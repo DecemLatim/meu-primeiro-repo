@@ -93,4 +93,50 @@ No GitHub, o `README.md` aparece automaticamente na página inicial do repositó
 
 👉 Agora é só você abrir o `vim` com `vim README.md`, colar esse conteúdo, salvar e dar o ciclo `git add → git commit → git push`. Assim o manual vai aparecer na **página inicial do repositório** já formatado.  
 
+Excelente! Deixar o **README.md** redondo é o que diferencia um repositório "bagunçado" de um projeto de **nível profissional**.
+
+Se alguém (ou você mesmo no futuro) cair nesse repositório, vai saber exatamente o que fazer sem precisar ler todo o código do alias.
+
+### Sugestão de texto para o seu README.md
+
+Você pode abrir o arquivo com `nano README.md` e colar esta seção no final:
+
+```markdown
+---
+
+## 🚀 Como Estudar para a LPIC-1
+
+Este repositório contém um sistema de Flashcards automatizado para rodar direto no terminal.
+
+### 1. Configuração
+Para usar o comando `est_lpic`, adicione o alias ao seu ambiente:
+- O passo a passo está no arquivo `flashcard/AdicionarAlias.txt`.
+
+### 2. Como rodar
+Basta digitar o comando abaixo no terminal:
+\`\`\`bash
+est_lpic
+\`\`\`
+
+### 3. O que o sistema faz?
+- Sorteia 1 de 100 questões fundamentais da LPIC-1.
+- Centraliza a pergunta para melhor foco.
+- Mostra o número do Card (linha) para facilitar a revisão posterior.
+
+```
+
+---
+
+### 💡 Dica Final de Git:
+
+Depois de editar o README, não esqueça daquele "combo" que você já mestreou:
+
+1. `git add README.md`
+2. `git commit -m "docs: adiciona instruções de uso dos flashcards"`
+3. `git push origin main`
+
+Agora sim, seu projeto está com "selo de qualidade" internacional!
+
+**Tudo pronto por aqui?** Se o cérebro pedir uma pausa, vá tomar um café — você trabalhou bem hoje. Se quiser continuar, é só mandar! ☕🐧
+
 Fim do processo.
