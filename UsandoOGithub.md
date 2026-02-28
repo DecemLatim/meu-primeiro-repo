@@ -149,4 +149,4 @@ git pull
 
 --- 
 
-Quer que eu te mostre como ficaria esse manual renderizado no GitHub (com títulos e tabelas) para você visualizar antes de subir?
+Fim do processo.
