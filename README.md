@@ -1,5 +1,3 @@
----
-
 ```markdown
 # 📖 Meu Primeiro Repositório – Manual GitHub
 
