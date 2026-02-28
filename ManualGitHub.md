@@ -11,4 +11,3 @@
 1. `git add arquivo`
 2. `git commit -m "Mensagem"`
 3. `git push`
-
