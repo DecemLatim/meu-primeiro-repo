@@ -1,4 +1,3 @@
-Perfeito, Decem! Vou montar um **manual em Markdown (MD)** com tudo que vimos até agora, incluindo a tabela expandida dos comandos. Assim você pode copiar direto para o `vim` e subir para o GitHub.  
 
 ---
 
@@ -148,8 +147,6 @@ git pull
 - **branch/merge** → trabalhar em paralelo e juntar depois.  
 ```
 
----
-
-👉 Agora é só você abrir o `vim` com `vim UsandoOGithub.md`, colar esse conteúdo, salvar e dar o ciclo `git add → git commit → git push`. Assim o manual vai aparecer no GitHub já formatado bonitinho.  
+--- 
 
 Quer que eu te mostre como ficaria esse manual renderizado no GitHub (com títulos e tabelas) para você visualizar antes de subir?
