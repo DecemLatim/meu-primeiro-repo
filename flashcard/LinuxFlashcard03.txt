@@ -8,3 +8,7 @@
 [LPIC-1] Qual utilitário gera o arquivo de configuração do GRUB 2? | grub-mkconfig ou grub2-mkconfig
 [LPIC-1] Qual comando verifica as dependências dos módulos do Kernel e gera o arquivo modules.dep? | depmod
 [LPIC-1] Qual comando mostra as opções de configuração do Kernel em uma interface de menu no terminal? | make menuconfig
+[LPIC-1] Qual comando o 'modprobe' consulta para saber as dependências? | depmod (modules.dep)
+[LPIC-1] Qual comando SQL é usado para inserir novos dados em uma tabela? | INSERT
+[LPIC-1] Qual comando SQL é usado para atualizar dados já existentes? | UPDATE
+[LPIC-1] Qual comando mostra os módulos do Kernel que estão carregados agora? | lsmod
