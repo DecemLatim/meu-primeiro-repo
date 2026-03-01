@@ -18,3 +18,28 @@
 [LPIC-1] Qual o comando para atualizar o grub.cfg no Debian/Ubuntu? | update-grub
 [LPIC-1] Qual utilitário permite ver as mensagens do Kernel logo após o boot? | dmesg
 [LPIC-1] Onde o Kernel mapeia o hardware do sistema? | Durante o processo de boot (mapeamento de hardware)
+[LPIC-1] O que significa a sigla FHS? | Filesystem Hierarchy Standard
+[LPIC-1] Qual diretório é a raiz de todo o sistema? | / (barra)
+[LPIC-1] Onde ficam os comandos essenciais para todos os usuários (ex: ls, cp)? | /bin
+[LPIC-1] Onde ficam os comandos de administração restritos ao root (ex: fdisk, iptables)? | /sbin
+[LPIC-1] Qual diretório contém os arquivos de configuração do sistema? | /etc
+[LPIC-1] Onde fica o Kernel do Linux e os arquivos do gerenciador de boot? | /boot
+[LPIC-1] Qual diretório virtual contém informações sobre processos e o Kernel? | /proc
+[LPIC-1] Onde os dispositivos de hardware são mapeados como arquivos? | /dev
+[LPIC-1] Qual o diretório padrão para as pastas pessoais dos usuários comuns? | /home
+[LPIC-1] Onde fica a pasta pessoal do administrador (superusuário)? | /root
+[LPIC-1] Qual diretório armazena bibliotecas essenciais para os binários em /bin e /sbin? | /lib
+[LPIC-1] Onde são montados dispositivos removíveis (pendrives, CDs) automaticamente? | /media
+[LPIC-1] Qual o diretório padrão para montagens temporárias feitas pelo administrador? | /mnt
+[LPIC-1] Onde ficam instalados programas de terceiros ou pacotes "adicionais" (ex: Google Chrome)? | /opt
+[LPIC-1] Qual diretório contém arquivos que mudam constantemente (logs, spools, caches)? | /var
+[LPIC-1] Onde ficam os arquivos de log do sistema? | /var/log
+[LPIC-1] Qual diretório armazena arquivos temporários que são limpos no reboot? | /tmp
+[LPIC-1] O que significa a sigla /usr? | Unix System Resources (ou User System Resources)
+[LPIC-1] Onde ficam as páginas de manual (man pages) no FHS? | /usr/share/man
+[LPIC-1] Qual subdiretório do /usr contém binários instalados localmente pelo administrador? | /usr/local
+[LPIC-1] Onde ficam os arquivos de dados de serviços do sistema (ex: sites do Apache)? | /srv
+[LPIC-1] Qual diretório virtual (moderno) contém informações sobre o hardware e drivers? | /sys
+[LPIC-1] Qual a principal diferença entre /bin e /usr/bin em sistemas modernos? | Atualmente são links simbólicos um para o outro (Merge-Usr)
+[LPIC-1] Por que o diretório /var deve ficar em uma partição separada em servidores? | Para evitar que logs cheios travem a partição raiz (/)
+[LPIC-1] Onde ficam as filas de impressão e e-mail no Linux? | /var/spool
