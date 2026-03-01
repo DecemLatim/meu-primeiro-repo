@@ -98,3 +98,4 @@
 [LPIC-1] Qual comando permite executar um programa com uma prioridade (nice) específica desde o início? | nice
 [LPIC-1] Qual variável de ambiente armazena o directório pessoal (home) do utilizador actual? | HOME
 [LPIC-1] Qual comando do 'systemd' é usado para listar todas as unidades (units) que falharam no arranque? | systemctl --failed
+[LPIC-1] Qual arquivo é usado para configurar limites de recursos de forma permanente? | /etc/security/limits.conf

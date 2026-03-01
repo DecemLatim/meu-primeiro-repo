@@ -1,0 +1,10 @@
+[LPIC-1] Qual comando do SQL apaga uma TABELA inteira (estrutura e dados)? | DROP TABLE
+[LPIC-1] Qual comando do SQL remove todas as LINHAS de uma tabela mas mantém a estrutura? | TRUNCATE ou DELETE
+[LPIC-1] No SQL, qual cláusula é usada para ordenar os resultados? | ORDER BY
+[LPIC-1] Qual comando é usado para compilar um novo Kernel no estilo antigo (Traditional)? | make bzImage
+[LPIC-1] Qual comando instala os módulos do Kernel após a compilação? | make modules_install
+[LPIC-1] Em qual diretório ficam os módulos do Kernel compilados? | /lib/modules/[versao_do_kernel]
+[LPIC-1] Qual comando remove um módulo do Kernel em tempo de execução? | rmmod ou modprobe -r
+[LPIC-1] Qual utilitário gera o arquivo de configuração do GRUB 2? | grub-mkconfig ou grub2-mkconfig
+[LPIC-1] Qual comando verifica as dependências dos módulos do Kernel e gera o arquivo modules.dep? | depmod
+[LPIC-1] Qual comando mostra as opções de configuração do Kernel em uma interface de menu no terminal? | make menuconfig
