@@ -1,0 +1,20 @@
+[LPIC-1] Qual o primeiro software executado pelo hardware no boot? | BIOS ou UEFI
+[LPIC-1] Qual a limitação de partições primárias de uma BIOS com MBR? | 4 partições primárias
+[LPIC-1] Onde ficam os primeiros 512 bytes de um disco no esquema BIOS? | MBR (Master Boot Record)
+[LPIC-1] Qual sistema substituiu a BIOS e permite discos maiores que 2TB? | UEFI
+[LPIC-1] Qual o nome da tabela de partições usada obrigatoriamente pelo UEFI? | GPT (GUID Partition Table)
+[LPIC-1] Qual o sistema de arquivos padrão da partição EFI (ESP)? | FAT32 (vfat)
+[LPIC-1] Qual o gerenciador de boot mais comum nas distros Linux atuais? | GRUB (ou GRUB2)
+[LPIC-1] Qual o arquivo de configuração principal do GRUB2? | /boot/grub/grub.cfg
+[LPIC-1] Qual comando o Kernel usa para carregar drivers essenciais antes de montar o raiz? | initrd (ou initramfs)
+[LPIC-1] O Kernel do Linux é carregado na memória de forma compactada ou descompactada? | Compactada (ele se descompacta na RAM)
+[LPIC-1] Qual o processo de número 1 (PID 1) na maioria das distros modernas? | systemd (ou init)
+[LPIC-1] No systemd, como são chamados os grupos de serviços/alvos? | Targets
+[LPIC-1] Qual 'target' do systemd corresponde ao modo multiusuário com rede? | multi-user.target
+[LPIC-1] Qual 'target' do systemd ativa a interface gráfica? | graphical.target
+[LPIC-1] Qual parâmetro do Kernel no GRUB esconde as mensagens de boot? | quiet
+[LPIC-1] Qual parâmetro do Kernel no GRUB mostra uma tela de carregamento (logo)? | splash
+[LPIC-1] Como o GRUB identifica partições de forma única para evitar erros de nomes (sda/sdb)? | Pelo UUID
+[LPIC-1] Qual o comando para atualizar o grub.cfg no Debian/Ubuntu? | update-grub
+[LPIC-1] Qual utilitário permite ver as mensagens do Kernel logo após o boot? | dmesg
+[LPIC-1] Onde o Kernel mapeia o hardware do sistema? | Durante o processo de boot (mapeamento de hardware)

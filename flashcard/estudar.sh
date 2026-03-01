@@ -10,7 +10,6 @@ rodar_estudo() {
     grep -n "." "$arquivo" | shuf | while IFS=":" read -r n resto; do
         IFS="|" read -r p r <<< "$resto"
         
-        # 1. TELA DA PERGUNTA
         dialog --backtitle "Estudando: $arquivo" \
                --title "CARD #$n - PERGUNTA" \
                --ok-label "VER RESPOSTA" \
@@ -19,46 +18,47 @@ rodar_estudo() {
         
         if [ $? -eq 3 ]; then return; fi
 
-        # 2. TELA DE REVELAÇÃO (Pergunta + Resposta na mesma caixa)
-        # Usamos \Z1 para cor vermelha ou \Z2 para verde se o dialog suportar --colors
         dialog --colors \
                --backtitle "Estudando: $arquivo" \
                --title "CARD #$n - REVELADO" \
                --ok-label "PRÓXIMA" \
                --extra-button --extra-label "MENU" \
-               --msgbox "\n\Z4PERGUNTA:\Zn\n$p\n\n--------------------------------------------\n\n\Z2RESPOSTA:\Zn\n$r\n\n" 18 65
+               --msgbox "\n\Z4PERGUNTA:\Zn\n$p\n\n\n\Z2RESPOSTA:\Zn\n$r\n\n" 18 65
         
         if [ $? -eq 3 ]; then return; fi
     done
 }
 
-# Loop do Menu Principal
 while true; do
     OPCAO=$(dialog --clear \
                     --backtitle "Sistema de Estudos LPIC-1 - Decem" \
                     --title " MENU PRINCIPAL " \
                     --cancel-label "Sair do Script" \
                     --menu "Escolha o deck que deseja estudar:" \
-                    15 55 5 \
+                    17 60 7 \
                     1 "Deck 01 (Geral, Processos, Pacotes)" \
                     2 "Deck 02 (Redes, Serviços, Segurança)" \
                     3 "Deck 03 (SQL, Kernel, Boot)" \
-                    4 "MARATONA (Todos os 175+ cards)" \
-                    5 "Sair" \
+                    4 "Deck 04 (Quotas, SQL Adv, Shell Adv)" \
+                    5 "Deck 05 (BOOT - BIOS/UEFI/GRUB)" \
+                    6 "MARATONA (Todos os 245+ cards)" \
+                    7 "Sair" \
                     2>&1 >/dev/tty)
 
-    if [ $? -ne 0 ] || [ "$OPCAO" == "5" ]; then
+    if [ $? -ne 0 ] || [ "$OPCAO" == "7" ]; then
         clear
         echo "Bons estudos e até a próxima!"
         exit 0
     fi
 
     case $OPCAO in
-        1) rodar_estudo "LinuxFlashcard.txt" ;;
+        1) rodar_estudo "LinuxFlashcard01.txt" ;;
         2) rodar_estudo "LinuxFlashcard02.txt" ;;
         3) rodar_estudo "LinuxFlashcard03.txt" ;;
-        4) 
-            cat LinuxFlashcard.txt LinuxFlashcard02.txt LinuxFlashcard03.txt > .tudo.tmp
+        4) rodar_estudo "LinuxFlashcard04.txt" ;;
+        5) rodar_estudo "LinuxFlashcard05.txt" ;;
+        6) 
+            cat LinuxFlashcard01.txt LinuxFlashcard02.txt LinuxFlashcard03.txt LinuxFlashcard04.txt LinuxFlashcard05.txt > .tudo.tmp
             rodar_estudo ".tudo.tmp"
             rm .tudo.tmp
             ;;

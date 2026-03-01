@@ -22,3 +22,10 @@
 [LPIC-1] Qual variável de localização define a ordem de classificação alfabética? | LC_COLLATE
 [LPIC-1] Qual o comando para listar todos os 'locales' disponíveis no sistema? | locale -a
 [LPIC-1] Qual tecnologia de acessibilidade converte texto em Braille ou Voz? | Screen Reader (como o Orca)
+[LPIC-1] Qual comando SQL é usado para ADICIONAR uma coluna em uma tabela existente? | ALTER TABLE
+[LPIC-1] Qual diretório do sistema (virtual) contém informações sobre o hardware e o Kernel? | /proc
+[LPIC-1] Qual arquivo em /proc contém informações sobre a CPU? | /proc/cpuinfo
+[LPIC-1] Qual arquivo em /proc mostra os módulos do Kernel carregados? | /proc/modules (mesmo que lsmod)
+[LPIC-1] Qual comando lista os dispositivos PCI conectados ao sistema? | lspci
+[LPIC-1] Qual comando lista os dispositivos USB conectados? | lsusb
+[LPIC-1] Qual utilitário mostra informações detalhadas sobre o hardware (DMI/BIOS)? | dmidecode
