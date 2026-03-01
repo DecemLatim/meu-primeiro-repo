@@ -43,3 +43,17 @@
 [LPIC-1] Qual a principal diferença entre /bin e /usr/bin em sistemas modernos? | Atualmente são links simbólicos um para o outro (Merge-Usr)
 [LPIC-1] Por que o diretório /var deve ficar em uma partição separada em servidores? | Para evitar que logs cheios travem a partição raiz (/)
 [LPIC-1] Onde ficam as filas de impressão e e-mail no Linux? | /var/spool
+[LPIC-1] Qual comando atualiza o cache de bibliotecas compartilhadas (/etc/ld.so.cache)? | ldconfig
+[LPIC-1] Qual variável de ambiente define caminhos extras para busca de bibliotecas? | LD_LIBRARY_PATH
+[LPIC-1] Qual arquivo contém a lista de diretórios onde o sistema busca bibliotecas? | /etc/ld.so.conf
+[LPIC-1] Qual comando lista as bibliotecas compartilhadas exigidas por um programa? | ldd
+[LPIC-1] No VI, qual tecla move o cursor para a ESQUERDA? | h
+[LPIC-1] No VI, qual tecla move o cursor para BAIXO? | j
+[LPIC-1] No VI, qual tecla move o cursor para CIMA? | k
+[LPIC-1] No VI, qual tecla move o cursor para a DIREITA? | l
+[LPIC-1] No VI, qual comando apaga a LINHA inteira onde está o cursor? | dd
+[LPIC-1] No VI, qual comando apaga apenas o CARACTERE sob o cursor? | x
+[LPIC-1] No Regex, qual caractere representa o INÍCIO de uma linha? | ^ (circunflexo)
+[LPIC-1] No Regex, qual caractere representa o FIM de uma linha? | $ (cifrão)
+[LPIC-1] No Regex, qual caractere representa "zero ou mais ocorrências" do anterior? | * (asterisco)
+[LPIC-1] No Regex, qual caractere representa "exatamente um caractere qualquer"? | . (ponto)
