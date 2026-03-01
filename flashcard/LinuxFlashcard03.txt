@@ -12,3 +12,13 @@
 [LPIC-1] Qual comando SQL é usado para inserir novos dados em uma tabela? | INSERT
 [LPIC-1] Qual comando SQL é usado para atualizar dados já existentes? | UPDATE
 [LPIC-1] Qual comando mostra os módulos do Kernel que estão carregados agora? | lsmod
+[LPIC-1] Qual comando exibe todas as variáveis de localização (LC_*) atuais? | locale
+[LPIC-1] Qual variável define o idioma e o país (ex: pt_BR.UTF-8)? | LANG
+[LPIC-1] Qual variável de localização define especificamente o formato de MOEDA? | LC_MONETARY
+[LPIC-1] Qual comando gera as definições de localidade a partir de ficheiros fonte? | localedef
+[LPIC-1] Qual ferramenta de acessibilidade permite controlar o rato com o teclado? | Mouse Keys
+[LPIC-1] O que faz o recurso 'Bounce Keys' na acessibilidade? | Ignora teclas premidas repetidamente em curto tempo
+[LPIC-1] O que faz o recurso 'Slow Keys' na acessibilidade? | Exige que a tecla seja pressionada por um tempo mínimo
+[LPIC-1] Qual variável de localização define a ordem de classificação alfabética? | LC_COLLATE
+[LPIC-1] Qual o comando para listar todos os 'locales' disponíveis no sistema? | locale -a
+[LPIC-1] Qual tecnologia de acessibilidade converte texto em Braille ou Voz? | Screen Reader (como o Orca)
