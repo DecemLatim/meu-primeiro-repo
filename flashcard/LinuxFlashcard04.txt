@@ -32,3 +32,18 @@
 [LPIC-1] Qual arquivo armazena as senhas criptografadas dos usuários? | /etc/shadow
 [LPIC-1] Qual comando é usado para criar um novo grupo? | groupadd
 [LPIC-1] Qual comando remove um usuário e opcionalmente sua pasta home? | userdel -r
+[LPIC-1] Qual comando exibe os logs binários gerenciados pelo systemd? | journalctl
+[LPIC-1] Qual opção do journalctl mostra apenas os logs do boot atual? | journalctl -b
+[LPIC-1] Como ver logs de uma unidade específica (ex: sshd) com journalctl? | journalctl -u sshd
+[LPIC-1] Como ver as últimas 20 entradas no journalctl? | journalctl -n 20
+[LPIC-1] Qual comando do journalctl mostra mensagens de erro (prioridade 3)? | journalctl -p err
+[LPIC-1] Onde o systemd-journald armazena logs persistentes (se configurado)? | /var/log/journal
+[LPIC-1] Qual utilitário rotaciona, compacta e remove logs antigos? | logrotate
+[LPIC-1] Onde ficam os arquivos de configuração do logrotate? | /etc/logrotate.conf (e /etc/logrotate.d/)
+[LPIC-1] Qual comando exibe o conteúdo de logs compactados (.gz) sem descompactar? | zcat (ou zless/zgrep)
+[LPIC-1] O que o parâmetro 'rotate 4' no logrotate significa? | Mantém 4 arquivos de log antigos antes de apagar
+[LPIC-1] O que o parâmetro 'compress' no logrotate faz? | Compacta os logs antigos para economizar espaço
+[LPIC-1] Qual comando mostra quem está logado e o que está fazendo no momento? | w
+[LPIC-1] Qual comando mostra o histórico de reinicializações do sistema? | last reboot
+[LPIC-1] Como o journalctl exibe logs de uma data/hora específica? | journalctl --since "2023-10-01 10:00"
+[LPIC-1] Qual arquivo define quais mensagens de log vão para quais arquivos? | /etc/rsyslog.conf

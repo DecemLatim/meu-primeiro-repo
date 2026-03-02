@@ -73,3 +73,18 @@
 [LPIC-1] No rsyslog, como logar mensagens do kernel de nível 'err' ou superior? | kern.err /var/log/kernel.error
 [LPIC-1] Qual arquivo mapeia múltiplos nomes (apelidos) para uma conta de e-mail? | /etc/aliases
 [LPIC-1] Qual arquivo define limites permanentes de recursos (ulimit)? | /etc/security/limits.conf
+[LPIC-1] Qual o arquivo de log para mensagens gerais no Debian/Ubuntu? | /var/log/syslog
+[LPIC-1] Qual o arquivo de log para mensagens gerais no Red Hat/CentOS? | /var/log/messages
+[LPIC-1] Onde são registrados acessos SSH e uso do sudo no Debian? | /var/log/auth.log
+[LPIC-1] Onde são registrados acessos SSH e uso do sudo no Red Hat? | /var/log/secure
+[LPIC-1] Qual comando mostra logs em tempo real conforme novas linhas surgem? | tail -f
+[LPIC-1] Qual ferramenta bane IPs automaticamente após falhas repetidas no log? | Fail2Ban
+[LPIC-1] Qual o diretório padrão para logs de erro do servidor Apache? | /var/log/apache2/error.log
+[LPIC-1] Qual log deve ser consultado para rastrear envio de e-mails? | /var/log/mail.log (ou maillog)
+[LPIC-1] Como filtrar apenas erros críticos no dmesg? | dmesg -n 1 (ou dmesg --level=err)
+[LPIC-1] Qual o nome do daemon tradicional que gerencia o logging no Linux? | rsyslogd
+[LPIC-1] Onde fica o arquivo de configuração do rsyslog? | /etc/rsyslog.conf
+[LPIC-1] Qual facilidade (facility) de log é usada para mensagens do Kernel? | kern
+[LPIC-1] Qual nível de prioridade de log indica uma condição de emergência? | emerg (ou panic)
+[LPIC-1] Qual nível de prioridade indica apenas uma mensagem informativa? | info
+[LPIC-1] O que o comando 'logger' faz? | Envia mensagens personalizadas para o log do sistema
