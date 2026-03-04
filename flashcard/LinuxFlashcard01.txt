@@ -1,7 +1,7 @@
 [LPIC-1] Qual comando e flag mostram o ID do processo (PID) que abriu um arquivo ou socket? | lsof -p ou fuser
 [LPIC-1] Qual arquivo deve ser editado para configurar os repositórios no Debian/Ubuntu? | /etc/apt/sources.list
 [LPIC-1] Qual comando altera a prioridade de um processo que JÁ está em execução? | renice (o nice define apenas no início)
-[LPIC-1] No VI, qual comando salva o arquivo e sai (o mais rápido)? | :wq ou ZZ
+[LPIC-1] No VI, qual comando salva o arquivo e sai (o mais rápido)? | :wq ou ZZ ou :x
 [LPIC-1] Qual variável de ambiente define os diretórios onde o sistema busca por executáveis? | PATH
 [LPIC-1] Qual comando é usado para criar partições em discos com tabela GPT? | gdisk (ou parted)
 [LPIC-1] Qual o caminho completo do arquivo que armazena as senhas criptografadas dos usuários? | /etc/shadow

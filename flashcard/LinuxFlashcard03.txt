@@ -29,3 +29,13 @@
 [LPIC-1] Qual comando lista os dispositivos PCI conectados ao sistema? | lspci
 [LPIC-1] Qual comando lista os dispositivos USB conectados? | lsusb
 [LPIC-1] Qual utilitário mostra informações detalhadas sobre o hardware (DMI/BIOS)? | dmidecode
+[LPIC-1] O que representa o bit '1' no início de 'chmod 1777 /tmp'? | Sticky Bit (apenas dono deleta)
+[LPIC-1] Comando: controle total dono, leitura grupo, nada outros? | chmod 740
+[LPIC-1] Comando simbólico: remover r e x de grupo (g) e outros (o)? | chmod go-rx
+[LPIC-1] O que faz o comando 'chmod u+s binario'? | Ativa o SUID (roda como dono do arquivo)
+[LPIC-1] Permissão que falta se tem 'r' mas não consegue dar 'cd' em pasta? | Execução (x)
+[LPIC-1] Qual comando altera apenas o grupo proprietário de um arquivo? | chgrp
+[LPIC-1] Com umask 027, qual a permissão padrão de um NOVO arquivo? | 640 (rw-r-----)
+[LPIC-1] O que indica o 's' minúsculo no lugar do 'x' do dono em 'ls -l'? | SUID ativo + Execução (x)
+[LPIC-1] Como aplicar permissão de leitura recursiva em uma árvore? | chmod -R a+r
+[LPIC-1] Bit usado em pastas para novos arquivos herdar grupo pai? | SGID (chmod g+s)

@@ -30,7 +30,7 @@ rodar_estudo() {
                --ok-label "ACERTEI! ✅" \
                --extra-button --extra-label "ERREI... ❌" \
                --cancel-label "SAIR" \
-               --msgbox "\n\Z4PERGUNTA:\Zn\n$p\n\n--------------------------------------------\n\n\Z2RESPOSTA:\Zn\n$r\n\n" 18 65
+               --msgbox "\n\Z4PERGUNTA:\Zn\n$p\n\n\n\n\Z2RESPOSTA:\Zn\n$r\n\n" 18 65
         
         RES=$?
 

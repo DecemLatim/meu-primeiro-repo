@@ -1,0 +1,10 @@
+# Ignorar arquivos temporários do sistema
+temp_log
+*~
+*.swp
+
+# Ignorar o seu histórico pessoal de estudos
+historico_estudos.log
+
+# Ignorar arquivos de backup ou temporários do mktemp
+/tmp/
