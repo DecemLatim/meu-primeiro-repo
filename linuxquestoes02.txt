@@ -1,7 +1,0 @@
-# Bibliotecas Partilhadas e Gestão de Pacotes (Debian/RPM)
-[LPIC-1] Qual comando lista as bibliotecas partilhadas necessárias para um executável? | ldd;ldconfig;apt;dpkg;ld.so
-[LPIC-1] Qual utilitário atualiza o cache de bibliotecas (/etc/ld.so.cache)? | ldconfig;ldd;updatedb;sln;apt-get
-[LPIC-1] No Debian, qual comando instala um ficheiro .deb local resolvendo dependências? | apt install;dpkg -i;apt-get update;apt-cache;rpm -ivh
-[LPIC-1] Qual comando do RPM é usado para verificar a qual pacote um ficheiro pertence? | rpm -qf;rpm -ivh;rpm -qa;rpm -V;rpm -e
-[LPIC-1] Qual ficheiro contém a lista de repositórios remotos do APT? | /etc/apt/sources.list;/etc/apt/apt.conf;/var/lib/apt;/etc/dpkg/dpkg.cfg;/etc/yum.repos.d
-[LPIC-1] Qual comando remove um pacote RPM mas mantém os ficheiros de configuração? | rpm -e;rpm -ev;rpm -qa;rpm -U;rpm -F

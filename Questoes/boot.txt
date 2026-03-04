@@ -1,5 +1,0 @@
-[BIOS/UEFI] Por que ele não carrega o Kernel diretamente? | Porque o BIOS é "burro": ele não entende sistemas de arquivos (EXT4/XFS). Ele só sabe carregar o GRUB.
-[GRUB] O que ele entrega para o Kernel ao passar o bastão? | O binário do Kernel (vmlinuz), o initramfs e os parâmetros de boot (root=UUID...).
-[INITRAMFS] Qual sua missão suicida logo após o boot? | Fornecer drivers na RAM para montar o disco real (/) e depois sumir da memória.
-[SYSTEMD] Por que ele é chamado de PID 1? | Porque é o primeiro processo iniciado pelo Kernel e pai de todos os outros serviços.
-[ERRO] O que indica um Kernel Panic 'VFS: Unable to mount root fs'? | Indica que o Kernel não achou o disco ou o initramfs não tinha o driver correto.
