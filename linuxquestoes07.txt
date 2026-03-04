@@ -1,0 +1,11 @@
+# Arquitetura de Sistema e Hardware (Tópico 101)
+[LPIC-1] Qual comando exibe informações detalhadas sobre a CPU, como modelo e cache? | lscpu;lsusb;lspci;lsdev;lsmem
+[LPIC-1] Qual sistema moderno substituiu a antiga BIOS e permite o Secure Boot? | UEFI;GRUB;ACPI;APM;CMOS
+[LPIC-1] Qual comando lista todos os dispositivos conectados ao barramento PCI? | lspci;lsusb;lsblk;lsmod;lsdev
+[LPIC-1] Em qual diretório o Kernel expõe informações sobre o hardware e drivers em tempo real? | /proc;/etc;/var;/usr;/bin
+[LPIC-1] Qual comando é usado para carregar ou remover módulos (drivers) do Kernel manualmente? | modprobe;insmod;lsmod;rmmod;depmod
+[LPIC-1] Qual utilitário lista os dispositivos USB conectados ao sistema? | lsusb;lspci;lsblk;lsdev;usbview
+[LPIC-1] Qual comando exibe informações sobre o hardware a partir das tabelas DMI/BIOS (como número de série da placa-mãe)? | dmidecode;biosdecode;hwinfo;lshw;arch
+[LPIC-1] Qual arquivo contém informações sobre as interrupções (IRQs) utilizadas pelo sistema? | /proc/interrupts;/proc/cpuinfo;/proc/ioports;/proc/meminfo;/proc/dma
+[LPIC-1] Qual comando lista os módulos do Kernel que estão carregados no momento? | lsmod;modinfo;modprobe;insmod;depmod
+[LPIC-1] Qual ferramenta é usada para visualizar e gerenciar dispositivos "Coldplug" e "Hotplug"? | udev;dbus;hal;sysfs;kmod

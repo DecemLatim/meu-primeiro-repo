@@ -1,0 +1,11 @@
+# Redes, Serviços de Sistema e Segurança (Tópico 110)
+[LPIC-1] Qual comando exibe o endereço IP e detalhes das interfaces de rede (substituto do ifconfig)? | ip addr;route;netstat;dig;hostname
+[LPIC-1] Qual arquivo contém a lista de servidores DNS que o sistema deve consultar? | /etc/resolv.conf;/etc/hosts;/etc/networks;/etc/dns.conf;/var/run/dns
+[LPIC-1] Qual utilitário é usado para testar a conectividade básica enviando pacotes ICMP? | ping;traceroute;netstat;nmap;route
+[LPIC-1] Qual comando exibe a tabela de roteamento IP do kernel? | ip route;ifconfig;host;nslookup;dig
+[LPIC-1] Qual arquivo mapeia nomes de hosts para endereços IP localmente? | /etc/hosts;/etc/resolv.conf;/etc/hostname;/etc/services;/etc/networks
+[LPIC-1] Qual comando é usado para encontrar o caminho que um pacote percorre até o destino? | traceroute;ping;ip route;netstat;ss
+[LPIC-1] Qual porta padrão é utilizada pelo serviço SSH? | 22;80;443;21;25
+[LPIC-1] Qual comando permite listar as portas abertas e conexões ativas no sistema? | ss;ps;top;free;df
+[LPIC-1] Qual comando é usado para alterar o limite de recursos (como número de arquivos abertos) do usuário? | ulimit;usermod;chage;passwd;groupmod
+[LPIC-1] Qual opção do comando 'useradd' define a data de expiração de uma conta de usuário? | -e;-d;-s;-g;-u
