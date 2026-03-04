@@ -1,0 +1,16 @@
+# Dispositivos, Particionamento e Sistemas de Arquivos
+[LPIC-1] Qual diretório contém os arquivos de dispositivo (como sda, sdb, tty)? | /dev;/etc;/var;/proc;/sys
+[LPIC-1] Qual comando é usado para criar partições em um disco com tabela de partição MBR? | fdisk;gdisk;parted;mkfs;mount
+[LPIC-1] Qual comando é usado para criar partições em um disco com tabela de partição GPT? | gdisk;fdisk;format;mkswap;fsck
+[LPIC-1] Qual comando cria um sistema de arquivos ext4 em uma partição? | mkfs.ext4;mke2fs -j;format -t ext4;mount -t ext4;fdisk -l
+[LPIC-1] Qual arquivo armazena as informações de montagem automática de sistemas de arquivos? | /etc/fstab;/etc/mtab;/proc/mounts;/etc/exports;/etc/filesystems
+[LPIC-1] Qual comando ativa as quotas de disco em um sistema de arquivos já montado? | quotaon;edquota;setquota;quotacheck;repquota
+[LPIC-1] Qual comando é usado para verificar a integridade de um sistema de arquivos? | fsck;tune2fs;debugfs;dumpe2fs;e2label
+[LPIC-1] Qual comando exibe o UUID (Universally Unique Identifier) de todas as partições? | blkid;lsblk;fdisk -l;df -h;mount
+[LPIC-1] No /etc/fstab, qual coluna define a ordem em que o 'fsck' verificará o disco no boot? | 6ª coluna (pass);5ª coluna (dump);4ª coluna (options);2ª coluna (mount point);3ª coluna (type)
+[LPIC-1] Qual comando cria um link simbólico (soft link) entre dois arquivos? | ln -s;ln;link;cp -l;mv -s
+[LPIC-1] Qual comando é usado para desmontar um sistema de arquivos que está no ponto /mnt/dados? | umount /mnt/dados;unmount /mnt/dados;rmmount /mnt/dados;detach /mnt/dados;mount -u
+[LPIC-1] Segundo o FHS, qual diretório deve conter arquivos de log e dados que mudam constantemente? | /var;/usr;/etc;/opt;/run
+[LPIC-1] Qual comando exibe o espaço livre e usado em disco de forma legível (human-readable)? | df -h;du -sh;free -m;ls -lh;fdisk -s
+[LPIC-1] Qual comando permite alterar o rótulo (label) de um sistema de arquivos ext4? | e2label;tune2fs -L;mkfs -L;mke2fs;fsck -l
+[LPIC-1] Qual a principal diferença de um 'Hard Link' para um 'Symbolic Link'? | Aponta para o inode;Pode cruzar partições;É um atalho de caminho;Pode apontar para diretórios;Tem permissões próprias

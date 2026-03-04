@@ -1,0 +1,49 @@
+[LPIC-1] Qual comando abre o editor para configurar as quotas de um usuário? | edquota
+[LPIC-1] Qual utilitário gera um relatório (summary) das quotas de disco? | repquota
+[LPIC-1] Qual arquivo deve ser criado na raiz do sistema de arquivos para armazenar quotas (antigo)? | aquota.user ou aquota.group
+[LPIC-1] No SQL, qual comando combina linhas de duas ou mais tabelas baseado em uma coluna comum? | JOIN (ou INNER JOIN)
+[LPIC-1] Qual restrição (constraint) garante que cada linha de uma tabela seja única? | PRIMARY KEY
+[LPIC-1] Qual arquivo do TCP Wrappers é consultado PRIMEIRO para permitir acesso? | /etc/hosts.allow
+[LPIC-1] No shell, qual operador executa o segundo comando APENAS se o primeiro falhar? | || (OR)
+[LPIC-1] No shell, qual operador executa o segundo comando APENAS se o primeiro tiver sucesso? | && (AND)
+[LPIC-1] Qual comando torna uma variável local do shell disponível para processos filhos? | export
+[LPIC-1] Qual comando é usado para alterar o dono (owner) de um arquivo? | chown
+[LPIC-1] Qual comando é usado para alterar o grupo de um arquivo? | chgrp ou chown :grupo
+[LPIC-1] Qual opção do 'usermod' bloqueia (lock) a conta de um usuário? | -L
+[LPIC-1] Qual comando mostra o caminho completo (path) de um executável? | which ou type
+[LPIC-1] Qual arquivo contém a lista de terminais seguros de onde o root pode logar? | /etc/securetty
+[LPIC-1] Qual utilitário é o "super servidor" que gerencia conexões de serviços simples? | inetd ou xinetd
+[LPIC-1] Qual comando lista os arquivos abertos por um processo ou usuário? | lsof
+[LPIC-1] No VI/VIM, qual comando salva e sai (write and quit)? | :wq ou :x
+[LPIC-1] No VI/VIM, qual comando sai SEM salvar as alterações? | :q!
+[LPIC-1] Qual comando exibe o histórico de logins e logouts do sistema? | last
+[LPIC-1] Qual arquivo armazena as informações de login falhas (bad logins)? | /var/log/btmp
+[LPIC-1] Qual comando lê do 'standard input' e escreve no 'standard output' E em arquivos ao mesmo tempo? | tee
+[LPIC-1] Qual comando remove o mapeamento de um sistema de arquivos? | umount
+[LPIC-1] Qual comando define as permissões padrão para novos arquivos criados? | umask
+[LPIC-1] Qual sinal do kill (numérico) termina um processo de forma forçada e imediata? | 9 (SIGKILL)
+[LPIC-1] Qual sinal do kill (numérico) pede para o processo terminar de forma educada? | 15 (SIGTERM)
+[LPIC-1] Por que não se deve usar 'cat' no /var/log/btmp e qual comando usar? | É um arquivo binário; deve-se usar o comando 'lastb'.
+[LPIC-1] Onde ficam os logs de falha de login no Red Hat e como lê-los? | No /var/log/btmp; lê-se com o comando 'lastb'.
+[LPIC-1] Qual permissão especial permite que um arquivo seja executado com os poderes do DONO? | SUID (u+s ou 4000)
+[LPIC-1] Qual permissão especial faz com que novos arquivos herdem o GRUPO do diretório pai? | SGID (g+s ou 2000)
+[LPIC-1] Qual bit de permissão (Sticky Bit) impede que usuários apaguem arquivos uns dos outros em pastas públicas? | Sticky Bit (+t ou 1000)
+[LPIC-1] Qual comando altera as informações de expiração de senha de um usuário? | chage
+[LPIC-1] Qual arquivo armazena as senhas criptografadas dos usuários? | /etc/shadow
+[LPIC-1] Qual comando é usado para criar um novo grupo? | groupadd
+[LPIC-1] Qual comando remove um usuário e opcionalmente sua pasta home? | userdel -r
+[LPIC-1] Qual comando exibe os logs binários gerenciados pelo systemd? | journalctl
+[LPIC-1] Qual opção do journalctl mostra apenas os logs do boot atual? | journalctl -b
+[LPIC-1] Como ver logs de uma unidade específica (ex: sshd) com journalctl? | journalctl -u sshd
+[LPIC-1] Como ver as últimas 20 entradas no journalctl? | journalctl -n 20
+[LPIC-1] Qual comando do journalctl mostra mensagens de erro (prioridade 3)? | journalctl -p err
+[LPIC-1] Onde o systemd-journald armazena logs persistentes (se configurado)? | /var/log/journal
+[LPIC-1] Qual utilitário rotaciona, compacta e remove logs antigos? | logrotate
+[LPIC-1] Onde ficam os arquivos de configuração do logrotate? | /etc/logrotate.conf (e /etc/logrotate.d/)
+[LPIC-1] Qual comando exibe o conteúdo de logs compactados (.gz) sem descompactar? | zcat (ou zless/zgrep)
+[LPIC-1] O que o parâmetro 'rotate 4' no logrotate significa? | Mantém 4 arquivos de log antigos antes de apagar
+[LPIC-1] O que o parâmetro 'compress' no logrotate faz? | Compacta os logs antigos para economizar espaço
+[LPIC-1] Qual comando mostra quem está logado e o que está fazendo no momento? | w
+[LPIC-1] Qual comando mostra o histórico de reinicializações do sistema? | last reboot
+[LPIC-1] Como o journalctl exibe logs de uma data/hora específica? | journalctl --since "2023-10-01 10:00"
+[LPIC-1] Qual arquivo define quais mensagens de log vão para quais arquivos? | /etc/rsyslog.conf

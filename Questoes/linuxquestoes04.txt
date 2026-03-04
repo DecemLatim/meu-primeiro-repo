@@ -1,0 +1,11 @@
+# Shells, Scripting e Gestão de Dados (Tópico 105)
+[LPIC-1] Qual caractere é usado no início de um script para indicar o interpretador (Shebang)? | #!;!!;$!;#!bin;#!bash
+[LPIC-1] Qual comando é usado para tornar um script 'meuscript.sh' executável? | chmod +x;chown +x;chmod 777;source;./meuscript.sh
+[LPIC-1] Qual variável de ambiente armazena o status de saída (exit status) do último comando executado? | $?;$#;$*;$!;$0
+[LPIC-1] Qual estrutura de controle é usada para repetir um bloco de comandos enquanto uma condição for VERDADEIRA? | while;if;case;until;for
+[LPIC-1] Qual comando é usado para ler uma entrada do usuário e salvá-la em uma variável dentro de um script? | read;input;get;echo;set
+[LPIC-1] Qual estrutura é ideal para testar uma variável contra vários valores possíveis (como um menu)? | case;if;while;for;do
+[LPIC-1] O que o comando 'export' faz com uma variável de shell? | Torna-a disponível para subshells;Apaga a variável;Protege a variável contra escrita;Salva a variável no /etc/profile;Cria um alias
+[LPIC-1] Qual caractere é usado para redirecionar o erro padrão (stderr) para um arquivo? | 2>;>;>>;1>;<
+[LPIC-1] Qual o resultado do comando 'echo $#' dentro de um script shell? | O número de argumentos passados;O nome do script;O ID do processo;O último argumento;O status de erro
+[LPIC-1] Como você executa um script no shell atual sem criar um novo processo filho? | source ou .;bash;sh;exec;./

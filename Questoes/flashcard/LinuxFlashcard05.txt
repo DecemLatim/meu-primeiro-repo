@@ -1,0 +1,59 @@
+[LPIC-1] Qual o primeiro software executado pelo hardware no boot? | BIOS ou UEFI
+[LPIC-1] Qual a limitação de partições primárias de uma BIOS com MBR? | 4 partições primárias
+[LPIC-1] Onde ficam os primeiros 512 bytes de um disco no esquema BIOS? | MBR (Master Boot Record)
+[LPIC-1] Qual sistema substituiu a BIOS e permite discos maiores que 2TB? | UEFI
+[LPIC-1] Qual o nome da tabela de partições usada obrigatoriamente pelo UEFI? | GPT (GUID Partition Table)
+[LPIC-1] Qual o sistema de arquivos padrão da partição EFI (ESP)? | FAT32 (vfat)
+[LPIC-1] Qual o gerenciador de boot mais comum nas distros Linux atuais? | GRUB (ou GRUB2)
+[LPIC-1] Qual o arquivo de configuração principal do GRUB2? | /boot/grub/grub.cfg
+[LPIC-1] Qual comando o Kernel usa para carregar drivers essenciais antes de montar o raiz? | initrd (ou initramfs)
+[LPIC-1] O Kernel do Linux é carregado na memória de forma compactada ou descompactada? | Compactada (ele se descompacta na RAM)
+[LPIC-1] Qual o processo de número 1 (PID 1) na maioria das distros modernas? | systemd (ou init)
+[LPIC-1] No systemd, como são chamados os grupos de serviços/alvos? | Targets
+[LPIC-1] Qual 'target' do systemd corresponde ao modo multiusuário com rede? | multi-user.target
+[LPIC-1] Qual 'target' do systemd ativa a interface gráfica? | graphical.target
+[LPIC-1] Qual parâmetro do Kernel no GRUB esconde as mensagens de boot? | quiet
+[LPIC-1] Qual parâmetro do Kernel no GRUB mostra uma tela de carregamento (logo)? | splash
+[LPIC-1] Como o GRUB identifica partições de forma única para evitar erros de nomes (sda/sdb)? | Pelo UUID
+[LPIC-1] Qual o comando para atualizar o grub.cfg no Debian/Ubuntu? | update-grub
+[LPIC-1] Qual utilitário permite ver as mensagens do Kernel logo após o boot? | dmesg
+[LPIC-1] Onde o Kernel mapeia o hardware do sistema? | Durante o processo de boot (mapeamento de hardware)
+[LPIC-1] O que significa a sigla FHS? | Filesystem Hierarchy Standard
+[LPIC-1] Qual diretório é a raiz de todo o sistema? | / (barra)
+[LPIC-1] Onde ficam os comandos essenciais para todos os usuários (ex: ls, cp)? | /bin
+[LPIC-1] Onde ficam os comandos de administração restritos ao root (ex: fdisk, iptables)? | /sbin
+[LPIC-1] Qual diretório contém os arquivos de configuração do sistema? | /etc
+[LPIC-1] Onde fica o Kernel do Linux e os arquivos do gerenciador de boot? | /boot
+[LPIC-1] Qual diretório virtual contém informações sobre processos e o Kernel? | /proc
+[LPIC-1] Onde os dispositivos de hardware são mapeados como arquivos? | /dev
+[LPIC-1] Qual o diretório padrão para as pastas pessoais dos usuários comuns? | /home
+[LPIC-1] Onde fica a pasta pessoal do administrador (superusuário)? | /root
+[LPIC-1] Qual diretório armazena bibliotecas essenciais para os binários em /bin e /sbin? | /lib
+[LPIC-1] Onde são montados dispositivos removíveis (pendrives, CDs) automaticamente? | /media
+[LPIC-1] Qual o diretório padrão para montagens temporárias feitas pelo administrador? | /mnt
+[LPIC-1] Onde ficam instalados programas de terceiros ou pacotes "adicionais" (ex: Google Chrome)? | /opt
+[LPIC-1] Qual diretório contém arquivos que mudam constantemente (logs, spools, caches)? | /var
+[LPIC-1] Onde ficam os arquivos de log do sistema? | /var/log
+[LPIC-1] Qual diretório armazena arquivos temporários que são limpos no reboot? | /tmp
+[LPIC-1] O que significa a sigla /usr? | Unix System Resources (ou User System Resources)
+[LPIC-1] Onde ficam as páginas de manual (man pages) no FHS? | /usr/share/man
+[LPIC-1] Qual subdiretório do /usr contém binários instalados localmente pelo administrador? | /usr/local
+[LPIC-1] Onde ficam os arquivos de dados de serviços do sistema (ex: sites do Apache)? | /srv
+[LPIC-1] Qual diretório virtual (moderno) contém informações sobre o hardware e drivers? | /sys
+[LPIC-1] Qual a principal diferença entre /bin e /usr/bin em sistemas modernos? | Atualmente são links simbólicos um para o outro (Merge-Usr)
+[LPIC-1] Por que o diretório /var deve ficar em uma partição separada em servidores? | Para evitar que logs cheios travem a partição raiz (/)
+[LPIC-1] Onde ficam as filas de impressão e e-mail no Linux? | /var/spool
+[LPIC-1] Qual comando atualiza o cache de bibliotecas compartilhadas (/etc/ld.so.cache)? | ldconfig
+[LPIC-1] Qual variável de ambiente define caminhos extras para busca de bibliotecas? | LD_LIBRARY_PATH
+[LPIC-1] Qual arquivo contém a lista de diretórios onde o sistema busca bibliotecas? | /etc/ld.so.conf
+[LPIC-1] Qual comando lista as bibliotecas compartilhadas exigidas por um programa? | ldd
+[LPIC-1] No VI, qual tecla move o cursor para a ESQUERDA? | h
+[LPIC-1] No VI, qual tecla move o cursor para BAIXO? | j
+[LPIC-1] No VI, qual tecla move o cursor para CIMA? | k
+[LPIC-1] No VI, qual tecla move o cursor para a DIREITA? | l
+[LPIC-1] No VI, qual comando apaga a LINHA inteira onde está o cursor? | dd
+[LPIC-1] No VI, qual comando apaga apenas o CARACTERE sob o cursor? | x
+[LPIC-1] No Regex, qual caractere representa o INÍCIO de uma linha? | ^ (circunflexo)
+[LPIC-1] No Regex, qual caractere representa o FIM de uma linha? | $ (cifrão)
+[LPIC-1] No Regex, qual caractere representa "zero ou mais ocorrências" do anterior? | * (asterisco)
+[LPIC-1] No Regex, qual caractere representa "exatamente um caractere qualquer"? | . (ponto)

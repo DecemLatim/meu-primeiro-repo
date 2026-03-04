@@ -1,0 +1,6 @@
+Hello World
+Segunda versão
+Atualizando o arquivo hello 03
+Adicionado/alterado no github.
+
+Fim do processo.

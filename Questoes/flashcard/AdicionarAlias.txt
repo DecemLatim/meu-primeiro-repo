@@ -1,0 +1,5 @@
+# Adicionar o alias "est_lpic" no arquivo /root/bashrc
+# Copia a linha abaixo e executa no prompt do shell
+
+echo "alias est_lpic='grep -n \".\" LinuxFlashcard.txt | shuf | while IFS=\":\" read -r n resto; do IFS=\"|\" read -r p r <<< \"\$resto\"; clear; printf \"\\n%.0s\" {1..10}; echo -e \"\e[1;34mCARD #\$n\e[0m\"; echo -e \"\e[1;33mPERGUNTA:\e[0m \$p\"; printf \"\\n\"; read -p \"Pense e aperte ENTER...\" < /dev/tty; printf \"\\n\\n\"; echo -e \"\e[1;32mRESPOSTA:\e[0m \$r\"; echo \"\"; read -p \"Próxima? [ENTER]\" < /dev/tty; done'" >> ~/.bashrc
+source ~/.bashrc
