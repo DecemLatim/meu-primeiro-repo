@@ -1,0 +1,102 @@
+# Comandos GNU/Linux - Parte 3 (Processos e Fluxos)
+[LPIC-1] Qual comando é utilizado para enviar um sinal a um processo, sendo o sinal padrão o SIGTERM (15)? | kill;sigsend;stop;terminate;break
+[LPIC-1] Qual comando exibe os processos do sistema em tempo real, permitindo ordenar por uso de CPU ou Memória? | top;ps;free;vmstat;uptime
+[LPIC-1] Qual opção do comando 'ps' exibe todos os processos de todos os usuários, incluindo os que não possuem terminal (TTY)? | aux;-ef;all;-a;list
+[LPIC-1] Qual comando é usado para alterar a prioridade de um processo que JÁ está em execução? | renice;nice;priority;chpriority;setnice
+[LPIC-1] Qual o valor de prioridade (nice) padrão atribuído a um novo processo criado por um usuário comum? | 0;10;-20;19;5
+[LPIC-1] Qual sinal é enviado pelo comando 'kill -9' para forçar o encerramento imediato de um processo? | SIGKILL;SIGTERM;SIGINT;SIGHUP;SIGSTOP
+[LPIC-1] Qual comando exibe a árvore de hierarquia de processos, mostrando quem é o processo pai? | pstree;ps -tree;showtree;proctree;top -t
+[LPIC-1] Qual utilitário é usado para executar um comando com uma prioridade específica ANTES dele iniciar? | nice;renice;setpriority;priority;execnice
+[LPIC-1] No 'top', qual tecla é pressionada para alterar a prioridade (renice) de um processo sem sair do programa? | r;n;p;k;m
+[LPIC-1] Qual o intervalo de valores possíveis para o 'nice' no Linux? | -20 a 19;-10 a 10;0 a 100;1 a 99;-100 a 100
+[LPIC-1] Qual comando exibe apenas os processos que pertencem a um usuário específico (ex: Rafael)? | ps -u Rafael;ps -user Rafael;ps -only Rafael;ps -show Rafael;ps -who Rafael
+[LPIC-1] Qual sinal é enviado quando pressionamos Ctrl+C no terminal para interromper um processo? | SIGINT;SIGKILL;SIGTERM;SIGQUIT;SIGSTOP
+[LPIC-1] Qual comando 'kill' é usado para recarregar as configurações de um serviço (daemon) sem interrompê-lo? | kill -1 (SIGHUP);kill -9;kill -15;kill -2;kill -19
+[LPIC-1] No 'top', qual tecla ordena os processos pelo maior consumo de memória RAM? | M;P;T;N;R
+[LPIC-1] Qual comando exibe o ID do processo (PID) de um programa pelo seu nome? | pidof;pgrep;id;findpid;getpid
+[LPIC-1] Qual sinal suspende temporariamente um processo (colocando-o em stop)? | SIGSTOP;SIGCONT;SIGKILL;SIGINT;SIGTERM
+[LPIC-1] Qual comando exibe o tempo que o sistema está ligado e a média de carga (load average)? | uptime;free;date;time;last
+[LPIC-1] Qual a função do comando 'nohup'? | Executar um comando que continua rodando após o logout;Encerrar um comando imediatamente;Mudar a prioridade de um comando;Esconder um comando da lista de processos;Mudar o dono de um processo
+[LPIC-1] Qual comando coloca um processo que estava suspenso para rodar em segundo plano (background)? | bg;fg;jobs;&;stop
+[LPIC-1] Qual comando traz um processo do segundo plano (background) para o primeiro plano (foreground)? | fg;bg;jobs;next;switch
+[LPIC-1] Qual símbolo é colocado ao final de um comando para iniciá-lo diretamente em segundo plano? | &;%;$;?;#
+[LPIC-1] Qual comando lista os processos (jobs) que foram iniciados no terminal atual? | jobs;ps -j;list;bglist;tasklist
+[LPIC-1] Qual opção do comando 'free' exibe os valores em Megabytes? | -m;-k;-g;-h;-b
+[LPIC-1] Qual comando exibe estatísticas detalhadas sobre memória virtual, processos e CPU? | vmstat;iostat;memstat;cpustat;netstat
+[LPIC-1] Qual sinal é enviado pelo comando 'kill' quando nenhum número de sinal é especificado? | 15 (SIGTERM);9 (SIGKILL);1 (SIGHUP);2 (SIGINT);19 (SIGSTOP)
+[LPIC-1] No editor 'vi', qual comando exclui a linha atual e a próxima linha (total de 2)? | 2dd;d2;dd2;x2;del2
+[LPIC-1] Qual comando é usado para visualizar o conteúdo de um arquivo de texto começando pelo final (inverso)? | tac;rev;tail;back;reverse
+[LPIC-1] No 'top', qual tecla é usada para encerrar (kill) um processo? | k;r;q;z;h
+[LPIC-1] Qual comando mostra as mensagens enviadas pelo kernel durante o boot (anel de mensagens)? | dmesg;bootlog;kernlog;syslog;journalctl -b
+[LPIC-1] Qual opção do 'ps' mostra a linhagem do processo (quem chamou quem) no formato de floresta? | ps -f;ps -l;ps -ax;ps --forest;ps -e
+[LPIC-1] Qual valor de 'nice' representa a MAIOR prioridade possível para um processo? | -20;19;0;100;-10
+[LPIC-1] Qual usuário pode atribuir valores de 'nice' negativos (maior prioridade) a um processo? | Apenas o Root;Qualquer usuário;Usuários do grupo sudo;Apenas o dono do processo;Nenhum usuário
+[LPIC-1] Qual comando exibe o estado atual da memória RAM e do Swap? | free;vmstat;top;todas as anteriores;memshow
+[LPIC-1] No Bash, qual comando encerra a execução de um script se houver erro em qualquer comando? | set -e;set -x;set -v;set -o;set -u
+[LPIC-1] Qual comando é usado para enviar sinais para processos baseando-se no nome parcial do programa? | pkill;killall;killname;kill -p;sigkill
+[LPIC-1] Qual o efeito do comando 'kill -19'? | Para/Suspende o processo;Continua o processo;Encerra o processo;Recarrega o processo;Muda a prioridade
+[LPIC-1] Qual comando exibe o limite de recursos (como memória e arquivos abertos) para o usuário atual? | ulimit;quota;limit;sysctl;getconf
+[LPIC-1] Qual opção do comando 'top' define o intervalo de atualização em segundos? | -d;-s;-i;-n;-u
+[LPIC-1] No 'top', qual tecla alterna a exibição entre os núcleos individuais da CPU? | 1;c;i;t;m
+[LPIC-1] Qual comando é usado para rodar uma sequência de comandos apenas se o primeiro terminar com SUCESSO? | &&;||;;;&;|
+[LPIC-1] Qual comando exibe o ID do processo pai (PPID) de um determinado processo? | ps -f;ps -x;ps -e;top -n 1;pgrep -p
+[LPIC-1] Qual sinal é enviado pelo comando 'kill -SIGCONT'? | Continua um processo que estava suspenso;Encerra o processo;Suspende o processo;Recarrega as configurações;Desconecta o terminal
+[LPIC-1] No monitor 'top', qual tecla é utilizada para ocultar ou exibir processos inativos (idle)? | i;u;k;r;z
+[LPIC-1] Qual comando permite enviar um sinal para todos os processos que estão rodando um mesmo programa (ex: todos os 'httpd')? | killall;pkill;kill -a;sigall;terminate --all
+[LPIC-1] Qual comando é usado para ver quanto tempo de CPU um comando utilizou após sua execução terminar? | time;uptime;date;times;clock
+[LPIC-1] O que acontece com um processo quando ele se torna um "Zumbi" (defunct)? | Ele terminou mas ainda tem uma entrada na tabela de processos;Ele travou o sistema;Ele está usando 100% de CPU;Ele foi movido para o swap;Ele mudou de proprietário
+[LPIC-1] Qual comando mostra o terminal (tty) ao qual o usuário está conectado no momento? | tty;whoami;id;where;term
+[LPIC-1] Qual opção do comando 'jobs' exibe também o PID dos processos em segundo plano? | -l;-p;-n;-r;-s
+[LPIC-1] No 'top', qual tecla altera a cor da interface ou destaca campos específicos? | z;b;x;y;c
+[LPIC-1] Qual comando é usado para alterar a prioridade de um processo usando o nome do programa em vez do PID? | renice -n valor -u usuario;nice;prio;setprio;pkill -nice
+[LPIC-1] Qual o valor MÁXIMO de 'nice' (menor prioridade) que um usuário pode atribuir? | 19;20;10;0;-20
+[LPIC-1] Qual sinal é enviado ao processo quando o terminal de controle é fechado? | SIGHUP (1);SIGINT (2);SIGTERM (15);SIGKILL (9);SIGQUIT (3)
+[LPIC-1] Qual comando monitora em tempo real as chamadas de sistema (system calls) feitas por um programa? | strace;ltrace;ptrace;trace;syslog
+[LPIC-1] No monitoramento de carga, o que significa um 'load average' de 1.0 em um sistema com apenas 1 CPU? | A CPU está 100% ocupada;A CPU está em idle;O sistema está travado;Metade da CPU está livre;O swap está cheio
+[LPIC-1] Qual comando exibe os usuários logados no sistema e o que eles estão fazendo no momento? | w;who;users;last;finger
+[LPIC-1] Qual opção do 'ps' permite formatar as colunas que você deseja visualizar? | -o;--format;-f;-l;-L
+[LPIC-1] No editor 'vi', qual comando move o cursor para o meio da tela? | M;H;L;G;z
+[LPIC-1] Qual comando é utilizado para enviar um sinal 'SIGQUIT' via teclado, gerando um core dump? | Ctrl+\;Ctrl+C;Ctrl+Z;Ctrl+D;Ctrl+Break
+[LPIC-1] Qual comando do Bash impede que um processo receba o sinal SIGHUP quando o shell é encerrado? | disown;nohup;bg;detach;keep
+[LPIC-1] Qual sinal é representado pelo número 2 no comando kill? | SIGINT;SIGHUP;SIGQUIT;SIGILL;SIGTRAP
+[LPIC-1] Qual utilitário exibe graficamente a utilização de I/O de disco por processo? | iotop;top;iostat;vmstat;df -h
+[LPIC-1] No monitor 'top', qual tecla permite filtrar a visualização para os processos de apenas um usuário? | u;f;o;s;L
+[LPIC-1] Qual comando 'pgrep' retorna a contagem de processos em vez dos PIDs? | pgrep -c;pgrep -l;pgrep -n;pgrep -o;pgrep -x
+[LPIC-1] Qual comando exibe o limite de arquivos abertos simultaneamente por um processo? | ulimit -n;ulimit -u;ulimit -f;ulimit -m;ulimit -v
+[LPIC-1] Qual opção do 'ps' exibe informações sobre threads (processos leves)? | -L;-H;-m;-T;-p
+[LPIC-1] Qual sinal é enviado para solicitar que um processo finalize e grave seu estado atual em um arquivo core? | SIGQUIT;SIGTERM;SIGABRT;SIGSEGV;SIGFPE
+[LPIC-1] No monitor 'top', qual tecla exibe o caminho completo do comando executado? | c;i;f;V;x
+[LPIC-1] Qual comando é usado para rodar um processo com a prioridade mais baixa possível? | nice -n 19;nice -n -20;nice -n 0;nice -n 10;nice -n 1
+[LPIC-1] Qual comando lista todos os arquivos abertos por processos no sistema? | lsof;lsfile;openfiles;procfiles;fuser
+[LPIC-1] Qual sinal 'kill' não pode ser ignorado ou bloqueado pelo processo? | SIGKILL (9);SIGTERM (15);SIGHUP (1);SIGINT (2);SIGQUIT (3)
+[LPIC-1] No 'top', qual tecla ordena os processos pelo tempo de execução (TIME+)? | T;M;P;N;A
+[LPIC-1] Qual comando do Bash lista os PIDs de todos os processos filhos do shell atual? | echo $BASHPID;jobs -p;ps -T;pgrep -P $$;parent
+[LPIC-1] Qual comando é usado para "acordar" um processo que foi parado pelo sinal SIGSTOP? | kill -SIGCONT;kill -SIGSTART;kill -SIGRESUME;kill -18;as opções 1 e 4
+[LPIC-1] Qual opção do comando 'free' exibe os dados em Gigabytes? | -g;-m;-k;-h;-b
+[LPIC-1] No editor 'vi', qual comando repete a última ação de edição realizada? | . (ponto);; (ponto e vírgula);r;R;u
+[LPIC-1] Qual comando exibe informações sobre a arquitetura da CPU (modelo, cores, cache)? | lscpu;cat /proc/cpuinfo;cpuid;as duas primeiras opções;uname -p
+[LPIC-1] Qual sinal é enviado quando um processo filho termina ou para? | SIGCHLD;SIGCONT;SIGPIPE;SIGALRM;SIGUSR1
+[LPIC-1] No 'top', qual tecla alterna a exibição de informações de resumo no topo da tela? | l;m;t;s;1
+[LPIC-1] Qual comando identifica qual processo está utilizando um arquivo ou diretório específico? | fuser;lsof;who-uses;find-proc;filelock
+[LPIC-1] Qual comando é usado para executar uma tarefa em um horário específico no futuro (uma única vez)? | at;cron;batch;sleep;wait
+[LPIC-1] Qual comando exibe o valor de prioridade (NI) e a prioridade em tempo real (PRI) de um processo? | ps -l;top;ps -f;as duas primeiras opções;nice -v
+[LPIC-1] Qual comando é utilizado para listar todos os sinais disponíveis que o comando kill pode enviar? | kill -l;kill --signals;siglist;show-signals;man signals
+[LPIC-1] No monitor 'top', qual tecla é usada para salvar as configurações de visualização atuais no arquivo ~/.toprc? | W;S;Z;f;q
+[LPIC-1] Qual comando executa um processo em segundo plano e redireciona automaticamente sua saída para o arquivo nohup.out? | nohup;bg;detach;screen;disown
+[LPIC-1] Qual opção do comando 'renice' permite alterar a prioridade de todos os processos de um grupo de usuários? | -g;-u;-p;-n;-L
+[LPIC-1] No 'top', qual tecla alterna entre mostrar o uso de CPU por núcleo ou a média total? | 1;t;m;c;f
+[LPIC-1] Qual sinal é enviado para um processo quando a conexão do terminal é perdida (SIGHUP)? | 1;2;9;15;19
+[LPIC-1] Qual comando exibe o limite de processos que o usuário atual pode criar simultaneamente? | ulimit -u;ulimit -n;ulimit -f;ulimit -p;ulimit -a
+[LPIC-1] Qual comando do 'vi' move o cursor para o final da linha e entra no modo de inserção? | A;a;i;I;o
+[LPIC-1] Qual comando é usado para verificar a carga do sistema e a quantidade de usuários logados de forma resumida? | uptime;who -q;last;date;top -n 1
+[LPIC-1] Qual sinal 'kill' é utilizado para parar um processo em background de forma que ele possa ser continuado depois? | SIGSTOP (19);SIGCONT (18);SIGTERM (15);SIGKILL (9);SIGINT (2)
+[LPIC-1] No 'top', qual tecla permite selecionar quais colunas (campos) serão exibidos na tela? | f;o;s;L;V
+[LPIC-1] Qual comando 'pgrep' exibe o nome do processo ao lado do seu PID? | pgrep -l;pgrep -a;pgrep -u;pgrep -n;pgrep -x
+[LPIC-1] Qual a prioridade (nice) de um processo que foi iniciado apenas com o comando 'nice' (sem especificar valor)? | 10;0;5;19;-10
+[LPIC-1] Qual comando é usado para mover um processo do primeiro plano para o segundo plano, após ele ter sido pausado com Ctrl+Z? | bg;fg;jobs;next;stop
+[LPIC-1] No editor 'vi', qual comando apaga do cursor até o final da linha atual (equivalente ao 'D')? | d$;dd;dw;db;dG
+[LPIC-1] Qual comando do Bash exibe a lista de sinais e seus respectivos números? | trap -l;kill -l;bash --signals;as duas primeiras opções;sigshow
+[LPIC-1] Qual opção do 'ps' exibe o tempo total de CPU acumulado pelo processo? | -o time;ps -t;ps -c;ps -u;ps -T
+[LPIC-1] Qual comando monitora em tempo real as mensagens do sistema conforme elas são gravadas nos logs? | tail -f /var/log/messages;dmesg -w;journalctl -f;todas as anteriores;watch logs
+[LPIC-1] No 'top', qual tecla altera o modo de visualização da carga de CPU para exibir um gráfico de barras? | t;m;c;g;1
+[LPIC-1] Qual comando 'kill' envia o sinal SIGTERM para um processo usando seu PID? | kill -15;kill -9;kill -1;kill -19;kill -2

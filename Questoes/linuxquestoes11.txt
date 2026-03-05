@@ -1,0 +1,102 @@
+# Comandos GNU/Linux - Parte 2 (Filtros e Redirecionamentos)
+[LPIC-1] Qual comando é utilizado para converter espaços em tabulações em um arquivo de texto? | unexpand;expand;tr;sed;fmt
+[LPIC-1] Qual comando exibe as linhas comuns entre dois arquivos que foram previamente ordenados? | comm;diff;cmp;join;paste
+[LPIC-1] Qual opção do comando 'split' permite dividir um arquivo em pedaços de um tamanho específico (ex: 10MB)? | -b;-l;-d;-a;-C
+[LPIC-1] Qual comando do editor 'sed' é utilizado para substituir todas as ocorrências de uma palavra por outra em uma linha? | s/velho/novo/g;r/velho/novo/g;sub/velho/novo/;c/velho/novo/;w/velho/novo/
+[LPIC-1] Qual comando exibe o conteúdo de um arquivo em formato octal, decimal ou hexadecimal? | od;hexdump;cat -v;binview;dump
+[LPIC-1] Qual comando é usado para mesclar linhas de arquivos, separando-as por um delimitador customizado (ex: vírgula)? | paste -d;join -t;cat -s;merge -d;append -c
+[LPIC-1] No Bash, qual comando redireciona a saída padrão (stdout) para um arquivo, mas mantém o erro (stderr) na tela? | comando > arquivo;comando 2> arquivo;comando &> arquivo;comando | arquivo;comando >> arquivo
+[LPIC-1] Qual comando é utilizado para remover o "buffer" de saída e exibir o conteúdo de um arquivo de trás para frente caractere por caractere? | rev;tac;tail -r;flip;mirror
+[LPIC-1] Qual comando exibe apenas a primeira parte (prefixo) comum de linhas em arquivos? | fmt;pr;cut;tr;fold
+[LPIC-1] Qual utilitário é capaz de formatar um texto em múltiplas colunas para facilitar a leitura? | column;pr;fmt;paste;expand
+[LPIC-1] No 'sed', qual comando deleta as linhas de 1 a 5 de um arquivo? | 1,5d;d 1-5;rm 1,5;del 1:5;1-5/d
+[LPIC-1] Qual comando é usado para localizar arquivos cujo bit SUID está ativado? | find / -perm /4000;find / -suid;find / -mode 4000;find / -type s;find / -user root
+[LPIC-1] Qual comando do 'awk' é usado para imprimir apenas o segundo campo (coluna) de um arquivo? | print $2;print column 2;echo $2;cut $2;show $2
+[LPIC-1] Qual símbolo no redirecionamento do Bash permite enviar a saída para um arquivo e para a tela simultaneamente? | tee;pipe;ampersand;stream;logger
+[LPIC-1] No 'grep', qual metacaractere representa o início de uma linha? | ^ (circunflexo);$ (cifrão);. (ponto);* (asterisco);? (interrogação)
+[LPIC-1] Qual comando exibe a diferença detalhada linha a linha entre dois arquivos de texto? | diff;cmp;comm;sdiff;match
+[LPIC-1] Qual comando é usado para extrair apenas as linhas de um arquivo que não coincidem com um padrão (inverter busca)? | grep -v;grep -i;grep -n;grep -l;grep -c
+[LPIC-1] Qual comando 'find' busca por arquivos maiores que 100 Megabytes? | find -size +100M;find -size 100M;find -weight +100M;find -capacity 100M;find -len 100M
+[LPIC-1] No 'grep', qual metacaractere representa o fim de uma linha? | $ (cifrão);^ (circunflexo);. (ponto);* (asterisco);# (cerquilha)
+[LPIC-1] Qual utilitário é usado para traduzir ou deletar conjuntos de caracteres (ex: converter \r\n para \n)? | tr;sed;awk;fmt;cut
+[LPIC-1] Qual comando do 'sed' é usado para imprimir apenas as linhas que sofreram substituição, ocultando as demais? | sed -n 's/velho/novo/p';sed -i 's/velho/novo/';sed -e 's/velho/novo/w';sed -r 's/velho/novo/g';sed 's/velho/novo/q'
+[LPIC-1] Qual comando 'find' localiza arquivos que foram acessados (read) há mais de 30 dias? | find -atime +30;find -mtime +30;find -ctime +30;find -access 30;find -read +30
+[LPIC-1] No 'grep', qual sequência representa "zero ou mais ocorrências" do caractere anterior? | * (asterisco);+ (mais);? (interrogação);. (ponto);{n}
+[LPIC-1] Qual comando combina arquivos linha por linha, mas permite especificar um delimitador como ponto-e-vírgula? | paste -d';';join -t';';cat -s;merge -d;fmt -d
+[LPIC-1] Qual comando 'awk' exibe a última coluna de cada linha, independente de quantas colunas existam? | print $NF;print $LAST;print $0;print $1;print $END
+[LPIC-1] Qual utilitário compara dois arquivos e gera um arquivo de "patch" (diferenças) para ser usado depois? | diff -u;comm -1;cmp -l;patch -g;sdiff -o
+[LPIC-1] Qual opção do comando 'expand' define o número de espaços que cada tabulação deve ocupar? | -t;--spaces;-n;-s;-i
+[LPIC-1] No 'sed', qual comando insere uma linha de texto ANTES da linha 10? | 10i;10a;10c;10w;10r
+[LPIC-1] Qual comando 'find' busca apenas por arquivos do tipo "link simbólico"? | find -type l;find -type f;find -type d;find -type s;find -type b
+[LPIC-1] No 'grep', qual metacaractere representa exatamente "um único caractere qualquer"? | . (ponto);* (asterisco);? (interrogação);^ (circunflexo);$ (cifrão)
+[LPIC-1] Qual comando é utilizado para formatar um arquivo de texto para que cada linha tenha no máximo 60 caracteres (quebra automática)? | fmt -w 60;pr -w 60;fold -w 60;nl -w 60;split -l 60
+[LPIC-1] Qual comando 'find' executa o comando 'ls -l' para cada arquivo encontrado? | find . -exec ls -l {} \;;find . -run ls -l;find . -do "ls -l";find . -command ls -l;find . -ls -l
+[LPIC-1] No 'awk', qual variável interna armazena o número total de campos (colunas) da linha atual? | NF;NR;FS;OFS;$0
+[LPIC-1] Qual comando exibe as primeiras 15 linhas de um arquivo e numera a saída? | head -n 15 | nl;head -15 | cat -b;head -15 | pr -n;todas as anteriores;top -15 | num
+[LPIC-1] Qual comando 'sed' é usado para converter todas as letras minúsculas em maiúsculas (estilo simplificado)? | y/abc.../ABC.../;s/a-z/A-Z/g;tr a-z A-Z;upper;change-case
+[LPIC-1] Qual comando 'find' busca por arquivos que NÃO possuem permissão de escrita para o dono? | find ! -perm -u=w;find -perm -000;find -perm /u=w;find -no-write;find -mode 0
+[LPIC-1] No 'grep', como você busca por uma palavra que está no início de um arquivo de texto? | grep '^palavra';grep '$palavra';grep '.palavra';grep '\<palavra';grep '[palavra]'
+[LPIC-1] Qual utilitário é usado para remover seções de linhas de arquivos baseando-se em posições de bytes? | cut -b;split -b;tr -d;sed -c;fmt -b
+[LPIC-1] Qual comando do 'sed' encerra a execução após encontrar a primeira ocorrência do padrão? | q (quit);d (delete);p (print);s (substitute);n (next)
+[LPIC-1] Qual comando do Bash redireciona o erro padrão para o mesmo lugar da saída padrão? | 2>&1;1>&2;>&2;2>1;&>1
+[LPIC-1] Qual comando do 'awk' é utilizado para definir o delimitador de campos como uma vírgula (CSV)? | awk -F',';awk -d',';awk -t',';awk -s',';awk -p','
+[LPIC-1] No 'sed', qual comando anexa uma linha de texto APÓS a linha especificada? | a (append);i (insert);c (change);r (read);w (write)
+[LPIC-1] Qual comando 'find' localiza arquivos criados ou modificados mais recentemente do que um arquivo de referência? | find -newer arquivo;find -after arquivo;find -more arquivo;find -time arquivo;find -update arquivo
+[LPIC-1] Qual comando 'grep' utiliza Expressões Regulares Estendidas (ERE), permitindo o uso do operador '|' (OR)? | grep -E;grep -F;grep -G;grep -r;grep -i
+[LPIC-1] Qual opção do 'sort' ignora espaços em branco no início da linha ao realizar a ordenação? | -b;-d;-f;-i;-n
+[LPIC-1] No editor 'vi', qual comando apaga do cursor até o final da linha atual? | D;C;X;A;i
+[LPIC-1] Qual comando do 'awk' armazena o número da linha (registro) que está sendo processada no momento? | NR;NF;FS;RS;OFS
+[LPIC-1] Qual comando 'find' busca por arquivos que possuem o bit SGID ativado? | find -perm /2000;find -perm /4000;find -perm /1000;find -mode 2000;find -type g
+[LPIC-1] Qual comando do 'sed' é usado para ler o conteúdo de um arquivo externo e inseri-lo no fluxo de edição? | r (read);w (write);a (append);i (insert);e (execute)
+[LPIC-1] No 'grep', qual metacaractere representa "um ou mais" ocorrências do caractere anterior (em modo estendido)? | + (mais);* (asterisco);? (interrogação);. (ponto);^ (circunflexo)
+[LPIC-1] Qual comando remove todas as ocorrências de um caractere específico (ex: todas as letras 'a') de um texto? | tr -d 'a';sed 's/a//';cut -d 'a';fmt -d 'a';grep -v 'a'
+[LPIC-1] Qual comando 'find' busca por arquivos vazios (tamanho zero)? | find -empty;find -size 0;find -null;as duas primeiras opções;find -type z
+[LPIC-1] No 'awk', qual o bloco de comandos que é executado apenas UMA vez, antes de processar qualquer linha? | BEGIN;START;FIRST;INIT;PRE
+[LPIC-1] Qual comando do 'sed' altera (substitui) uma linha inteira por um novo texto? | c (change);s (substitute);a (append);i (insert);w (write)
+[LPIC-1] Qual comando do Bash redireciona a entrada de um comando para vir de um arquivo em vez do teclado? | <;>;|;<<;>>
+[LPIC-1] No 'grep', qual opção exibe o nome dos arquivos que contêm a correspondência, em vez das linhas? | -l;-c;-n;-v;-i
+[LPIC-1] Qual comando 'find' busca por arquivos que foram modificados há exatamente 2 dias? | find -mtime 2;find -mtime +2;find -mtime -2;find -day 2;find -time 2
+[LPIC-1] No 'awk', qual bloco de comandos é executado após o processamento de todas as linhas do arquivo? | END;FINISH;LAST;STOP;EXIT
+[LPIC-1] Qual utilitário é usado para formatar parágrafos de texto, unindo linhas curtas e quebrando as longas? | fmt;pr;nl;tr;expand
+[LPIC-1] Qual comando 'sed' grava as linhas processadas (ou parte delas) num arquivo externo? | w (write);r (read);s (substitute);p (print);q (quit)
+[LPIC-1] No 'grep', qual metacaractere representa "zero ou uma" ocorrência do caractere anterior (opcional)? | ? (interrogação);* (asterisco);+ (mais);. (ponto);| (pipe)
+[LPIC-1] Qual comando 'find' busca apenas diretórios? | find -type d;find -type f;find -type l;find -type b;find -type s
+[LPIC-1] Qual comando é usado para comparar dois arquivos binários byte a byte? | cmp;diff;comm;sdiff;match
+[LPIC-1] No 'awk', qual variável contém a linha inteira (o registro completo)? | $0;$1;$NF;$NR;ALL
+[LPIC-1] Qual comando 'find' localiza arquivos baseando-se no número do seu inode? | find -inum;find -inode;find -id;find -node;find -num
+[LPIC-1] Qual comando inverte o conteúdo de cada linha de um arquivo, preservando a ordem das linhas? | rev;tac;tail -r;sort -r;flip
+[LPIC-1] No 'grep', como você busca por uma correspondência que esteja no final da linha? | grep 'padrão$';grep '^padrão';grep '.padrão';grep 'padrão!';grep 'padrão#'
+[LPIC-1] Qual comando é usado para ordenar um arquivo ignorando a diferença entre maiúsculas e minúsculas? | sort -f;sort -i;sort -u;sort -n;sort -r
+[LPIC-1] Qual comando 'sed' é usado para imprimir apenas a linha número 5 de um arquivo? | sed -n '5p';sed '5d';sed '5s';sed '5i';sed '5w'
+[LPIC-1] Qual comando 'find' busca por arquivos que têm permissão de execução para o grupo? | find -perm -g=x;find -perm /g=x;find -perm g+x;todas as anteriores;find -mode g+x
+[LPIC-1] No redirecionamento, como descartar as mensagens de erro (stderr) de um comando? | comando 2> /dev/null;comando > /dev/null;comando | /dev/null;comando 2>&1;comando &> /dev/null
+[LPIC-1] Qual comando exibe o conteúdo de um arquivo de texto de baixo para cima (inverte a ordem das linhas)? | tac;rev;tail -r;cat -n;sort -r
+[LPIC-1] Qual comando 'grep' utiliza Expressões Regulares Básicas (BRE), onde metacaracteres como '+' precisam de escape? | grep -G;grep -E;grep -F;grep -P;grep -X
+[LPIC-1] Qual comando do 'vi' salva o arquivo atual com um novo nome? | :w nome;:s nome;:e nome;:n nome;:q nome
+[LPIC-1] Qual comando 'find' busca por arquivos modificados nos últimos 60 minutos? | find -mmin -60;find -mtime -60;find -atime -60;find -ctime -60;find -time 60
+[LPIC-1] Qual comando 'awk' exibe o número de colunas de cada linha de um arquivo? | {print NF};{print $NF};{print NR};{print $0};{print FS}
+[LPIC-1] Qual opção do 'ls' lista o tamanho dos arquivos em formato legível para humanos (KB, MB, GB)? | -h;-l;-S;-s;-v
+[LPIC-1] No 'vi', qual comando move o cursor para a primeira linha do arquivo? | gg;G;1G;a primeira e a terceira;[[
+[LPIC-1] Qual comando 'grep' busca por uma string fixa, sem interpretar metacaracteres (ignora a Regex)? | grep -F;grep -E;grep -G;grep -P;grep -v
+[LPIC-1] No 'sed', qual símbolo representa o texto que foi correspondido na busca para ser usado na substituição? | & (e comercial);$ (cifrão);* (asterisco);# (cerquilha);@ (arroba)
+[LPIC-1] Qual comando 'find' apaga automaticamente todos os arquivos encontrados (use com cuidado!)? | find -delete;find -remove;find -rm;find -erase;find -d
+[LPIC-1] Qual comando do 'sed' é usado para ler a próxima linha de entrada e substituí-la no espaço de padrão (pattern space)? | n (next);p (print);d (delete);s (substitute);q (quit)
+[LPIC-1] No 'awk', qual opção permite passar uma variável externa do shell para dentro do script awk? | -v;-f;-F;-p;-x
+[LPIC-1] Qual comando do 'vi' apaga o caractere que está exatamente sob o cursor? | x;X;d;i;u
+[LPIC-1] Qual comando 'find' busca por arquivos que possuem exatamente a permissão 644? | find -perm 644;find -mode 644;find -chmod 644;find -access 644;find -type 644
+[LPIC-1] Qual comando do 'sed' é usado para imprimir o número da linha atual na saída? | = (igual);# (cerquilha);$ (cifrão);! (exclamação);& (e comercial)
+[LPIC-1] No 'awk', qual a função utilizada para calcular o comprimento (número de caracteres) de uma string? | length();count();size();len();width()
+[LPIC-1] Qual comando do 'vi' move o cursor para o início da linha atual? | 0 (zero);$ (cifrão);G;w;b
+[LPIC-1] Qual comando 'grep' exibe apenas o texto que casou com a expressão, em vez da linha inteira? | -o;-n;-l;-c;-v
+[LPIC-1] Qual comando do 'sed' interrompe o processamento do script e sai imediatamente? | q (quit);d (delete);p (print);n (next);x (exchange)
+[LPIC-1] No 'awk', qual o caractere utilizado para separar múltiplos comandos em uma única linha? | ; (ponto e vírgula);, (vírgula);: (dois pontos);| (pipe);. (ponto)
+[LPIC-1] Qual comando 'find' localiza arquivos baseando-se no tempo de mudança do Inode (status)? | find -ctime;find -mtime;find -atime;find -itime;find -stime
+[LPIC-1] Qual comando do 'vi' entra no modo de inserção de texto ANTES do cursor? | i;a;o;I;A
+[LPIC-1] No 'grep', qual metacaractere representa "qualquer caractere" (exceto quebra de linha)? | . (ponto);* (asterisco);+ (mais);? (interrogação);^ (circunflexo)
+[LPIC-1] Qual comando do 'sed' é usado para trocar (swap) o conteúdo do pattern space pelo hold space? | x;h;g;G;H
+[LPIC-1] Qual comando 'awk' transforma uma string em letras minúsculas? | tolower();toupper();lower();small();convert()
+[LPIC-1] No editor 'vi', qual comando apaga a palavra inteira a partir da posição do cursor? | dw;dd;de;dx;db
+[LPIC-1] Qual comando 'find' busca por arquivos que pertencem a um grupo (GID) específico? | find -group;find -gid;find -owner;find -user;find -perm
+[LPIC-1] No 'grep', qual opção permite buscar por padrões que começam com hífen, evitando que sejam interpretados como opções? | -e;--regexp;-i;-v;-l
+[LPIC-1] Qual comando do 'sed' adiciona uma linha de texto ao Hold Space (espaço de espera)? | H;G;X;P;N
+[LPIC-1] No editor 'vi', qual comando pula o cursor para o final da palavra atual? | e;w;b;0;$

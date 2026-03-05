@@ -1,0 +1,102 @@
+# Comandos GNU/Linux - Parte 1
+[LPIC-1] Qual comando abaixo irá exibir sua atual localização na estrutura de diretórios do sistema? | pwd;ls .;pwconv;cd;whereis
+[LPIC-1] Qual comando pode ser usado para dividir um determinado arquivo em 4 partes iguais? | split;cat;fmt;join;cut
+[LPIC-1] Qual é o argumento válido para os comandos cp, mv e rm que ativa o chamado "modo interativo"? | -i;-f;-r;-p;-v
+[LPIC-1] Qual comando irá remover linhas duplicadas de um arquivo ordenado? | uniq;trim;filter;wc;sort -d
+[LPIC-1] Qual dos seguintes comandos você pode usar para renomear um arquivo no Linux? | mv;rm;new;m;rename -f
+[LPIC-1] O comando apropos procura por programas através de uma descrição. É verdade que 'apropos email' busca comandos relacionados a email? | Verdadeiro;Falso;Depende do Shell;Somente no Root;Não existe esse comando
+[LPIC-1] Qual comando exibe as últimas 30 linhas de um log e continua acompanhando novos conteúdos anexados (streaming)? | tail -f -n 30;cat -r -n 30;cut -30 -v;head -30 -e;tac -30
+[LPIC-1] Qual comando remove todos os subdiretórios em /tmp, mesmo que estejam em uso ou inexistentes? | rm -rf /tmp/*;m -rf /tmp;del /tmp/*;delete /tmp/*;rm -Ra /tmp/*
+[LPIC-1] Quais comandos podem retornar informações sobre programas/comandos no Linux? | man, whatis, info;ls, cd, pwd;cat, more, less;vi, nano, emacs;top, ps, free
+[LPIC-1] Qual o uso correto do comando mkdir para criar a estrutura dir/subdir1/subdir2 de uma vez? | mkdir -p dir/subdir1/subdir2;mkdir -m dir/subdir1/subdir2;mkdir -Z dir/subdir1/subdir2;mkdir dir/subdir1/subdir2;mkdir -v dir/subdir1/subdir2
+[LPIC-1] Qual símbolo escreve a saída padrão em um arquivo novo e qual junta a saída a um arquivo existente? | > e >>;>> e >;> e |;| e >>;<< e <
+[LPIC-1] Qual comando é usado para remover um diretório que está obrigatoriamente vazio? | rmdir;rm -r;deldir;erase;remove
+[LPIC-1] Qual comando é usado para exibir o conteúdo de um arquivo em sentido inverso (da última linha para a primeira)? | tac;rev;pr;back;sed -r
+[LPIC-1] Qual comando exibirá apenas as últimas linhas do arquivo texto arquivo1.txt? | tail arquivo1.txt;head -b arquivo1.txt;head --bottom;head -v;cat --end
+[LPIC-1] Qual comando é utilizado para listar os atributos (como imutabilidade) de um arquivo no Linux? | lsattr;ls -attr;printattr;fileattr;chattr -l
+[LPIC-1] No Bash, qual atalho de teclado (estilo Emacs) é utilizado para seguir uma linha de comando à frente no histórico? | Ctrl+n;Ctrl+f;Ctrl+e;Ctrl+a;Ctrl+p
+[LPIC-1] Qual diretório possui a maior parte da documentação (FAQs, READMEs, HOWTOs) da distribuição? | /usr/share/doc;/etc/doc;/var/log/doc;/usr/local/doc;/root/docs
+[LPIC-1] Qual comando altera o modo de edição do shell Bash para o estilo do editor VI? | set -o vi;mode vi;bash --vi;alias vi-mode;set vi-style
+[LPIC-1] No comando cat, qual opção é utilizada para numerar todas as linhas da saída? | cat -n;cat -b;cat -A;cat -E;cat -s
+[LPIC-1] Qual comando traduz ou deleta caracteres da entrada padrão (ex: converter minúsculas em maiúsculas)? | tr;sed;awk;cut;paste
+[LPIC-1] Qual comando é utilizado para formatar arquivos de texto para impressão, dividindo-os em páginas com cabeçalhos? | pr;fmt;nl;join;paste
+[LPIC-1] Qual opção do comando 'ls' exibe os arquivos ocultos (que começam com ponto)? | -a;-h;-l;-S;-t
+[LPIC-1] Qual comando exibe o início de um arquivo de texto (por padrão, as primeiras 10 linhas)? | head;tail;start;top;first
+[LPIC-1] Qual utilitário é usado para localizar arquivos baseando-se em um banco de dados indexado e atualizado pelo 'updatedb'? | locate;find;whereis;which;grep
+[LPIC-1] O comando 'grep' com a opção '-v' serve para? | Exibir linhas que NÃO contêm a expressão;Exibir o número da linha;Ignorar maiúsculas/minúsculas;Listar apenas o nome do arquivo;Exibir o contexto da linha
+[LPIC-1] Qual comando une duas linhas de arquivos diferentes que possuem um campo comum? | join;paste;cat;merge;connect
+[LPIC-1] Qual comando altera as permissões de acesso de arquivos e diretórios? | chmod;chown;chgrp;umask;setfacl
+[LPIC-1] Qual comando é utilizado para contar o número de linhas, palavras e bytes de um arquivo? | wc;nl;num;count;stats
+[LPIC-1] Para visualizar o conteúdo de um arquivo de texto página por página, permitindo retroceder na leitura, usa-se o? | less;more;cat;head;view
+[LPIC-1] Qual comando envia a saída de um programa para a entrada de outro? | | (pipe);> (redirecionamento);& (background);; (sequencial);$ (variável)
+[LPIC-1] Qual comando remove diretórios e seus conteúdos de forma recursiva? | rm -r;rmdir;del -a;erase -r;remove -d
+[LPIC-1] Qual comando é usado para localizar arquivos em tempo real percorrendo a árvore de diretórios? | find;locate;whereis;which;search
+[LPIC-1] No comando 'ls', qual opção ordena a saída por tamanho de arquivo? | -S;-t;-X;-u;-r
+[LPIC-1] Qual comando transforma caracteres de tabulação em espaços? | expand;unexpand;tr;sed;fmt
+[LPIC-1] O comando 'cp -p' serve para? | Preservar permissões, dono e data original;Copiar de forma recursiva;Pedir confirmação antes de sobrescrever;Criar um link simbólico;Mostrar o progresso da cópia
+[LPIC-1] Qual comando exibe o tipo de um arquivo (texto, executável, imagem, etc)? | file;type;stat;whatis;ls -Z
+[LPIC-1] Qual utilitário converte a codificação de caracteres de um arquivo (ex: de UTF-8 para ISO-8859-1)? | iconv;recode;convert;tr;sed
+[LPIC-1] No editor VI, qual comando salva o arquivo e sai do editor? | :wq;:q!;:w;:s;ZZ
+[LPIC-1] Qual comando extrai colunas ou campos específicos de cada linha de um arquivo? | cut;split;paste;join;awk -f
+[LPIC-1] O comando 'tail -n +20 arquivo.txt' fará o quê? | Exibir do arquivo a partir da linha 20 até o fim;Exibir apenas as últimas 20 linhas;Exibir as 20 primeiras linhas;Excluir a linha 20;Numerar as últimas 20 linhas
+[LPIC-1] Qual comando mescla linhas de arquivos diferentes, lado a lado, separadas por tabulação? | paste;join;cat;merge;append
+[LPIC-1] No shell Bash, qual tecla completa automaticamente nomes de comandos ou arquivos? | Tab;Esc;Espaço;Enter;Ctrl+C
+[LPIC-1] Qual comando cria um link físico (hard link) entre arquivos? | ln;ln -s;link;cp -l;mklink
+[LPIC-1] Qual opção do comando 'grep' permite ignorar a diferença entre maiúsculas e minúsculas? | -i;-v;-l;-n;-c
+[LPIC-1] Qual comando exibe informações detalhadas sobre o inode de um arquivo, como datas de acesso e modificação? | stat;file;ls -i;inode;check
+[LPIC-1] No redirecionamento, como se envia tanto a saída padrão (stdout) quanto o erro padrão (stderr) para o mesmo arquivo? | &> arquivo;> arquivo 2>&1;ambas as opções anteriores;1> arquivo;2> arquivo
+[LPIC-1] Qual comando resume um arquivo longo, removendo espaços em branco extras e formatando parágrafos? | fmt;pr;nl;fold;tr
+[LPIC-1] Qual comando inverte a ordem dos caracteres em cada linha de um arquivo (espelhamento)? | rev;tac;tail;sort -r;flip
+[LPIC-1] No VI, qual tecla entra no modo de inserção de texto? | i;a;o;todas as anteriores;Esc
+[LPIC-1] Qual comando exibe apenas as linhas que são únicas (não repetidas) em um arquivo? | uniq -u;uniq -d;uniq -c;sort -u;grep -u
+[LPIC-1] Qual opção do 'rm' permite apagar arquivos protegidos por escrita sem pedir confirmação? | -f;-i;-r;-v;-d
+[LPIC-1] O comando 'ls -d' serve para? | Listar apenas o diretório em si, não o conteúdo;Listar arquivos deletados;Listar por data;Listar descrições;Listar apenas arquivos de dados
+[LPIC-1] Qual comando numera as linhas de um arquivo de texto? | nl;cat -n;pr -n;todas as anteriores;num
+[LPIC-1] No redirecionamento, qual símbolo é usado para receber dados até que uma palavra-chave (EOF) seja encontrada? | << (Here Document);< (entrada);> (saída);>> (anexo);| (pipe)
+[LPIC-1] Qual comando 'find' busca por arquivos que foram modificados nos últimos 10 minutos? | find -mmin -10;find -mtime -10;find -atime -10;find -ctime -10;find -time 10
+[LPIC-1] Qual comando transforma espaços em branco em tabulações? | unexpand;expand;tr;sed;fmt
+[LPIC-1] No VI, qual comando apaga uma linha inteira? | dd;dw;x;u;yy
+[LPIC-1] Qual comando exibe o conteúdo de arquivos binários em formato hexadecimal ou octal? | od;hexdump;cat -b;binview;dump
+[LPIC-1] Qual opção do 'cp' cria links simbólicos em vez de copiar os arquivos? | -s;-l;-p;-R;-f
+[LPIC-1] Qual comando do Bash exibe todos os comandos digitados anteriormente pelo usuário? | history;last;logs;events;calls
+[LPIC-1] Qual comando é utilizado para converter as quebras de linha de um arquivo do formato Windows (CRLF) para o formato Linux (LF)? | dos2unix;unix2dos;tr -d '\n';fmt;sed 's/$/\n/'
+[LPIC-1] Qual opção do comando 'ls' ordena os arquivos pela data da última modificação, mostrando os mais recentes primeiro? | -t;-S;-X;-u;-c
+[LPIC-1] No VI, qual comando desfaz a última alteração feita no texto? | u;Ctrl+z;:undo;x;U
+[LPIC-1] Qual comando exibe o conteúdo de um arquivo começando pela primeira linha e parando a cada tela cheia (estilo antigo)? | more;less;cat;pg;view
+[LPIC-1] O comando 'grep -n' exibe o quê junto com a linha encontrada? | O número da linha no arquivo;O nome do arquivo;O total de ocorrências;O contexto posterior;O deslocamento em bytes
+[LPIC-1] Qual comando divide um arquivo grande em pedaços menores baseando-se no número de linhas? | split -l;cut -c;csplit;fold;break
+[LPIC-1] Qual comando remove as permissões de execução de um arquivo para todos os usuários? | chmod -x;chmod a-x;chmod 644;todas as anteriores;chmod 000
+[LPIC-1] No editor VI, como você busca por uma palavra específica de cima para baixo? | /palavra;?palavra;:s/palavra;f palavra;G palavra
+[LPIC-1] Qual comando combina o conteúdo de vários arquivos e exibe na saída padrão? | cat;paste;join;merge;dog
+[LPIC-1] Qual opção do comando 'sort' permite ordenar numericamente (em vez de alfabeticamente)? | -n;-r;-u;-k;-M
+[LPIC-1] Qual comando é usado para criar um apelido (atalho) para um comando longo no Bash? | alias;set;export;link;shortcut
+[LPIC-1] Qual comando do Bash exibe o valor de uma variável de ambiente? | echo $VAR;print VAR;show VAR;get VAR;VAR?
+[LPIC-1] Qual comando remove todas as quebras de linha de um arquivo, transformando-o em uma única linha? | tr -d '\n';cat -A;fmt -1;sed 's/ //g';join -a
+[LPIC-1] No VI, qual comando copia (yank) a linha atual para o buffer? | yy;cc;pp;dd;yw
+[LPIC-1] Qual comando 'find' busca por arquivos que pertencem a um usuário específico? | find -user;find -owner;find -uid;find -name;find -who
+[LPIC-1] O comando 'ls -F' serve para? | Adicionar um indicador visual (/ para pastas, * para executáveis);Ordenar por tipo;Mostrar arquivos ocultos;Forçar a saída em colunas;Listar em formato longo
+[LPIC-1] Qual comando remove a indentação (espaços/tabs) do início das linhas de um arquivo? | unexpand;expand;tr -s;sed 's/ //';fmt -u
+[LPIC-1] Qual comando é usado para alterar o dono (proprietário) de um arquivo? | chown;chgrp;chmod;umask;owner
+[LPIC-1] No Bash, qual símbolo redireciona a saída de erro (stderr) para o buraco negro do sistema? | 2> /dev/null;> /dev/null;1> /dev/null;&> /dev/null;| /dev/null
+[LPIC-1] Qual comando exibe o caminho absoluto do diretório HOME do usuário atual? | echo ~;pwd;cd ~;whereis home;env home
+[LPIC-1] Qual comando pode ser usado para ver o progresso de uma transferência de dados através de um pipe? | pv;cat;tee;watch;progress
+[LPIC-1] No VI, qual comando cola o conteúdo que foi copiado anteriormente (após a posição atual)? | p;P;v;V;a
+[LPIC-1] Qual comando 'grep' conta apenas o número de linhas que contêm a expressão? | -c;-n;-l;-v;-i
+[LPIC-1] Qual comando do Bash limpa a tela do terminal? | clear;reset;cls;clean;Ctrl+L (atalho)
+[LPIC-1] Qual comando exibe o uso de memória RAM no sistema em tempo real? | free;mem;top;ps;vmstat
+[LPIC-1] No editor VI, qual comando apaga do cursor até o final da palavra atual? | dw;de;dd;db;dx
+[LPIC-1] Qual comando gera uma lista de números sequenciais (útil para loops em scripts)? | seq;num;list;count;gen
+[LPIC-1] Qual opção do 'cp' permite copiar diretórios inteiros (recursivamente)? | -r;-R;-a;todas as anteriores;-d
+[LPIC-1] Qual comando 'cut' extrai do 5º ao 10º caractere de cada linha? | cut -c 5-10;cut -f 5-10;cut -d 5-10;cut -b 5,10;cut -x 5-10
+[LPIC-1] No Bash, qual comando encerra a sessão atual do shell? | exit;logout;Ctrl+d;todas as anteriores;quit
+[LPIC-1] Qual comando 'find' busca por arquivos com uma permissão exata (ex: 777)? | find -perm 777;find -mode 777;find -chmod 777;find -access 777;find -type 777
+[LPIC-1] Qual comando do Bash remove um alias criado anteriormente? | unalias;unset;rmalias;delalias;alias -d
+[LPIC-1] Qual comando exibe as primeiras 20 linhas de um arquivo? | head -n 20;head -20;head -v 20;duas primeiras opções;top -n 20
+[LPIC-1] No VI, qual comando entra no modo de inserção na linha abaixo da atual? | o;O;i;a;I
+[LPIC-1] Qual comando do Bash exporta uma variável local para se tornar uma variável de ambiente? | export;set;env;alias;declare -x
+[LPIC-1] Qual comando 'sort' remove as linhas duplicadas durante a ordenação? | -u;-d;-s;-n;-r
+[LPIC-1] Qual comando exibe quanto tempo o sistema está ligado (uptime) e a carga média? | uptime;w;top;todas as anteriores;time
+[LPIC-1] No redirecionamento, qual comando lê da entrada padrão e escreve na saída padrão e em um arquivo ao mesmo tempo? | tee;pipe;split;logger;copy
+[LPIC-1] Qual comando altera o grupo proprietário de um arquivo? | chgrp;chown;chmod;groupmod;newgrp
+[LPIC-1] Qual comando do VI move o cursor para o final do arquivo? | G;gg;$;L;M
+[LPIC-1] Qual comando é usado para compactar arquivos no formato .gz (Gzip)? | gzip;zip;bzip2;tar -z;compress

@@ -1,0 +1,123 @@
+# Comandos GNU/Linux - Parte 4 (Permissões e Links)
+[LPIC-1] Qual comando é utilizado para alterar o dono (proprietário) de um arquivo ou diretório? | chown;chgrp;chmod;umask;setfacl
+[LPIC-1] Qual comando altera as permissões de acesso (leitura, escrita e execução) de um arquivo? | chmod;chown;chgrp;umask;chattr
+[LPIC-1] Qual comando é usado para alterar apenas o grupo proprietário de um arquivo? | chgrp;chown;chmod;groupmod;newgrp
+[LPIC-1] Qual a representação numérica para as permissões de um arquivo com leitura e escrita para o dono, e apenas leitura para o grupo e outros? | 644;755;664;600;444
+[LPIC-1] No comando 'chmod', qual letra representa a categoria "todos os usuários" (dono, grupo e outros)? | a;u;g;o;e
+[LPIC-1] Qual o comando para criar um link simbólico chamado 'atalho' apontando para o arquivo 'original'? | ln -s original atalho;ln original atalho;link original atalho;mklink original atalho;ln -l original atalho
+[LPIC-1] Qual a principal diferença entre um Link Físico (Hard Link) e um Link Simbólico? | O Link Físico aponta para o Inode, o Simbólico aponta para o Nome;O Link Físico pode apontar para diretórios;O Link Simbólico não pode cruzar sistemas de arquivos;O Link Físico ocupa mais espaço em disco;O Link Simbólico é mais rápido
+[LPIC-1] Qual comando exibe o valor da máscara padrão de criação de arquivos (umask) do usuário atual? | umask;mask;getmask;showmask;umask -v
+[LPIC-1] Se a 'umask' for 022, qual será a permissão padrão de um novo diretório criado? | 755;644;777;700;666
+[LPIC-1] Qual opção do comando 'chown' permite alterar o dono de um diretório e de todos os seus subarquivos recursivamente? | -R;-r;-f;-v;-a
+[LPIC-1] No 'ls -l', qual caractere na primeira posição indica que o arquivo é um link simbólico? | l;d;-;b;c
+[LPIC-1] Qual permissão numérica equivale a 'rwxr-xr-x'? | 755;777;644;750;711
+[LPIC-1] O que acontece com um Link Físico se o arquivo original for deletado? | O link continua funcionando e acessando os dados;O link para de funcionar (quebra);O link é deletado automaticamente;Os dados são apagados do disco;O link vira um link simbólico
+[LPIC-1] Qual comando remove a permissão de leitura para "outros" (others) no arquivo 'teste.txt'? | chmod o-r teste.txt;chmod a-r teste.txt;chmod u-r teste.txt;chmod g-r teste.txt;chmod r-o teste.txt
+[LPIC-1] Qual o valor da 'umask' necessário para que arquivos novos sejam criados com a permissão 660? | 006;022;027;007;111
+[LPIC-1] Qual bit especial, quando definido em um diretório, permite que apenas o dono de um arquivo possa deletá-lo (ex: pasta /tmp)? | Sticky Bit;SUID;SGID;Immutable Bit;Execute Bit
+[LPIC-1] Qual comando 'ln' cria um link físico? | ln original link;ln -s original link;ln -l original link;ln -f original link;ln -h original link
+[LPIC-1] No comando 'chmod', qual o valor numérico da permissão de "execução"? | 1;2;4;7;0
+[LPIC-1] Qual o resultado do comando 'chmod 4755 arquivo'? | Define o bit SUID e permissão 755;Define o SGID e permissão 755;Define o Sticky Bit e permissão 755;Remove todas as permissões;Define apenas leitura
+[LPIC-1] Qual caractere separa o usuário do grupo no comando 'chown' (ex: usuario:grupo)? | : (dois pontos);. (ponto);as duas anteriores;@ (arroba);| (pipe)
+[LPIC-1] Qual comando exibe o número do Inode de um arquivo? | ls -i;ls -l;stat;as opções 1 e 3;file
+[LPIC-1] O que acontece com um Link Simbólico se o arquivo original for movido para outra pasta? | O link quebra (aponta para um caminho inexistente);O link atualiza o caminho automaticamente;O arquivo original é movido de volta;O link continua funcionando normalmente;O link é convertido em link físico
+[LPIC-1] Qual bit especial permite que um arquivo executável rode com os privilégios do dono do arquivo, em vez do usuário que o chamou? | SUID;SGID;Sticky Bit;Execute;Write
+[LPIC-1] Qual o valor numérico da permissão de "escrita"? | 2;1;4;6;7
+[LPIC-1] Qual comando 'chmod' adiciona permissão de execução para o dono e para o grupo simultaneamente? | chmod ug+x;chmod u+x,g+x;chmod 750;todas as anteriores;chmod a+x
+[LPIC-1] Se a 'umask' for 077, quem terá acesso a um arquivo recém-criado? | Apenas o dono;O dono e o grupo;Todos os usuários;Ninguém;Apenas o root
+[LPIC-1] Qual comando 'chmod' define o bit SGID em um diretório? | chmod g+s;chmod u+s;chmod +t;chmod 1777;chmod 4755
+[LPIC-1] O que o comando 'chmod +t diretório' faz? | Ativa o Sticky Bit;Ativa o SUID;Ativa o SGID;Dá permissão total;Torna o diretório temporário
+[LPIC-1] Qual comando 'chown' altera o dono para 'rafael' e o grupo para 'ti' ao mesmo tempo? | chown rafael:ti arquivo;chown rafael.ti arquivo;chown rafael/ti arquivo;as duas primeiras opções;chgrp rafael:ti arquivo
+[LPIC-1] Qual a limitação de um Link Físico em relação a sistemas de arquivos (partições)? | Não pode ser criado entre partições diferentes;Não pode ser criado no mesmo diretório;Não pode ter o mesmo nome;Não pode ser deletado;Não tem limitações
+[LPIC-1] Qual valor numérico representa a permissão 'rw-r-----'? | 640;600;660;644;440
+[LPIC-1] Qual bit especial em um diretório faz com que novos arquivos criados dentro dele herdem o grupo do diretório pai? | SGID;SUID;Sticky Bit;Inherit Bit;Group Bit
+[LPIC-1] Qual o comando para remover um link simbólico sem apagar o arquivo original? | rm link;unlink link;del link;as duas primeiras opções;rm -f original
+[LPIC-1] Qual o valor numérico padrão da permissão de "leitura"? | 4;1;2;6;7
+[LPIC-1] O comando 'chmod 1777 /tmp' define qual bit especial? | Sticky Bit;SUID;SGID;Execute;Immutable
+[LPIC-1] Qual comando exibe detalhadamente as permissões, dono, grupo e datas de um arquivo? | ls -l;stat;file;as duas primeiras opções;ls -a
+[LPIC-1] No 'chmod' simbólico, qual letra representa o grupo? | g;u;o;a;gr
+[LPIC-1] Qual o comando para ver quantos links físicos um arquivo possui? | ls -l;stat;ls -i;as duas primeiras opções;file
+[LPIC-1] Se você der o comando 'chmod 000 arquivo', quem poderá ler o conteúdo do arquivo? | Apenas o root;Ninguém;O dono;O grupo;Usuários com sudo
+[LPIC-1] Qual o efeito de um Link Simbólico para um diretório? | Funciona normalmente como um atalho;Não é permitido;Só funciona se for link físico;Apaga o conteúdo do diretório;Transforma o diretório em arquivo
+[LPIC-1] Qual comando exibe o número de links físicos que apontam para um mesmo inode? | ls -l;stat;ls -i;as duas primeiras opções;file
+[LPIC-1] Se um arquivo tem permissões 'rwsr-xr-x', o que o 's' no lugar do 'x' do dono indica? | Bit SUID ativo;Bit SGID ativo;Sticky Bit ativo;Arquivo de sistema;Arquivo oculto
+[LPIC-1] Qual o valor da umask para que diretórios novos tenham permissão 770 e arquivos 660? | 007;022;002;077;111
+[LPIC-1] Qual comando 'chmod' retira a permissão de escrita do grupo de forma simbólica? | chmod g-w;chmod w-g;chmod g=r;chmod 755;chmod -w g
+[LPIC-1] Um link simbólico pode apontar para um arquivo em outra partição ou HD diferente? | Sim;Não;Apenas se for link físico;Apenas se for root;Apenas no diretório /mnt
+[LPIC-1] Qual comando altera o grupo de um arquivo para 'financeiro' sem mexer no dono? | chown :financeiro;chgrp financeiro;as duas anteriores;chown .financeiro;todas as anteriores
+[LPIC-1] No 'ls -l', se as permissões terminam com um sinal de '+', o que isso significa? | Existem ACLs (Lista de Controle de Acesso) definidas;O arquivo é positivo;O arquivo tem permissão total;O arquivo é um link;O arquivo é compactado
+[LPIC-1] Qual o comando para criar um hard link de '/etc/passwd' no diretório atual? | ln /etc/passwd .;ln -s /etc/passwd .;link -h /etc/passwd;cp -l /etc/passwd .;as opções 1 e 4
+[LPIC-1] Qual bit especial em um executável permite que ele rode com as permissões do GRUPO dono do arquivo? | SGID;SUID;Sticky Bit;Group Bit;SetID
+[LPIC-1] Se você apagar um link simbólico, o que acontece com o arquivo original? | Nada acontece com o original;O original é apagado;O original fica corrompido;O original vira um link;O original muda de dono
+[LPIC-1] Qual comando 'chmod' define permissão total para o dono e nenhuma para os demais? | chmod 700;chmod 777;chmod 755;chmod u=rwx,go=;as opções 1 e 4
+[LPIC-1] Qual o valor numérico do Sticky Bit quando usado no início da permissão (ex: 1755)? | 1;2;4;7;0
+[LPIC-1] Qual comando 'find' localiza todos os arquivos que possuem o bit SUID (valor 4000) ativo? | find / -perm /4000;find / -suid;find / -user root;find / -mode 4000;find / -type s
+[LPIC-1] O que acontece se você tentar criar um link físico para um diretório como usuário comum? | O sistema não permite;O link é criado normalmente;O diretório é copiado;O sistema cria um link simbólico no lugar;O sistema trava
+[LPIC-1] Qual a permissão máxima que um arquivo de texto comum pode ter logo ao ser criado (sem execução)? | 666;777;644;755;600
+[LPIC-1] No 'ls -l', se as permissões de um diretório terminam com 't' (ex: drwxrwxrwt), o que isso indica? | Sticky Bit ativo;SUID ativo;SGID ativo;Diretório temporário;Diretório de texto
+[LPIC-1] Qual comando altera o dono para 'jessica' e o grupo para 'vendas' de forma recursiva? | chown -R jessica:vendas;chown -r jessica:vendas;chown -a jessica.vendas;chmod -R jessica:vendas;chown jessica:vendas -all
+[LPIC-1] O que define a permissão inicial de um arquivo no momento da sua criação? | A umask do processo;O dono do diretório;O sistema de arquivos;O comando touch;O kernel
+[LPIC-1] Qual comando 'chmod' ativa o bit SGID e define permissão 755 simultaneamente? | chmod 2755;chmod 4755;chmod 1755;chmod 7755;chmod 6755
+[LPIC-1] Se dois arquivos são links físicos um do outro, como o sistema sabe que eles são o "mesmo" arquivo? | Eles possuem o mesmo número de Inode;Eles possuem o mesmo nome;Eles possuem o mesmo tamanho;Eles estão na mesma pasta;Eles possuem a mesma data
+[LPIC-1] Qual comando remove o bit SUID de um arquivo chamado 'binario'? | chmod u-s binario;chmod 0755 binario;as duas anteriores;chmod -s binario;chmod u-x binario
+[LPIC-1] Qual o valor numérico do bit SGID quando usado no início da permissão (ex: 2755)? | 2;1;4;6;7
+[LPIC-1] Qual opção do 'ls' mostra o autor (owner) do arquivo? | -l;-o;-g;-n;-u
+[LPIC-1] Se a umask é 002, qual a permissão final de um arquivo (considerando base 666)? | 664;666;644;775;660
+[LPIC-1] Qual comando permite ver as permissões especiais (SUID/SGID/Sticky) de forma detalhada? | stat;ls -l;lsattr;file;getfacl
+[LPIC-1] Um link físico pode ser criado para um arquivo que está em um pendrive (outra partição)? | Não;Sim;Apenas como root;Apenas se o pendrive for ext4;Sim, mas o nome deve ser igual
+[LPIC-1] Qual comando do 'vi' salva as alterações em um arquivo que você não tem permissão de escrita (forçando como root)? | :w!;:q!;:x!;:save!;!write
+[LPIC-1] No 'chmod', qual categoria representa o "dono" do arquivo? | u (user);o (owner);d (dono);a (admin);p (proprietário)
+[LPIC-1] Qual o efeito do comando 'chmod 0755 arquivo'? | Define permissão 755 e garante que nenhum bit especial esteja ativo;Ativa o SUID;Ativa o Sticky Bit;Apaga o arquivo;Muda o dono do arquivo
+[LPIC-1] Qual comando exibe a umask em formato simbólico (ex: u=rwx,g=rx,o=rx)? | umask -S;umask -p;umask -v;umask -l;umask -a
+[LPIC-1] Se um arquivo tem permissão 777 e a umask é 022, o que acontece se você copiar esse arquivo para outra pasta com 'cp' (sem preservar)? | O novo arquivo terá permissão 755;O novo arquivo terá permissão 777;O novo arquivo terá permissão 644;O novo arquivo será deletado;O sistema pede confirmação
+[LPIC-1] Qual comando 'find' busca por arquivos que tenham o Sticky Bit ativo? | find / -perm /1000;find / -perm /4000;find / -perm /2000;find / -type t;find / -sticky
+[LPIC-1] Qual caractere representa a "falta de permissão" na saída do comando 'ls -l'? | - (hífen);x;0;n;*
+[LPIC-1] O comando 'chown rafael. arquivo.txt' (com o ponto no final) faz o quê? | Altera o dono para rafael e o grupo para o grupo padrão do rafael;Dá erro de sintaxe;Altera apenas o dono;Cria um link simbólico;Oculta o arquivo
+[LPIC-1] Qual comando remove o Sticky Bit de um diretório? | chmod -t;chmod -s;chmod -u;chmod 0755;as opções 1 e 4
+[LPIC-1] Qual a principal vantagem do Link Simbólico sobre o Físico? | Pode apontar para diretórios e outras partições;É mais seguro;Não ocupa Inode;Não precisa de permissão;É imutável
+[LPIC-1] No 'chmod' simbólico, como você dá permissão de leitura para todos sem mexer nas outras permissões? | chmod a+r;chmod 444;chmod ugo=r;chmod +read;chmod r+all
+[LPIC-1] Qual o valor numérico do bit SUID quando usado no início da permissão (ex: 4755)? | 4;1;2;7;0
+[LPIC-1] Qual comando é usado para verificar se dois arquivos são na verdade o mesmo link físico? | ls -i;cmp;diff;stat;todas as anteriores
+[LPIC-1] Qual a permissão resultante de 'chmod 755' em um arquivo? | rwxr-xr-x;rwxrwxrwx;rw-r--r--;r-xr-xr-x;rwx------
+[LPIC-1] Qual comando exibe o valor da umask em formato octal (ex: 0022)? | umask;umask -o;umask -n;umask -v;umask -d
+[LPIC-1] No 'ls -l', o que indica um 's' minúsculo na posição do 'x' do grupo (ex: rwxr-sr-x)? | SGID ativo com execução permitida;SGID ativo sem execução;SUID ativo;Sticky Bit ativo;Arquivo oculto
+[LPIC-1] Qual o efeito do comando 'chmod u=rw,go= arquivo'? | Define 600 (leitura/escrita para o dono, nada para os outros);Define 666;Define 644;Remove todas as permissões;Dá erro de sintaxe
+[LPIC-1] Qual a principal característica de um Link Físico em relação ao Inode? | Ele compartilha o mesmo Inode do arquivo original;Ele cria um novo Inode que aponta para o nome;Ele não usa Inode;Ele apaga o Inode original;Ele duplica o Inode
+[LPIC-1] Qual comando 'chown' altera o grupo de um arquivo para 'suporte' sem saber o nome do proprietário? | chown :suporte;chown .suporte;as duas anteriores;chgrp suporte;todas as anteriores
+[LPIC-1] O que acontece se você tentar criar um Link Simbólico para um arquivo que não existe? | O link é criado, mas fica "quebrado" (orfão);O comando dá erro e não cria nada;O arquivo original é criado vazio;O link vira um arquivo comum;O sistema pede a senha do root
+[LPIC-1] Qual permissão numérica representa 'rwxrwx--t'? | 1770;1777;4770;2770;770
+[LPIC-1] Qual comando exibe os atributos especiais (como 'i' de imutável) em sistemas de arquivos ext2/3/4? | lsattr;chattr;stat;file;ls -Z
+[LPIC-1] Se a umask é 000, qual a permissão padrão de um novo DIRETÓRIO? | 777;666;755;644;000
+[LPIC-1] No 'ls -l', o que indica um 'S' maiúsculo na posição do dono (ex: rwsr-xr-x)? | SUID ativo mas SEM permissão de execução (x);SUID ativo com execução;SGID ativo;Sticky Bit;Erro de disco
+[LPIC-1] Qual comando é usado para alterar atributos como "apenas anexar" (append only) em um arquivo? | chattr;chmod;chown;setattr;lsattr
+[LPIC-1] Quantos links físicos um diretório recém-criado possui por padrão? | 2 (o nome dele e o '.');1;0;3;Depende da umask
+[LPIC-1] Qual comando remove todas as permissões de um arquivo para todos os usuários (dono, grupo e outros)? | chmod 000;chmod a-rwx;as duas anteriores;chmod a=;todas as anteriores
+[LPIC-1] O que o comando 'ln -sf' faz ao criar um link simbólico? | Força a criação, sobrescrevendo se o link já existir;Cria um link físico silencioso;Cria um link seguro;Cria um link em modo fast;Cria um link de sistema
+[LPIC-1] Qual bit especial deve ser removido para que um usuário comum não consiga mais executar o comando 'passwd' com privilégios de root? | SUID;SGID;Sticky Bit;Execute;Write
+[LPIC-1] Qual comando exibe o tipo de arquivo baseando-se no seu conteúdo (magic numbers), ignorando a extensão? | file;type;stat;ls -l;whatis
+[LPIC-1] Se um diretório tem permissão 777 e o Sticky Bit ativo, o Rafael pode deletar um arquivo que pertence à Jessica? | Não, apenas o dono do arquivo ou do diretório pode;Sim, pois a permissão é 777;Sim, se ele tiver sudo;Apenas se o arquivo for um link;Apenas se o Rafael for do grupo da Jessica
+[LPIC-1] Qual a permissão octal resultante para um arquivo se a umask for 027 (base 666)? | 640;660;644;750;620
+[LPIC-1] Qual comando cria um link simbólico de um diretório? | ln -s;ln;link;mkdir -l;ln -d
+[LPIC-1] No editor 'vi', qual comando desfaz a última alteração (undo)? | u;U;Ctrl+z;:undo;x
+[LPIC-1] Qual comando remove um arquivo ou link, diminuindo o contador de links do Inode? | rm;unlink;del;as duas primeiras opções;remove
+[LPIC-1] Ao editar um arquivo com vi, você percebe que você está alterando o arquivo errado. Qual seqüência de comando vi lhe permitirá sair sem salvar as alterações? | :q!;:wq;:q;:s!;:x!
+[LPIC-1] Qual comando do vi move o cursor para o final da linha atual? | $;^;0;G;w
+[LPIC-1] Qual comando do vi apaga a palavra onde o cursor está posicionado? | dw;dd;x;de;db
+[LPIC-1] Qual comando do vi desfaz a última alteração feita no arquivo? | u;U;Ctrl+u;:undo;x
+[LPIC-1] Qual comando do vi move o cursor para a primeira linha do arquivo? | 1G;G;gg;as opções 1 e 3;0G
+[LPIC-1] Qual comando do vi é usado para pesquisar uma string de texto para frente (baixo)? | /string;?string;:s/string;f/string;find/string
+[LPIC-1] Qual comando do vi copia a linha atual para o buffer de memória (yank)? | yy;cc;pp;dd;yw
+[LPIC-1] Qual comando do vi cola o conteúdo do buffer após a posição do cursor? | p;P;v;V;a
+[LPIC-1] Qual comando do vi entra no modo de inserção de texto na linha abaixo da atual? | o;O;i;a;I
+[LPIC-1] Qual comando do vi substitui o caractere sob o cursor por outro caractere? | r;R;s;S;c
+[LPIC-1] Qual comando do vi deleta do cursor até o final da linha? | D;d$;dd;as opções 1 e 2;C
+[LPIC-1] Qual comando do vi move o cursor para o final do arquivo? | G;1G;$;L;gg
+[LPIC-1] Qual comando do vi salva o arquivo e sai do editor? | :wq;ZZ;:x;todas as anteriores;:q!
+[LPIC-1] Qual comando do vi move o cursor para o início da linha atual? | 0;^;$;H;w
+[LPIC-1] Qual comando do vi apaga uma linha inteira? | dd;dw;yy;x;cc
+[LPIC-1] Qual comando do vi entra no modo de inserção ANTES do cursor? | i;a;o;I;A
+[LPIC-1] Qual comando do vi entra no modo de inserção APÓS o cursor? | a;i;o;A;I
+[LPIC-1] Qual comando do vi apaga o caractere sob o cursor? | x;X;d;i;u
+[LPIC-1] Qual comando do vi move o cursor para a linha número 10? | 10G;:10;G10;as opções 1 e 2;10j
+[LPIC-1] Qual comando do vi permite repetir o último comando de edição? | . (ponto);; (ponto e vírgula);r;R;u
+[LPIC-1] Qual comando do vi é usado para substituir todas as ocorrências de 'velho' por 'novo' no arquivo inteiro? | :%s/velho/novo/g;:s/velho/novo/g;:r/velho/novo/;/velho/novo;g/velho/novo

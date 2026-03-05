@@ -1,0 +1,100 @@
+# Comandos GNU/Linux - Parte 5 (Arquivamento e Cotas)
+[LPIC-1] Qual comando é utilizado para criar um arquivo de arquivo (archive) contendo vários arquivos e diretórios sem necessariamente compactá-los? | tar;gzip;bzip2;zip;compress
+[LPIC-1] Qual opção do comando 'tar' é usada para EXTRAIR o conteúdo de um arquivo .tar? | -x;-c;-t;-v;-f
+[LPIC-1] Qual utilitário de compactação oferece, geralmente, a melhor taxa de compressão (embora seja o mais lento)? | xz;gzip;bzip2;compress;zip
+[LPIC-1] Qual opção do 'tar' permite compactar o arquivo usando o algoritmo Gzip (formato .tar.gz)? | -z;-j;-J;-Z;-g
+[LPIC-1] Qual comando é usado para visualizar o conteúdo de um arquivo de texto compactado com gzip sem precisar descompactá-lo primeiro? | zcat;bzcat;xzcat;cat -z;gzcat
+[LPIC-1] Qual comando descompacta um arquivo com a extensão .bz2? | bunzip2;gunzip;unxz;unzip;expand
+[LPIC-1] Qual opção do 'tar' lista o conteúdo de um arquivo (archive) sem extraí-lo? | -t;-v;-l;-s;-x
+[LPIC-1] Qual comando é usado para verificar a integridade de um arquivo compactado com bzip2? | bzip2 -t;bzip2 -v;bzip2 -l;bzip2 -c;bzip2 -d
+[LPIC-1] Qual comando do Linux é usado para compactar arquivos individualmente, substituindo o original pelo formato .gz? | gzip;tar;zip;compress;xz
+[LPIC-1] Qual opção do 'tar' permite compactar o arquivo usando o algoritmo Bzip2 (formato .tar.bz2)? | -j;-z;-J;-Z;-b
+[LPIC-1] Qual utilitário é usado para descompactar arquivos do formato .zip? | unzip;gunzip;bunzip2;unxz;tar -zip
+[LPIC-1] Qual comando exibe o conteúdo de um arquivo compactado com bzip2 diretamente no terminal (estilo 'cat')? | bzcat;zcat;xzcat;cat -j;bzshow
+[LPIC-1] Qual opção do 'tar' é usada para CRIAR um novo arquivo de arquivo? | -c;-x;-t;-u;-r
+[LPIC-1] Qual comando é usado para descompactar arquivos .gz? | gunzip;bunzip2;unxz;unzip;decompress
+[LPIC-1] Qual opção do 'tar' permite adicionar (append) arquivos ao final de um arquivo .tar já existente? | -r;-u;-A;-c;-x
+[LPIC-1] Qual comando é usado para gerenciar e editar as cotas de disco (disk quotas) de um usuário? | edquota;setquota;quotaon;repquota;quotacheck
+[LPIC-1] No 'tar', qual opção SEMPRE deve ser a última antes do nome do arquivo, pois indica o "filename"? | -f;-v;-c;-x;-z
+[LPIC-1] Qual comando exibe um relatório resumido do uso de cotas para um sistema de arquivos? | repquota;quotacheck;quotaon;edquota;quota
+[LPIC-1] Qual a extensão padrão de arquivos compactados com o utilitário 'xz'? | .xz;.gz;.bz2;.Z;.zip
+[LPIC-1] Qual comando é usado para verificar e criar os arquivos de cota (aquota.user/group) em um sistema de arquivos? | quotacheck;quotaon;edquota;setquota;repquota
+[LPIC-1] Qual comando ativa a verificação de cotas de disco em uma particionada montada? | quotaon;quotaoff;edquota;quotacheck;setquota
+[LPIC-1] Qual opção do 'tar' permite compactar o arquivo usando o algoritmo XZ (formato .tar.xz)? | -J;-j;-z;-Z;-x
+[LPIC-1] Qual o limite de cota que impede absolutamente o usuário de gravar mais dados (limite rígido)? | Hard Limit;Soft Limit;Grace Period;Strict Limit;Final Limit
+[LPIC-1] Qual o nome do período de tempo em que um usuário pode ultrapassar o 'Soft Limit' antes de ser bloqueado? | Grace Period;Timeout;Soft Time;Limit Period;Wait Time
+[LPIC-1] Qual comando 'tar' extrai apenas um arquivo específico de dentro de um backup.tar? | tar -xf backup.tar arquivo.txt;tar -get backup.tar arquivo.txt;tar -x backup.tar;tar -f backup.tar;tar -i backup.tar
+[LPIC-1] Qual comando exibe as cotas de disco do usuário que o executa? | quota;repquota;edquota;showquota;myquota
+[LPIC-1] Qual comando é usado para descompactar arquivos .xz? | unxz;gunzip;bunzip2;unzip;xz -d
+[LPIC-1] No comando 'tar', o que a opção '-v' (verbose) faz? | Exibe os arquivos que estão sendo processados na tela;Compacta com mais velocidade;Verifica a integridade;Exibe a versão do tar;Valida o checksum
+[LPIC-1] Qual comando permite copiar as configurações de cota de um usuário "modelo" para outros usuários? | edquota -p;edquota -u;setquota;repquota -a;quota -u
+[LPIC-1] Qual utilitário de compactação é o mais antigo e utiliza a extensão .Z? | compress;gzip;bzip2;xz;zip
+[LPIC-1] Qual opção do 'tar' atualiza o arquivo de backup apenas se os arquivos na origem forem mais novos? | -u (update);-r (append);-c (create);-t (list);-A (concatenate)
+[LPIC-1] Qual comando é usado para desativar temporariamente as cotas de disco? | quotaoff;quotaon;edquota -d;repquota -off;rmquota
+[LPIC-1] Qual comando do Linux cria arquivos .zip compatíveis com outros sistemas operacionais? | zip;tar -z;gzip -z;bzip2 -z;xz -z
+[LPIC-1] Qual comando 'z' permite visualizar arquivos compactados página por página (como o 'less')? | zless;zmore;zview;bzless;as opções 1 e 2
+[LPIC-1] O que o comando 'tar -czf backup.tar.gz /home' faz? | Cria um arquivo compactado com gzip do diretório /home;Extrai o diretório /home;Lista o conteúdo de /home;Deleta o diretório /home;Move /home para o backup
+[LPIC-1] Qual arquivo de configuração deve conter as opções 'usrquota' ou 'grpquota' para permitir o uso de cotas? | /etc/fstab;/etc/mtab;/etc/quotas;/etc/shadow;/etc/passwd
+[LPIC-1] Qual utilitário 'z' permite comparar dois arquivos compactados sem descompactá-los? | zdiff;zcmp;zcomm;as opções 1 e 2;zmatch
+[LPIC-1] Qual opção do 'gzip' permite definir o nível de compressão (1 para rápido, 9 para melhor)? | -1 a -9;--level;--best;--fast;as opções 1 e 4
+[LPIC-1] Qual comando é usado para encontrar arquivos baseando-se no tamanho, útil para gerenciar espaço antes de atingir a cota? | find -size;du -s;df -h;ls -S;fuser
+[LPIC-1] Qual a função do comando 'cpio'? | Copia arquivos para dentro ou fora de um arquivo de archive;Compacta arquivos em formato .gz;Deleta arquivos duplicados;Muda o dono de arquivos;Verifica discos
+[LPIC-1] Qual utilitário 'z' é usado para buscar padrões em arquivos compactados com gzip (equivalente ao grep)? | zgrep;zegrep;zfgrep;todas as anteriores;gzgrep
+[LPIC-1] Qual comando exibe as estatísticas de uso de quota de forma legível para humanos (KB, MB, GB)? | repquota -h;quota -v;quotacheck -a;edquota -u;setquota -v
+[LPIC-1] Qual opção do comando 'bzip2' apaga o arquivo original após a compactação (comportamento padrão)? | Não precisa de opção (padrão);-d;-k;-f;-z
+[LPIC-1] Qual opção do comando 'bzip2' MANTÉM o arquivo original após a compactação? | -k (keep);-s;-m;-v;-f
+[LPIC-1] Qual comando é usado para converter um arquivo .cpio de volta para arquivos normais? | cpio -i;cpio -o;cpio -p;cpio -d;cpio -v
+[LPIC-1] Qual o nome do arquivo que armazena os limites de quota para usuários no diretório raiz da partição? | aquota.user;quota.user;user.quota;limits.user;aquota.u
+[LPIC-1] Qual o comando para editar o tempo de carência (grace period) das quotas de disco? | edquota -t;edquota -g;setquota -t;quotaon -t;repquota -t
+[LPIC-1] Qual comando do vi move o cursor para o final do arquivo? | G;1G;$;L;gg
+[LPIC-1] Qual utilitário 'z' permite visualizar arquivos compactados com xz diretamente (estilo cat)? | xzcat;zcat;bzcat;cat -J;xzshow
+[LPIC-1] Qual opção do comando 'tar' deve ser usada para garantir que as permissões originais dos arquivos sejam preservadas no backup? | -p;--preserve-permissions;as duas anteriores;-a;-m
+[LPIC-1] Qual comando é usado para criar um arquivo de archive cpio a partir de uma lista de nomes de arquivos vinda do stdin? | cpio -o;cpio -i;cpio -p;cpio -v;cpio -t
+[LPIC-1] Qual comando descompacta um arquivo .Z (criado pelo comando compress)? | uncompress;gunzip;bunzip2;unxz;expand
+[LPIC-1] No 'tar', qual a diferença entre as opções -z e -j? | -z usa gzip e -j usa bzip2;-z usa bzip2 e -j usa gzip;-z cria e -j extrai;-z é rápido e -j é lento;-z é para arquivos e -j para pastas
+[LPIC-1] Qual comando é usado para sincronizar os dados de quota do kernel com os arquivos aquota.user/group no disco? | quotacheck -s;quotaon;quotasync;repquota;sync
+[LPIC-1] Qual opção do 'xz' define o nível máximo de compressão (o mais lento e eficiente)? | -9;--best;as duas anteriores;-1;--fast
+[LPIC-1] Qual utilitário permite visualizar a diferença entre dois arquivos compactados com bzip2? | bzdiff;bzcmp;as duas anteriores;zdiff;bzcomm
+[LPIC-1] Qual comando do vi apaga o caractere sob o cursor e entra no modo de inserção? | s;S;r;R;c
+[LPIC-1] Qual comando 'tar' exibe a lista de arquivos de um backup compactado com xz sem extraí-los? | tar -tJf backup.tar.xz;tar -tf backup.tar.xz;as duas anteriores;tar -xJf;tar -vJf
+[LPIC-1] Qual comando exibe o resumo de uso de disco de diretórios, ajudando a identificar quem está estourando a quota? | du -sh;df -h;ls -lh;quota;stat
+[LPIC-1] Qual comando 'tar' extrai o conteúdo de um arquivo para um diretório específico diferente do atual? | tar -xf backup.tar -C /destino;tar -xf backup.tar --dir /destino;tar -xf backup.tar > /destino;tar -xf backup.tar -d /destino;tar -xf backup.tar -p /destino
+[LPIC-1] Qual sinal do kill é enviado pelo comando Ctrl+C? | SIGINT (2);SIGTERM (15);SIGKILL (9);SIGHUP (1);SIGQUIT (3)
+[LPIC-1] Qual comando é usado para verificar a consistência dos arquivos de cota após um desligamento incorreto do sistema? | quotacheck;quotaon;repquota;edquota;setquota
+[LPIC-1] Qual opção do comando 'repquota' exibe o relatório de cotas para todos os sistemas de arquivos montados que possuem suporte a cotas? | -a;-v;-u;-g;-n
+[LPIC-1] No 'tar', qual a função da opção '-p' (preserve permissions)? | Mantém as permissões originais e bits SUID/SGID dos arquivos;Compacta com senha;Protege contra sobrescrita;Prioriza arquivos menores;Remove arquivos após backup
+[LPIC-1] Qual utilitário 'z' permite realizar uma busca por texto (grep) dentro de arquivos compactados com bzip2? | bzgrep;zgrep;xzgrep;grep -j;bzcat | grep
+[LPIC-1] Qual o comando utilizado para desativar o sistema de cotas em uma partição específica? | quotaoff;quotaon -d;rmquota;edquota -off;disablequota
+[LPIC-1] Qual comando permite definir os limites de cota para um usuário via linha de comando, sem abrir o editor de texto? | setquota;edquota;repquota;quotacheck;quotaon
+[LPIC-1] Qual opção do 'gzip' exibe a taxa de compressão e o nome de cada arquivo processado? | -v;-l;-t;-d;-f
+[LPIC-1] No contexto de cotas, o que define o 'Soft Limit'? | Um limite que pode ser ultrapassado temporariamente durante o Grace Period;O limite máximo absoluto;O tamanho médio dos arquivos;A cota do grupo;O tempo de expiração
+[LPIC-1] Qual comando exibe o conteúdo de um arquivo .xz diretamente no stdout, similar ao 'cat'? | xzcat;zcat;bzcat;xz -show;cat --xz
+[LPIC-1] Qual comando é usado para extrair arquivos de um archive criado com o utilitário 'cpio'? | cpio -i;cpio -o;cpio -p;cpio -t;cpio -v
+[LPIC-1] Qual opção do 'tar' permite deletar os arquivos originais do disco após eles serem adicionados al backup com sucesso? | --remove-files;-d;-r;--delete;-k
+[LPIC-1] Qual arquivo armazena as cotas de grupo no diretório raiz da partição? | aquota.group;quota.group;group.quota;limits.group;gquota.user
+[LPIC-1] Qual comando exibe o tempo restante do 'Grace Period' para um usuário que ultrapassou o 'Soft Limit'? | quota -v;repquota;edquota -t;quotaon;quotacheck
+[LPIC-1] Qual utilitário de compressão utiliza o algoritmo Lempel-Ziv-Markov chain (LZMA)? | xz;gzip;bzip2;zip;compress
+[LPIC-1] Qual comando 'tar' cria um backup e o envia diretamente para um dispositivo de fita magnética em /dev/st0? | tar -cvf /dev/st0 /diretorio;tar -czf /dev/st0;tar -cjf /dev/st0;tar -c /dev/st0;tar -f /dev/st0 -c
+[LPIC-1] No 'vi', qual comando apaga do cursor até o final da palavra? | dw;de;db;dd;x
+[LPIC-1] Qual comando é utilizado para atualizar o arquivo /etc/ld.so.cache após a instalação de novas bibliotecas? | ldconfig;ldd;ld.so;sln;libupdate
+[LPIC-1] Qual variável de ambiente pode ser configurada para buscar bibliotecas em caminhos personalizados? | LD_LIBRARY_PATH;PATH;LIB_PATH;LD_PRELOAD;LIBRARY
+[LPIC-1] Qual comando exibe as bibliotecas compartilhadas necessárias para um binário específico (ex: /bin/ls)? | ldd;ldconfig;ls-lib;libcheck;lsearch
+[LPIC-1] Em qual diretório ficam os arquivos de configuração das bibliotecas que o ldconfig lê? | /etc/ld.so.conf.d/;/usr/lib/conf.d/;/etc/lib.conf/;/var/lib/conf/;/lib/config/
+[LPIC-1] Qual comando é usado para criar o arquivo de banco de dados de quotas (aquota.user) se ele não existir? | quotacheck -c;quotaon -c;edquota -c;setquota -c;mkquota
+[LPIC-1] Qual opção do 'tar' permite que você extraia os arquivos preservando o dono e o grupo originais (apenas para o root)? | --same-owner;-p;-o;-u;-g
+[LPIC-1] Qual comando do vi move o cursor para o final da tela atual? | L;H;M;G;z
+[LPIC-1] Qual comando do vi move o cursor para o topo da tela atual? | H;L;M;G;t
+[LPIC-1] Qual comando é usado para tornar um arquivo "imutável" (nem o root pode apagar sem remover o atributo)? | chattr +i;chmod 000;chown root;setflag +i;immutable +y
+[LPIC-1] Qual comando remove o atributo de "apenas anexar" (append-only) de um arquivo de log? | chattr -a;chmod -a;lsattr -a;rm-attr;set-log
+[LPIC-1] Qual comando exibe os atributos especiais definidos pelo 'chattr'? | lsattr;stat;file;ls -l;getfacl
+[LPIC-1] Onde o sistema operacional busca primeiro as bibliotecas compartilhadas antes de olhar no cache do ldconfig? | LD_LIBRARY_PATH;/lib;/usr/lib;/etc/ld.so.conf;PATH
+[LPIC-1] Qual utilitário é uma alternativa ao 'tar' e trabalha com fluxos de dados (standard input/output)? | cpio;zip;compress;gzip;xz
+[LPIC-1] No 'tar', qual a função da opção '--exclude'? | Ignorar arquivos ou diretórios específicos no backup;Deletar arquivos após backup;Compactar apenas os arquivos listados;Criar uma lista de erros;Criptografar o backup
+[LPIC-1] Qual comando 'edquota' permite editar as quotas de um grupo específico? | edquota -g;edquota -u;edquota -p;edquota -t;edquota -a
+[LPIC-1] Qual comando é usado para visualizar as bibliotecas de 32 bits em um sistema de 64 bits? | ldd;ldconfig -p;as duas anteriores;ls -l /lib32;file
+[LPIC-1] Qual comando 'find' localiza arquivos que foram modificados nos últimos 10 minutos? | find -mmin -10;find -mtime -10;find -atime -10;find -ctime -10;find -time -10
+[LPIC-1] No 'vi', qual comando exclui a linha atual e entra no modo de inserção? | cc;dd;S;as opções 1 e 3;i
+[LPIC-1] Qual o comando para remover o cache de bibliotecas compartilhadas? | rm /etc/ld.so.cache;ldconfig -c;libclean;ld-remove;sln -clean
+[LPIC-1] Qual comando exibe o status (on/off) das cotas para todos os sistemas de arquivos? | quotaon -p;quota -a;repquota -v;quota -s;showquota
+[LPIC-1] Qual opção do 'tar' permite descompactar um arquivo .tar.xz (utilizando o filtro xz)? | -J;-j;-z;-Z;-x
+[LPIC-1] Qual comando do vi move o cursor para o meio da tela atual? | M;H;L;G;m

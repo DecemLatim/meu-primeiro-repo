@@ -1,0 +1,101 @@
+# Instalacao e Gerenciamento De Pacotes
+[LPIC-1] Qual o comando completo do yum para instalar o pacote nmap? | yum install nmap;yum show nmap;yum remove nmap;yum search nmap;yum whatsprovides nmap
+[LPIC-1] Qual comando lista todos os arquivos instalados por um pacote RPM já instalado? | rpm -ql;rpm -qf;rpm -qa;rpm -qi;rpm -Vp
+[LPIC-1] Qual opção do comando dpkg remove um pacote e seus arquivos de configuração? | --purge;--remove;--install;--list;--status
+[LPIC-1] Qual utilitário Debian gerencia pacotes e resolve dependências via linha de comando? | apt-get;dpkg;apt-cache;dselect;apt-config
+[LPIC-1] Onde são armazenados os endereços dos repositórios do utilitário APT? | /etc/apt/sources.list;/etc/apt/apt.conf;/etc/yum.repos.d/;/var/lib/dpkg/;/etc/dpkg/dpkg.cfg
+[LPIC-1] Qual comando RPM verifica a integridade de todos os pacotes instalados? | rpm -Va;rpm -qa;rpm -qi;rpm -Vp;rpm -Vf
+[LPIC-1] Qual comando exibe informações de um pacote Debian não instalado? | apt-cache show;dpkg -s;apt-get info;apt-cache policy;dpkg -L
+[LPIC-1] Qual variável define o caminho das bibliotecas compartilhadas? | LD_LIBRARY_PATH;PATH;LIB_PATH;SHARED_LIB;LD_PRELOAD
+[LPIC-1] Qual comando extrai arquivos de um pacote .deb sem instalá-lo? | dpkg-deb -x;dpkg -i;apt-get extract;dpkg-deb -e;dpkg -r
+[LPIC-1] Qual arquivo do YUM define opções globais e repositórios? | /etc/yum.conf;/etc/yum.repos.d/;/var/log/yum.log;/etc/rpm/yum.conf;/etc/yum.conf.d
+[LPIC-1] Qual comando atualiza a base de dados de bibliotecas compartilhadas? | ldconfig;ldd;libs-update;libconfig;ld.so.conf
+[LPIC-1] Qual utilitário converte pacotes entre diferentes formatos (ex: .rpm para .deb)? | alien;convert;pkg-trans;rpm2deb;package-convert
+[LPIC-1] Qual comando do YUM encontra qual pacote fornece um determinado arquivo? | yum provides;yum search;yum info;yum list;yum check-update
+[LPIC-1] Qual comando RPM instala um pacote exibindo barras de progresso (#)? | rpm -ivh;rpm -i;rpm -U;rpm -q;rpm -F
+[LPIC-1] Qual comando RPM remove um pacote instalado? | rpm -e;rpm -r;rpm -d;rpm --delete;rpm -u
+[LPIC-1] Qual comando lista as bibliotecas compartilhadas exigidas por um binário? | ldd;ldconfig;liblist;ls -lib;ld-ls
+[LPIC-1] No Debian, qual comando reconfigura um pacote já instalado? | dpkg-reconfigure;dpkg-config;apt-reconfig;reconfigure-package;dpkg-setup
+[LPIC-1] Qual opção do RPM atualiza um pacote ou o instala caso não exista? | -U;-i;-F;-u;-v
+[LPIC-1] Qual comando APT limpa o cache de pacotes baixados? | apt-get clean;apt-get autoclean;apt-get purge;apt-get autoremove;apt-get update
+[LPIC-1] Qual comando RPM identifica qual pacote instalou um arquivo específico? | rpm -qf;rpm -ql;rpm -qc;rpm -qi;rpm -qa
+[LPIC-1] Qual comando do APT-GET instala as versões mais recentes de todos os pacotes, removendo os antigos se necessário? | dist-upgrade;upgrade;update;install;full-upgrade
+[LPIC-1] Qual opção do RPM é usada para verificar apenas um arquivo de pacote específico em disco (.rpm)? | -Vp;-Va;-Vf;-Vg;-V
+[LPIC-1] Qual comando do YUM remove um pacote e também apaga os arquivos de configuração? | erase;remove;purge;clean;autoremove
+[LPIC-1] Onde fica o cache de arquivos .deb baixados pelo APT no Debian? | /var/cache/apt/archives/;/var/lib/apt/lists/;/etc/apt/sources.list.d/;/usr/src/packages/;/var/log/apt/
+[LPIC-1] Qual comando lista as dependências de um pacote RPM ainda não instalado? | rpm -qpR;rpm -qR;rpm -ql;rpm -qd;rpm -qc
+[LPIC-1] No Debian, qual utilitário interativo em modo texto (ncurses) é usado para gerenciar pacotes? | dselect;aptitude;dpkg;apt-get;tasksel
+[LPIC-1] Qual opção do comando dpkg lista o conteúdo de um pacote .deb? | -L;-l;-s;-i;-C
+[LPIC-1] Qual comando atualiza o banco de dados do utilitário 'locate'? | updatedb;locate -u;find -u;slocate;dbupdate
+[LPIC-1] Qual comando exibe o caminho completo de um comando executável? | which;whereis;whatis;locate;type
+[LPIC-1] Qual comando mostra o tipo de arquivo (binário, texto, etc)? | file;type;whatis;ls -l;cat -t
+[LPIC-1] Qual comando RPM instala um pacote somente se uma versão anterior já estiver instalada? | -Fvh;-ivh;-Uvh;-revh;-kvh
+[LPIC-1] Qual arquivo contém a lista de diretórios onde o sistema busca por bibliotecas? | /etc/ld.so.conf;/etc/ld.so.cache;/etc/modules.conf;/etc/lib.path;/etc/bashrc
+[LPIC-1] Qual comando do YUM exibe informações detalhadas sobre um pacote específico? | info;list;show;search;status
+[LPIC-1] Qual utilitário Debian é usado para extrair a lista de arquivos de um .deb? | dpkg-deb;apt-cache;apt-extract;dpkg-query;debuild
+[LPIC-1] No RPM, qual opção exibe informações sobre a versão e arquitetura de um pacote instalado? | -qi;-ql;-qc;-qd;-qf
+[LPIC-1] Qual comando do APT-GET baixa apenas as listas de pacotes atualizadas dos servidores? | update;upgrade;dist-upgrade;install;check
+[LPIC-1] Qual ferramenta permite gerenciar várias versões de um mesmo comando no Debian? | update-alternatives;version-manager;multi-bin;alt-cmd;select-version
+[LPIC-1] Qual opção do RPM verifica a integridade de um arquivo pertencente a um pacote? | -Vf;-Va;-Vp;-Vl;-Vi
+[LPIC-1] Qual arquivo armazena as assinaturas de chaves GPG para o APT? | /etc/apt/trusted.gpg;/etc/apt/sources.list;/etc/apt/apt.conf;/var/lib/apt/keyring;/etc/apt/keys
+[LPIC-1] Qual comando do YUM é usado para listar os repositórios configurados? | repolist;list repos;show-repos;repoinfo;yum-config
+[LPIC-1] Qual opção do dpkg remove apenas o binário, mantendo os arquivos de configuração? | -r;-P;-L;-s;-i
+[LPIC-1] Qual comando mostra as bibliotecas que um programa tentará carregar ao iniciar? | ldd;ldconfig;lib-check;ls-libs;readelf
+[LPIC-1] Qual comando RPM lista apenas os arquivos de configuração de um pacote? | -qc;-ql;-qd;-qi;-qf
+[LPIC-1] No YUM, qual comando limpa todos os arquivos temporários e cabeçalhos? | clean all;clean cache;purge;remove all;flush
+[LPIC-1] Qual comando do RPM exibe os scripts de pré e pós instalação de um pacote? | --scripts;-qs;--show-scripts;-qp;--metadata
+[LPIC-1] Qual comando Debian busca por pacotes que contenham um termo no nome ou descrição? | apt-cache search;apt-get find;dpkg -S;apt-search;aptitude find
+[LPIC-1] Qual comando recria o link simbólico para as bibliotecas compartilhadas? | ldconfig;ldd;lib-update;ln -s libs;ld.so
+[LPIC-1] Qual opção do RPM é usada para ignorar dependências durante a instalação? | --nodeps;--force;--no-dependencies;--ignore;--skip-deps
+[LPIC-1] Qual comando lista os pacotes instalados no sistema Debian? | dpkg -l;apt-list;dpkg -s;apt-get list;dpkg --show
+[LPIC-1] Qual arquivo contém a configuração do cache de bibliotecas compartilhadas? | /etc/ld.so.cache;/etc/ld.so.conf;/var/cache/libs;/etc/lib64.conf;/lib/cache
+[LPIC-1] Qual comando RPM lista a documentação de um pacote específico? | -qd;-ql;-qc;-qi;-qf
+[LPIC-1] Qual utilitário converte um pacote RPM em um arquivo CPIO? | rpm2cpio;rpm-extract;cpio-convert;rpm2arc;pkg2cpio
+[LPIC-1] Qual comando do APT remove o pacote e todas as configurações? | purge;remove;clean;delete;erase
+[LPIC-1] Qual variável define diretórios extras para o linker procurar bibliotecas em runtime? | LD_LIBRARY_PATH;LIB_PATH;BIN_PATH;LD_PRELOAD;PATH
+[LPIC-1] Qual comando RPM verifica todos os pacotes instalados? | -Va;-Vp;-Vf;-Vq;-Vl
+[LPIC-1] Qual opção do apt-get resolve problemas de dependências quebradas? | -f;--fix;--repair;-d;--force
+[LPIC-1] Qual comando RPM mostra o histórico de mudanças (changelog) de um pacote? | --changelog;-qc;-qi;-ql;-qd
+[LPIC-1] Qual diretório do YUM contém os arquivos .repo individuais? | /etc/yum.repos.d/;/etc/yum/;/var/lib/yum/;/etc/repos.d/;/usr/etc/yum/
+[LPIC-1] Qual comando Debian mostra se um pacote está instalado ou não? | dpkg -s;apt-cache status;apt-get check;dpkg -l;apt-info
+[LPIC-1] Qual comando RPM desinstala um pacote? | -e;-r;-d;-u;-x
+[LPIC-1] Qual comando do YUM é usado para verificar se existem atualizações disponíveis? | check-update;update-list;list-updates;show-updates;upgrade-check
+[LPIC-1] Qual opção do RPM é usada para instalar um pacote sem atualizar a base de dados de banco de dados? | --justdb;--nodb;--skip-db;--no-records;--ignore-db
+[LPIC-1] No Debian, qual comando limpa apenas os arquivos de pacotes que não podem mais ser baixados? | autoclean;clean;purge;remove;autoremove
+[LPIC-1] Qual comando do RPM mostra os arquivos de configuração de um pacote .rpm não instalado? | -qpc;-qpl;-qpi;-qpd;--scripts
+[LPIC-1] Qual utilitário é usado para encontrar binários, fontes e manuais de um comando? | whereis;which;whatis;locate;find
+[LPIC-1] Qual arquivo contém a lista de diretórios de bibliotecas padrão (como /lib e /usr/lib)? | /etc/ld.so.conf;/etc/ld.so.cache;/etc/libs.conf;/etc/ld.path;/etc/shared.conf
+[LPIC-1] Qual comando do YUM instala um grupo de pacotes (ex: "Development Tools")? | groupinstall;install-group;group-add;bundle-install;pkg-group
+[LPIC-1] Qual opção do dpkg exibe o status de um pacote específico (se está instalado ou não)? | -s;-l;-L;-i;-C
+[LPIC-1] Qual comando do RPM verifica a assinatura GPG de um arquivo de pacote? | -K;-V;-s;-p;--check-sig
+[LPIC-1] Qual comando do APT-GET baixa o código-fonte de um pacote? | source;get-source;download-source;src;fetch-source
+[LPIC-1] Qual utilitário do RPM é usado para construir pacotes a partir de arquivos spec? | rpmbuild;rpm-make;pkg-build;rpm-gen;rpm-spec
+[LPIC-1] Qual comando do YUM exibe uma lista de todos os pacotes instalados e disponíveis? | list;show;all;info;inventory
+[LPIC-1] No Debian, qual comando exibe as dependências reversas de um pacote (quem depende dele)? | apt-cache rdepends;apt-get rdepends;dpkg -R;apt-cache depends;apt-cache showpkg
+[LPIC-1] Qual opção do RPM força a instalação de um pacote ignorando erros? | --force;--ignore;--skip;--overwrite;--no-errors
+[LPIC-1] Qual comando atualiza o cache binário das bibliotecas (/etc/ld.so.cache)? | ldconfig;ldd;lib-update;ld-cache;refresh-libs
+[LPIC-1] Qual comando do YUM remove um pacote mas mantém os arquivos de dados? | remove;erase;purge;clean;delete
+[LPIC-1] No Debian, qual comando instala todas as dependências necessárias para compilar um pacote? | apt-get build-dep;apt-get source;apt-get install-dep;dpkg -b;apt-build
+[LPIC-1] Qual opção do RPM lista apenas os arquivos de documentação (man pages, etc)? | -qd;-qc;-ql;-qi;-qf
+[LPIC-1] Qual utilitário do APT é usado para gerenciar o arquivo sources.list via interface? | apt-setup;apt-config;apt-edit-sources;software-properties;apt-manage
+[LPIC-1] Qual comando RPM exibe a lista de pacotes instalados recentemente? | rpm -qa --last;rpm -qa --recent;rpm -ql --date;rpm -qi --time;rpm -qa --new
+[LPIC-1] Qual comando do YUM exibe quais pacotes pertencem a um repositório específico? | repoquery;yum list;yum info;yum-repo;yum-config-manager
+[LPIC-1] Qual opção do dpkg instala todos os pacotes (.deb) encontrados em um diretório? | -R;--install-all;-i;-a;--batch
+[LPIC-1] Qual comando do RPM extrai apenas os scripts de controle de um pacote? | --scripts;-qs;--show-scripts;-qp;--metadata
+[LPIC-1] No YUM, qual comando desativa temporariamente um repositório durante a instalação? | --disablerepo;--no-repo;--skip-repo;--disable;--off-repo
+[LPIC-1] Qual comando exibe uma descrição curta do que um comando faz (baseado no manual)? | whatis;whereis;which;locate;apropos
+[LPIC-1] Qual arquivo o comando ldconfig lê para saber quais diretórios escanear? | /etc/ld.so.conf;/etc/ld.so.cache;/var/lib/ldconfig;/etc/libs.path;/etc/ld.conf
+[LPIC-1] Qual opção do RPM atualiza um pacote apenas se ele já estiver instalado? | -F;-U;-i;-u;-v
+[LPIC-1] Qual comando do APT-GET simula uma instalação sem alterar o sistema? | -s;--simulate;--dry-run;--test;-d
+[LPIC-1] Qual comando do RPM exibe as capacidades (provides) que um pacote oferece? | --provides;-qp;--requires;--whatprovides;-qi
+[LPIC-1] No Debian, qual comando exibe o histórico de logs do APT? | cat /var/log/apt/history.log;cat /var/log/dpkg.log;apt history;dpkg --log;apt-get log
+[LPIC-1] Qual comando do YUM resolve dependências e instala pacotes locais (.rpm)? | localinstall;install;yum-local;rpm-install;pkg-install
+[LPIC-1] Qual opção do RPM é usada para consultar informações de um pacote não instalado? | -qp;-q;-qi;-ql;-qf
+[LPIC-1] Qual comando do APT-GET baixa o pacote mas não o instala? | -d;--download-only;--fetch;--get;-s
+[LPIC-1] Qual comando do RPM verifica o proprietário de um arquivo binário? | -qf;-ql;-qc;-qi;-qd
+[LPIC-1] Qual arquivo de configuração do APT define o comportamento padrão (ex: proxy)? | /etc/apt/apt.conf;/etc/apt/sources.list;/etc/apt/preferences;/var/lib/apt/config;/etc/apt/proxy.conf
+[LPIC-1] Qual comando RPM mostra os requerimentos de sistema (bibliotecas/pacotes) de um .rpm? | -qR;--requires;-qpR;-ql;-qi
+[LPIC-1] Qual utilitário converte pacotes entre Slackware, Stampede, Debian e RPM? | alien;convert;package-trans;rpm2cpio;deb2rpm
+[LPIC-1] Qual comando do YUM lista todos os arquivos dentro de um pacote? | repoquery -l;yum list;yum info;yum-ls;yum-files
+[LPIC-1] Qual opção do dpkg exibe o local onde um pacote está instalado? | -L;-l;-s;-i;-c
+[LPIC-1] Qual comando RPM desinstala um pacote sem verificar dependências? | --nodeps;-e --nodeps;-e --force;--ignore-deps;-e --skip

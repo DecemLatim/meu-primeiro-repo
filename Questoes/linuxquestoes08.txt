@@ -1,0 +1,16 @@
+# Arquitetura de Sistema
+[LPIC-1] O comando cat /proc/cpuinfo lista Informações sobre: | Processador(es) encontrado(s) pelo sistema;Portas IRQ;Consumo de memória;Endereços de I/O;Consumo de disco
+[LPIC-1] Dispositivos hotplug são dispositivos: | Que podem ser conectados com a máquina em funcionamento.;Mais caros, de melhor desempenho.;Que aquecem, prejudicando o funcionamento da máquina.;Que devem ser conectados com a máquina desligada.;Significa que o equipamento está danificado.
+[LPIC-1] Qual comando é utilizado para verificar dispositivos usb conectados ao computador ? | lsusb;cat /dev/usb;cat /proc/devices;lspci;ls -l
+[LPIC-1] Onde o GRUB irá armazenar suas informações de boot? | Master Boot Record (MBR);Inicialização da ROM;Inicialização da RAM;Partição /root;Partição /dev/sda1
+[LPIC-1] Qual dos comandos abaixo é utilizado para mostrar as unidades e suas dependências (systemd)? | systemctl list-dependencies;show --dependencies;chkconfig --dependencies;show unit-dependencies;systemctl status
+[LPIC-1] Para realizar o start do servidor web apache em sistemas que utilizam o sysvinit utilizamos o comando; service httpd start. Como seria realizado este procedimento em um sistema que utiliza o systemd ?| systemctl start httpd.service;/etc/init.d/httpd start;httpdctl start;service apache2 init;systemctl status apache2
+[LPIC-1] O principal comando usado para desligar ou reiniciar o sistema é o comando shutdown, pois agrega algumas funcionalidades importantes. Ele automaticamente notifica todos os usuários no sistema com uma mensagem exibida no terminal, e novos logins são bloqueados.Após invocar o shutdown, todos os processos recebem dois sinais de forma consecutiva. Quais são eles? | SIGTERM e SIGKILL;SIGSYS e SIGQUIT;SIGSTOP e SIGSYS;SIGHUP e SIGQUIT;NHOP e SIGDEV
+[LPIC-1] Qual o arquivo diz em qual frequencia o processador está funcionando? | /proc/cpuinfo;/proc/frequency;/proc/speed;/proc/mhz;/proc/bogomips
+[LPIC-1] Qual opção poderá ser usada com o comando shutdown para cancelar um desligamento do sistema? | shutdown -c;shutdown -x;shutdown -n;shutdown -u;shutdown -f
+[LPIC-1] Qual comando pode ser utilizado para inspecionar o hardware geral do sistema ? | lspci;hwlook;ls;find;history
+[LPIC-1] Qual o comando que exibe o nível de execução (runlevel) atual ? | runlevel;inittab;run_unit;telinit;init
+[LPIC-1] Qual das opções abaixo realiza o reboot do sistema através de um systemd target? | runlevel6.target ou reboot.target;runlevel0.target ou poweroff.target;runlevel1.target ou rescue.target;runlevel3.target ou multi-user.target;runlevel1.target ou reboot.target
+[LPIC-1] Qual target dá suporte a login gráfico ? | runlevel5.target ou graphical.target;runlevel0.target ou X.target;runlevel4.target;gdm.target;runlevel1.target ou graphical.target
+[LPIC-1] Qual nível de execução (runlevel) indica uma reinicialização do Sistema ? | 6;1;0;5;4
+[LPIC-1] Qual comando linux pode ser utilizado para enviar uma mensagem/notificação via terminal para todos os usuários logados no sistema? | wall;find;finger;free;du
