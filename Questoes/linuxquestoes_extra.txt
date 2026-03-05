@@ -1,0 +1,16 @@
+# LPIC-1: Detalhes de Administração e Quotas
+[LPIC-1] Qual comando é usado para criar o arquivo de banco de dados de quotas (aquota.user) em um sistema de arquivos? | quotacheck -u;quotaon;edquota;setquota;repquota
+[LPIC-1] No editor VI, qual comando permite substituir todas as ocorrências de 'antigo' por 'novo' no arquivo inteiro? | :%s/antigo/novo/g;:s/antigo/novo/g;:%s/antigo/novo/;sub/antigo/novo/g;replace antigo novo
+[LPIC-1] Qual comando exibe o tempo que o sistema está ligado, número de usuários e a carga média (load average)? | uptime;w;top;free;vmstat
+[LPIC-1] Qual opção do 'useradd' cria automaticamente o diretório home do usuário? | -m;-d;-h;-u;-k
+[LPIC-1] Qual comando é usado para visualizar as mensagens de erro e eventos do sistema gerenciados pelo systemd-journald? | journalctl;dmesg;cat /var/log/messages;logview;systemctl status
+[LPIC-1] Qual arquivo contém as definições de shell padrão, diretório home e IDs de grupo para novos usuários? | /etc/default/useradd;/etc/login.defs;/etc/passwd;/etc/profile;/etc/skel
+[LPIC-1] Qual comando altera o prazo de expiração da senha de um usuário? | chage;passwd -e;usermod -x;expiry;chpass
+[LPIC-1] No arquivo /etc/fstab, qual opção de montagem impede a execução de binários naquela partição? | noexec;ro;nodev;nosuid;user
+[LPIC-1] Qual comando exibe o estado das tabelas de roteamento e estatísticas de interface, mas está sendo substituído pelo 'ss'? | netstat;ip route;route -n;ifconfig;traceroute
+[LPIC-1] Qual diretório do FHS contém arquivos binários essenciais para a administração do sistema, geralmente executados pelo root? | /sbin;/bin;/usr/bin;/etc/sbin;/root/bin
+[LPIC-1] Qual comando remove um grupo do sistema? | groupdel;rmgroup;delgroup;groupmod -d;group -r
+[LPIC-1] Qual comando é usado para verificar quais bibliotecas um programa compilado está usando dinamicamente? | ldd;ldconfig;nm;objdump;readelf
+[LPIC-1] Qual variável de ambiente define os diretórios onde o shell procura por comandos executáveis? | PATH;HOME;SHELL;EXEC_PATH;DIR_PATH
+[LPIC-1] Qual comando é usado para enviar um processo que está em execução no terminal para o background? | Ctrl+z seguido de bg;Ctrl+c;&;fg;jobs -b
+[LPIC-1] Qual comando lista os arquivos abertos por processos no sistema? | lsof;fuser;ps -a;lsopen;procstat
