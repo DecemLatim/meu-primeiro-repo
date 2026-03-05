@@ -1,6 +1,4 @@
-# Interfaces de Usuário e Desktops (Tópico 106)
-# Segurança do Sistema (Tópico 110)
-# Fundamentos de Rede (Tópico 109)
+# Tópicos 106, 109 e 110 (Desktop, Redes e Segurança) 
 [LPIC-1] Qual é o principal arquivo de configuração do servidor X.org (X11)? | /etc/X11/xorg.conf;/etc/x11.conf;/etc/X11/X.conf;/usr/X11/xorg.conf;/etc/X11/xorg.ini
 [LPIC-1] Qual comando é usado para iniciar manualmente uma sessão gráfica a partir do console (TTY)? | startx;xinit;xstart;runx;gui-on
 [LPIC-1] Qual protocolo moderno está substituindo o X11, focando em segurança e performance? | Wayland;Mir;X12;Quartz;Waygate
