@@ -8,11 +8,11 @@
 [LPIC-1] Qual variável de ambiente define para qual servidor X uma aplicação gráfica deve enviar sua saída? | DISPLAY;XSERVER;SCREEN;WINDOW;MONITOR
 [LPIC-1] No comando 'export DISPLAY=192.168.1.10:0.0', o que o ':0.0' representa? | O primeiro display e a primeira tela;A porta de rede;O número do usuário;A versão do protocolo;O tempo de timeout
 [LPIC-1] Qual comando é usado para editar as credenciais de autorização (cookies) do servidor X? | xauth;xkey;xcookie;xsec;xhost
-[LPIC-1] Qual comando altera configurações do teclado e mouse no servidor X em tempo de execução? | xset;xmodmap;as duas anteriores;xconfig;xinput
+[LPIC-1] Qual comando altera configurações do teclado e mouse no servidor X em tempo de execução? | xset e xmodmap;xset;xmodmap;xconfig;xinput
 [LPIC-1] Qual gerenciador de exibição (Display Manager) é o padrão do ambiente GNOME? | GDM;KDM;LightDM;SDDM;XDM
 [LPIC-1] Qual gerenciador de exibição é comumente associado ao ambiente KDE Plasma (versões atuais)? | SDDM;KDM;GDM;XDM;LightDM
 [LPIC-1] Qual ambiente de desktop é conhecido por ser extremamente leve e ideal para hardware antigo? | Xfce;GNOME;KDE Plasma;Unity;Cinnamon
-[LPIC-1] Qual comando permite realizar o "X11 Forwarding" via SSH, rodando apps gráficos remotos na tela local? | ssh -X;ssh -G;ssh -Y;as opções 1 e 3;ssh -Z
+[LPIC-1] Qual comando permite realizar o "X11 Forwarding" via SSH, rodando apps gráficos remotos na tela local? | ssh -Y e ssh -X;ssh -G;ssh -Y;ssh -Z;ssh X
 [LPIC-1] Qual ferramenta de acessibilidade permite que usuários com dificuldades motoras "prendam" teclas modificadoras (Shift/Ctrl)? | Sticky Keys (Teclas de Aderência);Slow Keys;Bounce Keys;Mouse Keys;Repeat Keys
 [LPIC-1] Qual recurso de acessibilidade ignora pressionamentos de teclas rápidos e repetidos acidentalmente? | Bounce Keys (Teclas de Rejeição);Slow Keys;Sticky Keys;Toggle Keys;Filter Keys
 [LPIC-1] Qual recurso de acessibilidade exige que uma tecla seja pressionada por um tempo mínimo antes de ser aceita? | Slow Keys (Teclas Lentas);Bounce Keys;Sticky Keys;Repeat Keys;Wait Keys
@@ -29,52 +29,52 @@
 [LPIC-1] Qual ambiente de desktop é escrito em Qt e foca em customização extrema? | KDE Plasma;GNOME;Xfce;MATE;LXDE
 [LPIC-1] Qual ambiente de desktop surgiu como um fork do GNOME 2 para manter a interface clássica? | MATE;Cinnamon;Xfce;LXQt;Budgie
 [LPIC-1] Qual protocolo é usado para acesso remoto e compartilha o desktop através de "framebuffers"? | VNC;RDP;SSH;XDMCP;SPICE
-[LPIC-1] Qual comando exibe todas as interfaces de rede ativas e seus endereços IP (método clássico)? | ifconfig;ip addr;as duas anteriores;netstat -i;route -n
+[LPIC-1] Qual comando exibe todas as interfaces de rede ativas e seus endereços IP (método clássico)? | ifconfig e ip addr;ifconfig;ip addr;netstat -i;route -n
 [LPIC-1] Qual utilitário moderno da suíte 'iproute2' é recomendado para gerenciar endereços IP e rotas no Linux? | ip;ifconfig;route;netstat;arp
 [LPIC-1] Qual comando é usado para verificar a conectividade básica de rede enviando pacotes ICMP Echo Request? | ping;tracepath;netstat;host;dig
 [LPIC-1] Qual arquivo de configuração armazena os endereços dos servidores DNS que o sistema deve consultar? | /etc/resolv.conf;/etc/hosts;/etc/networks;/etc/hostname;/etc/nsswitch.conf
 [LPIC-1] Qual arquivo permite mapear nomes de host para endereços IP localmente, sem consulta ao DNS? | /etc/hosts;/etc/resolv.conf;/etc/hostname;/etc/networks;/etc/services
-[LPIC-1] Qual comando exibe a rota percorrida por um pacote até o destino, mostrando cada salto (hop)? | traceroute;tracepath;as duas anteriores;mtr;ping -r
-[LPIC-1] Qual comando exibe a tabela de roteamento IP do kernel atual? | route -n;ip route show;netstat -r;todas as anteriores;ip addr
-[LPIC-1] Qual comando é usado para configurar ou exibir o nome do host (hostname) do sistema? | hostname;hostnamectl;as duas anteriores;uname -n;set-hostname
+[LPIC-1] Qual comando exibe a rota percorrida por um pacote até o destino, mostrando cada salto (hop)? | traceroute e tracepath;traceroute;tracepath;mtr;ping -r
+[LPIC-1] Qual comando exibe a tabela de roteamento IP do kernel atual? | route -n e ip route show e netstat -r;route -n;ip route show;netstat -r;ip addr
+[LPIC-1] Qual comando é usado para configurar ou exibir o nome do host (hostname) do sistema? | hostname e hostnamectl;hostname;hostnamectl;uname -n;set-hostname
 [LPIC-1] Qual porta padrão é utilizada pelo serviço SSH? | 22;21;23;25;80
 [LPIC-1] Qual porta padrão é utilizada pelo serviço HTTP? | 80;443;8080;21;22
 [LPIC-1] Qual porta padrão é utilizada pelo serviço HTTPS (SSL/TLS)? | 443;80;8443;22;53
 [LPIC-1] Qual porta padrão é utilizada pelo serviço DNS (consultas)? | 53;67;68;123;161
 [LPIC-1] Qual protocolo é usado para atribuir endereços IP automaticamente aos dispositivos na rede? | DHCP;DNS;FTP;SNMP;ICMP
 [LPIC-1] Qual porta é utilizada pelo protocolo DHCP (servidor)? | 67;68;53;123;161
-[LPIC-1] Qual comando exibe as conexões de rede ativas, tabelas de roteamento e estatísticas de interface? | netstat;ss;as duas anteriores;ip link;ifstat
+[LPIC-1] Qual comando exibe as conexões de rede ativas, tabelas de roteamento e estatísticas de interface? | netstat e ss;netstat;ss;ip link;ifstat
 [LPIC-1] Qual utilitário moderno substitui o 'netstat' para visualizar sockets e conexões de rede? | ss;ip;nmcli;nstat;tcpdump
 [LPIC-1] Qual arquivo de configuração define a ordem de consulta para resolução de nomes (ex: primeiro hosts, depois dns)? | /etc/nsswitch.conf;/etc/resolv.conf;/etc/hosts;/etc/host.conf;/etc/networks
-[LPIC-1] Qual comando é usado para realizar consultas DNS detalhadas, como registros MX ou NS? | dig;host;nslookup;todas as anteriores;getent
-[LPIC-1] Qual comando exibe o endereço MAC (físico) de uma interface de rede? | ip link show;ifconfig;as duas anteriores;arp -a;netstat -i
-[LPIC-1] Qual comando exibe ou gerencia a tabela ARP (mapeamento IP para MAC) do sistema? | arp;ip neigh;as duas anteriores;netstat -a;route -e
+[LPIC-1] Qual comando é usado para realizar consultas DNS detalhadas, como registros MX ou NS? | dig,host e nslookup;dig;host;nslookup;getent
+[LPIC-1] Qual comando exibe o endereço MAC (físico) de uma interface de rede? | ip link show e ifconfig;ip link show;ifconfig;arp -a;netstat -i
+[LPIC-1] Qual comando exibe ou gerencia a tabela ARP (mapeamento IP para MAC) do sistema? | arp e ip neigh;arp;ip neigh;netstat -a;route -e
 [LPIC-1] Qual arquivo contém a lista de nomes de serviços e suas respectivas portas e protocolos (TCP/UDP)? | /etc/services;/etc/networks;/etc/protocols;/etc/nsswitch.conf;/etc/hosts
-[LPIC-1] Qual comando ativa uma interface de rede específica (ex: eth0)? | ifup eth0;ip link set eth0 up;as duas anteriores;ifconfig eth0 start;net-start eth0
-[LPIC-1] Qual comando desativa uma interface de rede específica? | ifdown eth0;ip link set eth0 down;as duas anteriores;ifconfig eth0 stop;net-stop eth0
-[LPIC-1] Qual comando do 'nmcli' (NetworkManager) exibe o status de todas as conexões de rede? | nmcli connection show;nmcli device status;as duas anteriores;nmcli general;nmcli networking
+[LPIC-1] Qual comando ativa uma interface de rede específica (ex: eth0)? | ifup eth0 e ip link set eth0 up;ifup eth0;ip link set eth0 up;ifconfig eth0 start;net-start eth0
+[LPIC-1] Qual comando desativa uma interface de rede específica? | ifdown eth0 e ip link set eth0 down;ifdown eth0;ip link set eth0 down;ifconfig eth0 stop;net-stop eth0
+[LPIC-1] Qual comando do 'nmcli' (NetworkManager) exibe o status de todas as conexões de rede? | nmcli connection show e nmcli device status;nmcli connection show;nmcli device status;nmcli general;nmcli networking
 [LPIC-1] Qual o endereço de loopback IPv4 padrão? | 127.0.0.1;192.168.0.1;10.0.0.1;0.0.0.0;255.255.255.255
-[LPIC-1] Qual o endereço de loopback IPv6 padrão? | ::1;0:0:0:0:0:0:0:1;as duas anteriores;fe80::1;ff02::1
-[LPIC-1] Qual comando é usado para adicionar um gateway padrão (default gateway) via linha de comando? | route add default gw IP;ip route add default via IP;as duas anteriores;ifconfig gw IP;netstat -g IP
+[LPIC-1] Qual o endereço de loopback IPv6 padrão? | ::1 e 0:0:0:0:0:0:0:1;::1;0:0:0:0:0:0:0:1;fe80::1;ff02::1
+[LPIC-1] Qual comando é usado para adicionar um gateway padrão (default gateway) via linha de comando? | route add default gw IP e ip route add default via IP;route add default gw IP;ip route add default via IP;ifconfig gw IP;netstat -g IP
 [LPIC-1] Qual protocolo é usado para sincronizar o relógio do sistema via rede? | NTP;SNMP;SMTP;DNS;DHCP
 [LPIC-1] Qual porta é utilizada pelo protocolo NTP? | 123;161;53;67;443
-[LPIC-1] Qual comando 'hostnamectl' define permanentemente o nome do host como 'servidor01'? | hostnamectl set-hostname servidor01;hostname servidor01;echo servidor01 > /etc/hostname;as opções 1 e 3;hostnamectl -s servidor01
-[LPIC-1] Qual comando exibe estatísticas de rede em tempo real, similar ao comando 'top'? | nload;ifstat;iptraf;todas as anteriores;netstat -t
+[LPIC-1] Qual comando 'hostnamectl' define permanentemente o nome do host como 'servidor01'? | echo servidor01 > /etc/hostname e hostnamectl set-hostname servidor01;hostname servidor01;echo servidor01 > /etc/hostname;hostnamectl -s servidor01;hostnamectl set-hostname servidor01
+[LPIC-1] Qual comando exibe estatísticas de rede em tempo real, similar ao comando 'top'? | nload e ifstat e iptraf;nload;ifstat;iptraf;netstat -t
 [LPIC-1] Qual opção do 'netstat' ou 'ss' mostra os processos (PID/Nome) que estão usando cada porta? | -p;-l;-t;-u;-n
 [LPIC-1] Qual opção do 'netstat' ou 'ss' exibe endereços e portas de forma numérica (sem resolver nomes)? | -n;-p;-l;-r;-a
-[LPIC-1] Qual comando é usado para capturar e analisar pacotes que passam pela interface de rede? | tcpdump;wireshark;as duas anteriores;nmap;netcat
-[LPIC-1] Qual utilitário é conhecido como o "canivete suíço" do TCP/IP, capaz de ler e escrever dados em conexões de rede? | nc (netcat);nmap;telnet;socat;as opções 1 e 4
+[LPIC-1] Qual comando é usado para capturar e analisar pacotes que passam pela interface de rede? | tcpdump e wireshark;tcpdump;wireshark;nmap;netcat
+[LPIC-1] Qual utilitário é conhecido como o "canivete suíço" do TCP/IP, capaz de ler e escrever dados em conexões de rede? | nc (netcat) e socat;nmap;telnet;socat;nc (netcat)
 [LPIC-1] Qual comando 'ip' remove o endereço IP 192.168.1.50 da interface eth0? | ip addr del 192.168.1.50/24 dev eth0;ip addr remove 192.168.1.50;ifconfig eth0 del 192.168.1.50;ip link delete eth0;ip route del 192.168.1.50
 [LPIC-1] Qual arquivo de configuração (em distros Debian/Ubuntu antigas) define as interfaces de rede? | /etc/network/interfaces;/etc/sysconfig/network-scripts/;/etc/networks;/etc/netplan/;/etc/resolv.conf
 [LPIC-1] Qual ferramenta do Ubuntu moderno utiliza arquivos YAML para configurar a rede? | Netplan;NetworkManager;ifupdown;systemd-networkd;iproute2
 [LPIC-1] Qual comando aplica as configurações feitas nos arquivos do Netplan? | netplan apply;netplan try;as duas anteriores;systemctl restart network;ifup -a
-[LPIC-1] Qual comando 'dig' busca especificamente pelo registro TXT de um domínio? | dig dominio.com TXT;dig -t TXT dominio.com;as duas anteriores;host -t TXT dominio.com;nslookup -q=txt dominio.com
+[LPIC-1] Qual comando 'dig' busca especificamente pelo registro TXT de um domínio? | dig dominio.com TXT e dig -t TXT dominio.com;dig dominio.com TXT;dig -t TXT dominio.com;host -t TXT dominio.com;nslookup -q=txt dominio.com
 [LPIC-1] Qual comando é usado para gerar um novo par de chaves (pública/privada) no GnuPG? | gpg --gen-key;gpg --create-key;gpg --new-key;gpg --make-key;gpg -k
-[LPIC-1] Qual comando lista todas as chaves públicas presentes no seu chaveiro GnuPG? | gpg --list-keys;gpg -k;as duas anteriores;gpg --show-keys;gpg -L
+[LPIC-1] Qual comando lista todas as chaves públicas presentes no seu chaveiro GnuPG? | gpg --list-keys e gpg -k;gpg --list-keys;gpg -k;gpg --show-keys;gpg -L
 [LPIC-1] Qual comando do GnuPG é usado para criptografar um arquivo para um destinatário específico? | gpg -e -r usuario arquivo;gpg --encrypt;gpg -c;gpg -s;gpg -d
-[LPIC-1] Qual comando é usado para descriptografar um arquivo recebido via GnuPG? | gpg -d arquivo.gpg;gpg --decrypt;as duas anteriores;gpg -x;gpg -u
+[LPIC-1] Qual comando é usado para descriptografar um arquivo recebido via GnuPG? | gpg -d arquivo.gpg e gpg --decrypt;gpg -d arquivo.gpg;gpg --decrypt;gpg -x;gpg -u
 [LPIC-1] Qual utilitário é usado para gerar um par de chaves RSA/ED25519 para autenticação SSH sem senha? | ssh-keygen;ssh-add;ssh-agent;ssh-copy-id;ssh-keyscan
-[LPIC-1] Qual comando transfere sua chave pública para o servidor remoto, permitindo o login sem senha? | ssh-copy-id;ssh-send-key;scp id_rsa.pub;cat id_rsa.pub | ssh;as opções 1 e 4
+[LPIC-1] Qual comando transfere sua chave pública para o servidor remoto, permitindo o login sem senha? | ssh-copy-id;ssh-send-key;scp id_rsa.pub;cat id_rsa.pub;ssh
 [LPIC-1] Qual arquivo no servidor remoto armazena as chaves públicas autorizadas a se conectar via SSH? | ~/.ssh/authorized_keys;~/.ssh/id_rsa.pub;/etc/ssh/keys;~/.ssh/known_hosts;/etc/authorized_keys
 [LPIC-1] Qual arquivo no computador LOCAL armazena a "digital" (fingerprint) dos servidores SSH já visitados? | ~/.ssh/known_hosts;~/.ssh/authorized_keys;/etc/ssh/ssh_config;~/.ssh/config;/var/log/secure
 [LPIC-1] Qual comando exibe os limites de recursos do sistema (como número de arquivos abertos) para o usuário atual? | ulimit;limit;sysctl;quota;setrlimit
@@ -83,14 +83,14 @@
 [LPIC-1] No 'limits.conf', qual a diferença entre um limite 'Soft' e um 'Hard'? | Soft pode ser aumentado pelo usuário até o Hard;Hard é apenas para o root;Soft é um aviso;Não há diferença;Hard é temporário
 [LPIC-1] Qual comando 'find' localiza arquivos com a permissão "World Writable" (escrita para todos)? | find / -perm -0002;find / -perm 777;find / -writable;find / -mode o+w;find / -user all
 [LPIC-1] Qual comando desativa temporariamente o uso de senhas shadow? | pwunconv;pwconv;grpconv;shadow-off;passwd -d
-[LPIC-1] Qual comando é usado para bloquear a conta de um usuário (colocando um ! na senha)? | usermod -L;passwd -l;as duas anteriores;userdel -l;lockuser
+[LPIC-1] Qual comando é usado para bloquear a conta de um usuário (colocando um ! na senha)? | usermod -L e passwd -l;usermod -L;passwd -l;userdel -l;lockuser
 [LPIC-1] Qual arquivo define as configurações globais de expiração de senhas e faixas de UID/GID? | /etc/login.defs;/etc/default/useradd;/etc/shadow;/etc/passwd;/etc/security/pwquality.conf
-[LPIC-1] Qual comando exibe informações detalhadas sobre a expiração da senha de um usuário (como 'jessica')? | chage -l jessica;passwd -S jessica;as duas anteriores;user-status jessica;id jessica
+[LPIC-1] Qual comando exibe informações detalhadas sobre a expiração da senha de um usuário (como 'jessica')? | chage -l jessica e passwd -S jessica;chage -l jessica;passwd -S jessica;user-status jessica;id jessica
 [LPIC-1] Qual comando força um usuário a alterar sua senha no próximo login? | chage -d 0 usuario;passwd -e usuario;as duas anteriores;usermod -f 0 usuario;passwd -expire usuario
 [LPIC-1] Qual diretório contém os arquivos de configuração do servidor SSH (sshd)? | /etc/ssh/;/etc/sshd/;/usr/lib/ssh/;/var/lib/ssh/;/etc/security/ssh/
-[LPIC-1] Qual comando deve ser usado para recarregar as configurações após alterar o /etc/ssh/sshd_config? | systemctl reload sshd;service ssh restart;as duas anteriores;sshd -t;killall -HUP sshd
+[LPIC-1] Qual comando deve ser usado para recarregar as configurações após alterar o /etc/ssh/sshd_config? | systemctl reload sshd e service ssh restart;systemctl reload sshd;service ssh restart;sshd -t;killall -HUP sshd
 [LPIC-1] Qual opção no 'sshd_config' impede que o usuário root faça login diretamente via rede? | PermitRootLogin no;DisableRoot yes;RootLogin off;NoRootLogin;IgnoreRoot
-[LPIC-1] Qual comando permite ver as portas abertas e os processos associados (ajudando na auditoria de segurança)? | netstat -tulnp;ss -tulnp;as duas anteriores;lsof -i;nmap localhost
+[LPIC-1] Qual comando permite ver as portas abertas e os processos associados (ajudando na auditoria de segurança)? | netstat -tulnp e ss -tulnp;netstat -tulnp;ss -tulnp;lsof -i;nmap localhost
 [LPIC-1] Qual utilitário 'sudo' é usado para editar o arquivo /etc/sudoers de forma segura? | visudo;sudodit;nano /etc/sudoers;vipw;vigr
 [LPIC-1] No arquivo 'sudoers', o que a tag 'NOPASSWD:' permite? | Executar comandos via sudo sem pedir a senha do usuário;Executar como root sem senha;Desativar o sudo;Criar um usuário sem senha;Logar sem senha
 [LPIC-1] Qual comando exibe o último login de todos os usuários do sistema? | lastlog;last;who;finger;uptime
@@ -98,4 +98,4 @@
 [LPIC-1] Qual comando 'gpg' importa a chave pública de um parceiro para o seu chaveiro? | gpg --import arquivo.asc;gpg --add-key;gpg --receive;gpg --load;gpg -i
 [LPIC-1] Qual opção do 'ssh' permite especificar uma chave privada diferente da padrão (id_rsa)? | -i;-p;-k;-key;-u
 [LPIC-1] Qual diretório da FHS armazena logs do sistema, como o /var/log/auth.log ou /var/log/secure? | /var/log;/etc/log;/usr/log;/run/log;/tmp
-[LPIC-1] Qual comando 'find' localiza arquivos que NÃO pertencem a nenhum usuário cadastrado no /etc/passwd? | find / -nouser;find / -nogroup;as duas anteriores;find / -user unknown;find / -orphans
+[LPIC-1] Qual comando 'find' localiza arquivos que NÃO pertencem a nenhum usuário cadastrado no /etc/passwd? | find / -nouser e find / -nogroup;find / -nouser;find / -nogroup;find / -user unknown;find / -orphans
