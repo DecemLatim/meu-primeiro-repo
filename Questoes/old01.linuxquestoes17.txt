@@ -3,7 +3,7 @@
 [LPIC-1] Qual variável especial do shell armazena o código de retorno (exit status) do último comando executado? | $?;$!;$#;$*;$0
 [LPIC-1] Qual variável especial contém o número total de argumentos passados para um script? | $#;$?;$@;$$;$1
 [LPIC-1] Qual variável especial representa o nome do próprio script que está sendo executado? | $0;$1;$#;$$;$!
-[LPIC-1] Qual variável especial representa todos os argumentos passados ao script como uma lista única? | $@ (ou $*);$*;$$;$#;$!
+[LPIC-1] Qual variável especial representa todos os argumentos passados ao script como uma lista única? | $@ e $*;$@;$*;;$$;$#
 [LPIC-1] Qual comando é usado dentro de um script para receber uma entrada do usuário e armazená-la em uma variável? | read;input;get;set;scanf
 [LPIC-1] No Bash, qual operador de teste verifica se um arquivo EXISTE e é um diretório? | [ -d arquivo ];[ -f arquivo ];[ -x arquivo ];[ -z arquivo ];[ -e arquivo ]
 [LPIC-1] Qual operador de teste verifica se uma string está VAZIA (tamanho zero)? | -z;-n;-e;-s;-f
@@ -16,18 +16,18 @@
 [LPIC-1] Qual laço de repetição executa comandos PARA cada item de uma lista (ex: lista de arquivos)? | for;while;until;do;each
 [LPIC-1] Qual comando interrompe imediatamente a execução de um laço (loop) e passa para o próximo comando após o laço? | break;continue;exit;stop;return
 [LPIC-1] Qual comando pula o restante do bloco atual do laço e volta para o início da próxima iteração? | continue;break;exit;return;skip
-[LPIC-1] Como você define uma variável chamada 'NOME' com o valor 'Gemini' no shell? | NOME=Gemini (ou NOME="Gemini");set NOME Gemini;NOME := Gemini;NOME == Gemini;NOME : Gemini
+[LPIC-1] Como você define uma variável chamada 'NOME' com o valor 'Gemini' no shell? | NOME=Gemini;set NOME Gemini;NOME := Gemini;NOME="Gemini";as opções 1 e 4
 [LPIC-1] Qual comando torna uma variável local disponível para processos filhos (subshells)? | export;set;env;local;declare
 [LPIC-1] No SQL, qual comando é usado para extrair dados de uma tabela? | SELECT;GET;EXTRACT;SHOW;SEARCH
 [LPIC-1] Qual cláusula SQL é usada para filtrar os resultados (ex: buscar apenas onde id=10)? | WHERE;HAVING;IF;FILTER;WHEN
 [LPIC-1] Qual comando SQL é usado para adicionar novos registros a uma tabela? | INSERT INTO;ADD RECORD;UPDATE;CREATE;PUT
-[LPIC-1] Qual comando SQL remove todos os registros de uma tabela (ou a tabela inteira)? | DROP (ou DELETE);DELETE;REMOVE;CLEAR;TRUNCATE
+[LPIC-1] Qual comando SQL remove todos os registros de uma tabela (ou a tabela inteira)? | DELETE e DROP;DELETE;DROP;REMOVE;CLEAR
 [LPIC-1] Qual caractere curinga no SQL (comando LIKE) representa QUALQUER quantidade de caracteres? | %;*;?;_;#
 [LPIC-1] Qual caractere curinga no SQL representa exatamente UM único caractere? | _;%;?;*;$
 [LPIC-1] Qual comando SQL altera dados já existentes em uma tabela? | UPDATE;CHANGE;MODIFY;SET;REPLACE
 [LPIC-1] Qual função SQL conta o número de registros retornados por uma consulta? | COUNT();SUM();TOTAL();MAX();MIN()
 [LPIC-1] Qual cláusula SQL organiza o resultado em ordem crescente ou decrescente? | ORDER BY;GROUP BY;SORT BY;ARRANGE;LIMIT
-[LPIC-1] Qual comando 'find' executa o comando 'rm' para cada arquivo encontrado? | find . -exec rm {} \; (ou -delete);find . -run rm;find . -do rm;find . -ls;find . -print
+[LPIC-1] Qual comando 'find' executa o comando 'rm' para cada arquivo encontrado? | find . -exec rm {} \;;find . -run rm;find . -do rm;find . -delete;as opções 1 e 4
 [LPIC-1] Qual a função do comando 'seq 1 5' em um laço 'for'? | Gera uma sequência de números de 1 a 5;Conta os arquivos do diretório;Sincroniza o relógio;Verifica a rede;Cria 5 pastas
 [LPIC-1] O que o comando 'source script.sh' faz? | Executa o script no shell atual (mantendo variáveis);Cria um backup do script;Compila o script;Lê apenas os comentários;Cria um link simbólico
 [LPIC-1] Qual comando 'sed' substitui a primeira ocorrência da palavra 'Linux' por 'Unix' em cada linha? | sed 's/Linux/Unix/' arquivo;sed 'g/Linux/Unix/' arquivo;sed 'r/Linux/Unix/' arquivo;sed 'sub/Linux/Unix/' arquivo;sed 'x/Linux/Unix/' arquivo
@@ -46,9 +46,9 @@
 [LPIC-1] No Regex, qual caractere curinga representa exatamente UM caractere qualquer? | .;*;+;?;^
 [LPIC-1] No Regex, qual quantificador indica "zero ou mais ocorrências" do caractere anterior? | *;+;?;{1,};.
 [LPIC-1] No Regex, qual quantificador indica "uma ou mais ocorrências" do caractere anterior? | +;*;?;{0,1};$
-[LPIC-1] No Regex, qual sequência representa um dígito numérico (0-9)? | [0-9] (ou \d);\d;[num];#;[09]
-[LPIC-1] Qual comando 'grep' utiliza Expressões Regulares Estendidas (ERE)? | grep -E (ou egrep);fgrep;grep -X;grep -S;grep -v
-[LPIC-1] Qual comando 'grep' busca por uma string fixa, ignorando metacaracteres de Regex? | grep -F (ou fgrep);grep -s;grep -v;grep -r;grep -i
+[LPIC-1] No Regex, qual sequência representa um dígito numérico (0-9)? | [0-9] e \d;[0-9];\d;[num];#
+[LPIC-1] Qual comando 'grep' utiliza Expressões Regulares Estendidas (ERE)? | grep -E e egrep;grep -E;egrep;fgrep;grep -X
+[LPIC-1] Qual comando 'grep' busca por uma string fixa, ignorando metacaracteres de Regex? | fgrep e grep -F;fgrep;grep -F;grep -s;grep -v
 [LPIC-1] No SQL, qual cláusula agrupa linhas que têm os mesmos valores em colunas específicas? | GROUP BY;ORDER BY;SORT BY;UNION;JOIN
 [LPIC-1] Qual comando SQL é usado para criar uma nova base de dados? | CREATE DATABASE;ADD DATABASE;MAKE DB;NEW DATABASE;SET DATABASE
 [LPIC-1] No SQL, qual operador é usado para buscar um padrão dentro de uma string (ex: nomes que começam com A)? | LIKE;MATCH;SEARCH;FIND;WHERE
@@ -57,7 +57,7 @@
 [LPIC-1] No SQL, qual restrição (constraint) garante que uma coluna não aceite valores nulos? | NOT NULL;UNIQUE;PRIMARY KEY;CHECK;DEFAULT
 [LPIC-1] No SQL, qual chave identifica de forma única cada registro em uma tabela? | PRIMARY KEY;FOREIGN KEY;UNIQUE KEY;MASTER KEY;INDEX
 [LPIC-1] No SQL, qual chave é usada para criar um relacionamento entre duas tabelas? | FOREIGN KEY;PRIMARY KEY;RELATION KEY;LINK KEY;ID KEY
-[LPIC-1] No Bash, como você executa um comando e descarta tanto a saída padrão quanto a de erro? | &> /dev/null (ou > /dev/null 2>&1);> /dev/null;2> /dev/null;> null;comando 2>1
+[LPIC-1] No Bash, como você executa um comando e descarta tanto a saída padrão quanto a de erro? | comando > /dev/null 2>&1 e comando &> /dev/null;comando > /dev/null 2>&1;comando &> /dev/null;comando > null;comando 2>1
 [LPIC-1] Qual comando 'find' busca arquivos modificados nos últimos 2 dias? | find . -mtime -2;find . -mtime +2;find . -atime 2;find . -ctime -2;find . -mod 2
 [LPIC-1] Qual sinal de interrupção (kill) é enviado pelo teclado ao pressionar Ctrl+C? | SIGINT (2);SIGTERM (15);SIGKILL (9);SIGSTOP (19);SIGHUP (1)
 [LPIC-1] Qual estrutura de controle do Bash é ideal para criar menus simples de escolha? | select;case;if;while;until
@@ -70,7 +70,7 @@
 [LPIC-1] Qual operador permite executar um segundo comando APENAS se o primeiro for bem-sucedido? | &&;||;;;&;>
 [LPIC-1] O que o caractere '!' faz antes de um comando no teste de shell? | Inverte o resultado lógico (NOT);Executa como root;Silencia erros;Repete o comando;Cancela o comando
 [LPIC-1] Qual comando 'sed' imprime apenas as linhas entre a 5 e a 10? | sed -n '5,10p';sed '5-10';sed 'print 5,10';sed -i '5,10';sed '/5,10/p'
-[LPIC-1] No Bash, como você executa uma substituição de comando (atribuir saída de comando a uma variável)? | $(comando);"comando";{comando};(comando);[comando]
+[LPIC-1] No Bash, como você executa uma substituição de comando (atribuir saída de comando a uma variável)? | VAR=$(comando) e VAR=`comando`;VAR=$(comando);VAR=`comando`;VAR={comando};VAR=|comando|
 [LPIC-1] Qual comando 'grep' exibe o número da linha onde a string foi encontrada? | grep -n;grep -l;grep -c;grep -v;grep -i
 [LPIC-1] Qual comando 'grep' exibe apenas o NOME dos arquivos que contêm a string buscada? | grep -l;grep -n;grep -c;grep -r;grep -f
 [LPIC-1] Qual comando 'grep' conta quantas vezes a string aparece no arquivo? | grep -c;grep -n;grep -l;grep -v;grep -i
@@ -95,7 +95,7 @@
 [LPIC-1] Qual tipo de JOIN retorna apenas as linhas que têm correspondência em ambas as tabelas? | INNER JOIN;LEFT JOIN;RIGHT JOIN;FULL JOIN;OUTER JOIN
 [LPIC-1] No SQL, como você seleciona valores únicos, removendo duplicatas? | SELECT DISTINCT;SELECT UNIQUE;SELECT ONLY;SELECT SINGLE;SELECT DIFFERENT
 [LPIC-1] Qual comando Bash envia um sinal de término suave para um processo? | kill -15;kill -9;kill -1;kill -2;kill -19
-[LPIC-1] No 'vi', como você salva o arquivo e sai rapidamente pelo modo de comando? | :wq (ou ZZ / :x);ZZ;:x;:q!;:w
+[LPIC-1] No 'vi', como você salva o arquivo e sai rapidamente pelo modo de comando? | ZZ,:wq e :x;ZZ;:wq;:x;:q!
 [LPIC-1] Qual comando 'sed' transforma todas as letras minúsculas em maiúsculas (via comando y)? | sed 'y/abcdef.../ABCDEF.../';sed 's/lower/upper/';sed 'up';sed 'tr a-z A-Z';sed 'convert'
 [LPIC-1] Qual comando verifica a sintaxe de um script Bash sem executá-lo? | bash -n script.sh;bash -s script.sh;bash -c script.sh;bash -v script.sh;bash -z script.sh
 [LPIC-1] Qual comando é usado para verificar e alterar o fuso horário (timezone) do sistema de forma interativa ou direta? | timedatectl;date -z;tzset;set-timezone;clock-setup

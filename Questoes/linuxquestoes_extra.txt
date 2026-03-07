@@ -1,4 +1,4 @@
-# LPIC-1: Detalhes de Administração e Quotas
+# Detalhes de Administração e Quotas
 [LPIC-1] Qual comando é usado para criar o arquivo de banco de dados de quotas (aquota.user) em um sistema de arquivos? | quotacheck -u;quotaon;edquota;setquota;repquota
 [LPIC-1] No editor VI, qual comando permite substituir todas as ocorrências de 'antigo' por 'novo' no arquivo inteiro? | :%s/antigo/novo/g;:s/antigo/novo/g;:%s/antigo/novo/;sub/antigo/novo/g;replace antigo novo
 [LPIC-1] Qual comando exibe o tempo que o sistema está ligado, número de usuários e a carga média (load average)? | uptime;w;top;free;vmstat

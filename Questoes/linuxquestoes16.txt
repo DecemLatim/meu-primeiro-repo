@@ -67,7 +67,7 @@
 [LPIC-1] Qual comando 'ip' remove o endereço IP 192.168.1.50 da interface eth0? | ip addr del 192.168.1.50/24 dev eth0;ip addr remove 192.168.1.50;ifconfig eth0 del 192.168.1.50;ip link delete eth0;ip route del 192.168.1.50
 [LPIC-1] Qual arquivo de configuração (em distros Debian/Ubuntu antigas) define as interfaces de rede? | /etc/network/interfaces;/etc/sysconfig/network-scripts/;/etc/networks;/etc/netplan/;/etc/resolv.conf
 [LPIC-1] Qual ferramenta do Ubuntu moderno utiliza arquivos YAML para configurar a rede? | Netplan;NetworkManager;ifupdown;systemd-networkd;iproute2
-[LPIC-1] Qual comando aplica as configurações feitas nos arquivos do Netplan? | netplan apply;netplan try;as duas anteriores;systemctl restart network;ifup -a
+[LPIC-1] Qual comando aplica as configurações feitas nos arquivos do Netplan? | netplan apply e netplan try;netplan apply;netplan try;systemctl restart network;ifup -a
 [LPIC-1] Qual comando 'dig' busca especificamente pelo registro TXT de um domínio? | dig dominio.com TXT e dig -t TXT dominio.com;dig dominio.com TXT;dig -t TXT dominio.com;host -t TXT dominio.com;nslookup -q=txt dominio.com
 [LPIC-1] Qual comando é usado para gerar um novo par de chaves (pública/privada) no GnuPG? | gpg --gen-key;gpg --create-key;gpg --new-key;gpg --make-key;gpg -k
 [LPIC-1] Qual comando lista todas as chaves públicas presentes no seu chaveiro GnuPG? | gpg --list-keys e gpg -k;gpg --list-keys;gpg -k;gpg --show-keys;gpg -L
@@ -86,7 +86,7 @@
 [LPIC-1] Qual comando é usado para bloquear a conta de um usuário (colocando um ! na senha)? | usermod -L e passwd -l;usermod -L;passwd -l;userdel -l;lockuser
 [LPIC-1] Qual arquivo define as configurações globais de expiração de senhas e faixas de UID/GID? | /etc/login.defs;/etc/default/useradd;/etc/shadow;/etc/passwd;/etc/security/pwquality.conf
 [LPIC-1] Qual comando exibe informações detalhadas sobre a expiração da senha de um usuário (como 'jessica')? | chage -l jessica e passwd -S jessica;chage -l jessica;passwd -S jessica;user-status jessica;id jessica
-[LPIC-1] Qual comando força um usuário a alterar sua senha no próximo login? | chage -d 0 usuario;passwd -e usuario;as duas anteriores;usermod -f 0 usuario;passwd -expire usuario
+[LPIC-1] Qual comando força um usuário a alterar sua senha no próximo login? | chage -d 0 usuario e passwd -e usuario;chage -d 0 usuario;passwd -e usuario;usermod -f 0 usuario;passwd -expire usuario
 [LPIC-1] Qual diretório contém os arquivos de configuração do servidor SSH (sshd)? | /etc/ssh/;/etc/sshd/;/usr/lib/ssh/;/var/lib/ssh/;/etc/security/ssh/
 [LPIC-1] Qual comando deve ser usado para recarregar as configurações após alterar o /etc/ssh/sshd_config? | systemctl reload sshd e service ssh restart;systemctl reload sshd;service ssh restart;sshd -t;killall -HUP sshd
 [LPIC-1] Qual opção no 'sshd_config' impede que o usuário root faça login diretamente via rede? | PermitRootLogin no;DisableRoot yes;RootLogin off;NoRootLogin;IgnoreRoot

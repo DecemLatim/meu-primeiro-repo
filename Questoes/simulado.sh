@@ -1,6 +1,7 @@
 #!/bin/bash
-
 # Diretórios e Arquivos
+# 
+# 
 DIRETORIO="/root/meu-primeiro-repo/Questoes"
 LOG_FILE="/root/meu-primeiro-repo/historico_estudos.log"
 

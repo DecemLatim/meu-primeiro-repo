@@ -1,0 +1,5 @@
+# Este arquivo é apenas um teste da ordem Padrão.
+[LPIC-1] Qual comando 'z' permite visualizar arquivos compactados página por página (como o 'less')? | zless (incluindo zmore);zmore;zview;bzless;zless e zmore
+[LPIC-1] Qual utilitário 'z' permite comparar dois arquivos compactados sem descompactá-los? | zdiff (incluindo zcmp);zcmp;zcomm;zmatch;zdiff e zcmp
+[LPIC-1] Qual opção do 'gzip' permite definir o nível de compressão (1 para rápido, 9 para melhor)? | -1 a -9 (ou --fast/--best);--level;--best;--fast;opções 1 e 4
+[LPIC-1] No 'vi', qual comando exclui a linha atual e entra no modo de inserção? | cc (ou S);dd;S;i;cc e S

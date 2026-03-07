@@ -1,0 +1,1 @@
+[LPIC-1] No Bash, como você executa uma substituição de comando (atribuir saída de comando a uma variável)? | $(comando);"comando";{comando};(comando);[comando]

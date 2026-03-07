@@ -39,7 +39,6 @@
 [LPIC-1] Qual opção do 'gzip' permite definir o nível de compressão (1 para rápido, 9 para melhor)? | -1 a -9;--level;--best;--fast;as opções 1 e 4
 [LPIC-1] Qual comando é usado para encontrar arquivos baseando-se no tamanho, útil para gerenciar espaço antes de atingir a cota? | find -size;du -s;df -h;ls -S;fuser
 [LPIC-1] Qual a função do comando 'cpio'? | Copia arquivos para dentro ou fora de um arquivo de archive;Compacta arquivos em formato .gz;Deleta arquivos duplicados;Muda o dono de arquivos;Verifica discos
-[LPIC-1] Qual utilitário 'z' é usado para buscar padrões em arquivos compactados com gzip (equivalente ao grep)? | zgrep;zegrep;zfgrep;todas as anteriores;gzgrep
 [LPIC-1] Qual comando exibe as estatísticas de uso de quota de forma legível para humanos (KB, MB, GB)? | repquota -h;quota -v;quotacheck -a;edquota -u;setquota -v
 [LPIC-1] Qual opção do comando 'bzip2' apaga o arquivo original após a compactação (comportamento padrão)? | Não precisa de opção (padrão);-d;-k;-f;-z
 [LPIC-1] Qual opção do comando 'bzip2' MANTÉM o arquivo original após a compactação? | -k (keep);-s;-m;-v;-f
@@ -48,15 +47,11 @@
 [LPIC-1] Qual o comando para editar o tempo de carência (grace period) das quotas de disco? | edquota -t;edquota -g;setquota -t;quotaon -t;repquota -t
 [LPIC-1] Qual comando do vi move o cursor para o final do arquivo? | G;1G;$;L;gg
 [LPIC-1] Qual utilitário 'z' permite visualizar arquivos compactados com xz diretamente (estilo cat)? | xzcat;zcat;bzcat;cat -J;xzshow
-[LPIC-1] Qual opção do comando 'tar' deve ser usada para garantir que as permissões originais dos arquivos sejam preservadas no backup? | -p;--preserve-permissions;as duas anteriores;-a;-m
 [LPIC-1] Qual comando é usado para criar um arquivo de archive cpio a partir de uma lista de nomes de arquivos vinda do stdin? | cpio -o;cpio -i;cpio -p;cpio -v;cpio -t
 [LPIC-1] Qual comando descompacta um arquivo .Z (criado pelo comando compress)? | uncompress;gunzip;bunzip2;unxz;expand
 [LPIC-1] No 'tar', qual a diferença entre as opções -z e -j? | -z usa gzip e -j usa bzip2;-z usa bzip2 e -j usa gzip;-z cria e -j extrai;-z é rápido e -j é lento;-z é para arquivos e -j para pastas
 [LPIC-1] Qual comando é usado para sincronizar os dados de quota do kernel com os arquivos aquota.user/group no disco? | quotacheck -s;quotaon;quotasync;repquota;sync
-[LPIC-1] Qual opção do 'xz' define o nível máximo de compressão (o mais lento e eficiente)? | -9;--best;as duas anteriores;-1;--fast
-[LPIC-1] Qual utilitário permite visualizar a diferença entre dois arquivos compactados com bzip2? | bzdiff;bzcmp;as duas anteriores;zdiff;bzcomm
 [LPIC-1] Qual comando do vi apaga o caractere sob o cursor e entra no modo de inserção? | s;S;r;R;c
-[LPIC-1] Qual comando 'tar' exibe a lista de arquivos de um backup compactado com xz sem extraí-los? | tar -tJf backup.tar.xz;tar -tf backup.tar.xz;as duas anteriores;tar -xJf;tar -vJf
 [LPIC-1] Qual comando exibe o resumo de uso de disco de diretórios, ajudando a identificar quem está estourando a quota? | du -sh;df -h;ls -lh;quota;stat
 [LPIC-1] Qual comando 'tar' extrai o conteúdo de um arquivo para um diretório específico diferente do atual? | tar -xf backup.tar -C /destino;tar -xf backup.tar --dir /destino;tar -xf backup.tar > /destino;tar -xf backup.tar -d /destino;tar -xf backup.tar -p /destino
 [LPIC-1] Qual sinal do kill é enviado pelo comando Ctrl+C? | SIGINT (2);SIGTERM (15);SIGKILL (9);SIGHUP (1);SIGQUIT (3)
@@ -91,10 +86,15 @@
 [LPIC-1] Qual utilitário é uma alternativa ao 'tar' e trabalha com fluxos de dados (standard input/output)? | cpio;zip;compress;gzip;xz
 [LPIC-1] No 'tar', qual a função da opção '--exclude'? | Ignorar arquivos ou diretórios específicos no backup;Deletar arquivos após backup;Compactar apenas os arquivos listados;Criar uma lista de erros;Criptografar o backup
 [LPIC-1] Qual comando 'edquota' permite editar as quotas de um grupo específico? | edquota -g;edquota -u;edquota -p;edquota -t;edquota -a
-[LPIC-1] Qual comando é usado para visualizar as bibliotecas de 32 bits em um sistema de 64 bits? | ldd;ldconfig -p;as duas anteriores;ls -l /lib32;file
 [LPIC-1] Qual comando 'find' localiza arquivos que foram modificados nos últimos 10 minutos? | find -mmin -10;find -mtime -10;find -atime -10;find -ctime -10;find -time -10
 [LPIC-1] No 'vi', qual comando exclui a linha atual e entra no modo de inserção? | cc;dd;S;as opções 1 e 3;i
 [LPIC-1] Qual o comando para remover o cache de bibliotecas compartilhadas? | rm /etc/ld.so.cache;ldconfig -c;libclean;ld-remove;sln -clean
 [LPIC-1] Qual comando exibe o status (on/off) das cotas para todos os sistemas de arquivos? | quotaon -p;quota -a;repquota -v;quota -s;showquota
 [LPIC-1] Qual opção do 'tar' permite descompactar um arquivo .tar.xz (utilizando o filtro xz)? | -J;-j;-z;-Z;-x
 [LPIC-1] Qual comando do vi move o cursor para o meio da tela atual? | M;H;L;G;m
+[LPIC-1] Qual utilitário 'z' é usado para buscar padrões em arquivos compactados com gzip (equivalente ao grep)? | zgrep (incluindo zegrep e zfgrep);zegrep;zfgrep;gzgrep;zcat
+[LPIC-1] Qual opção do comando 'tar' deve ser usada para garantir que as permissões originais dos arquivos sejam preservadas no backup? | -p (ou --preserve-permissions);--preserve-permissions;-a;-m;-v
+[LPIC-1] Qual opção do 'xz' define o nível máximo de compressão (o mais lento e eficiente)? | -9 (ou --best);--best;-1;--fast;-v
+[LPIC-1] Qual utilitário permite visualizar a diferença entre dois arquivos compactados com bzip2? | bzdiff (ou bzcmp);bzcmp;zdiff;bzcomm;bzip2 -d
+[LPIC-1] Qual comando 'tar' exibe a lista de arquivos de um backup compactado com xz sem extraí-los? | tar -tJf (ou tar -tf);tar -tf;tar -xJf;tar -vJf;tar -cJf
+[LPIC-1] Qual comando é usado para visualizar as bibliotecas de 32 bits em um sistema de 64 bits? | ldd (ou ldconfig -p);ldconfig -p;ls -l /lib32;file;ldd -v

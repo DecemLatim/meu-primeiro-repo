@@ -1,21 +1,21 @@
 # Dispositivos e Sistemas de Arquivos - Parte 1 (Tópico 104)
 [LPIC-1] Qual comando é utilizado para listar as partições de todos os discos rígidos reconhecidos pelo sistema? | fdisk -l;ls -p;partshow;gdisk -a;df -l
 [LPIC-1] Qual utilitário é o mais recomendado para gerenciar partições em discos que utilizam a tabela de partição GPT? | gdisk;fdisk;parted;sfdisk;cfdisk
-[LPIC-1] Qual comando cria um sistema de arquivos ext4 em uma partição específica (ex: /dev/sdb1)? | mkfs.ext4 /dev/sdb1;mke2fs -t ext4 /dev/sdb1;as duas anteriores;format -t ext4;mount.ext4
+[LPIC-1] Qual comando cria um sistema de arquivos ext4 em uma partição específica (ex: /dev/sdb1)? | mkfs.ext4 /dev/sdb1 e mke2fs -t ext4 /dev/sdb1;mkfs.ext4 /dev/sdb1;mke2fs -t ext4 /dev/sdb1;format -t ext4;mount.ext4
 [LPIC-1] Qual arquivo de configuração é lido pelo comando 'mount -a' para montar automaticamente os sistemas de arquivos no boot? | /etc/fstab;/etc/mtab;/etc/exports;/etc/filesystems;/etc/mount.conf
 [LPIC-1] Qual comando é usado para desvincular (desmontar) um sistema de arquivos do diretório de montagem? | umount;unmount;detach;eject;remove
-[LPIC-1] Qual opção do 'mount' permite montar um sistema de arquivos apenas para leitura? | -r;-o ro;as duas anteriores;-w;-f
+[LPIC-1] Qual opção do 'mount' permite montar um sistema de arquivos apenas para leitura? | -r e -o ro;-r;-o ro;-w;-f
 [LPIC-1] Qual comando exibe o UUID (Universally Unique Identifier) de uma partição, facilitando a configuração no fstab? | blkid;lsblk;id-partition;uuidgen;stat
 [LPIC-1] Qual ferramenta interativa baseada em ncurses facilita o particionamento de discos com interface visual simples? | cfdisk;fdisk;parted;gdisk;fdisk -v
 [LPIC-1] Qual comando é usado para criar uma partição de swap em um dispositivo? | mkswap;swapon;swapoff;fdisk -s;mkfs.swap
 [LPIC-1] Qual comando ativa o uso de uma partição de swap previamente preparada? | swapon;swapoff;mkswap;mount -s;activate-swap
 [LPIC-1] No arquivo /etc/fstab, qual o significado da opção 'defaults'? | Ativa rw, suid, dev, exec, auto, nouser e async;Define apenas permissão de leitura;Desativa a montagem automática;Limita o uso de CPU;Define o dono como root
-[LPIC-1] Qual comando é usado para verificar e reparar inconsistências em um sistema de arquivos ext4? | fsck;e2fsck;as duas anteriores;repairfs;checkfs
+[LPIC-1] Qual comando é usado para verificar e reparar inconsistências em um sistema de arquivos ext4? | fsck e e2fsck;fsck;e2fsck;repairfs;checkfs
 [LPIC-1] Qual comando exibe informações sobre o uso de espaço em disco de forma global (partições montadas)? | df -h;du -sh;lsblk;fdisk -l;stat
 [LPIC-1] Qual comando exibe o uso de espaço em disco de um diretório específico e seus subdiretórios? | du -sh;df -h;ls -l;stat;find
 [LPIC-1] Qual o limite máximo de partições primárias em um disco com tabela de partição MBR? | 4;2;128;Ilimitado;15
 [LPIC-1] Qual tipo de partição MBR deve ser criada para permitir a existência de mais de 4 partições no disco? | Partição Estendida;Partição Primária;Partição GPT;Partição Virtual;Partição de Swap
-[LPIC-1] Qual comando permite alterar o rótulo (label) de um sistema de arquivos ext4 já existente? | tune2fs -L;e2label;as duas anteriores;mkfs -L;labeltool
+[LPIC-1] Qual comando permite alterar o rótulo (label) de um sistema de arquivos ext4 já existente? | tune2fs -L e e2label;tune2fs -L;e2label;mkfs -L;labeltool
 [LPIC-1] Qual opção do 'fsck' força a verificação mesmo que o sistema de arquivos pareça limpo? | -f;-a;-y;-p;-v
 [LPIC-1] Qual comando exibe a hierarquia de dispositivos de bloco de forma visual (árvore)? | lsblk;lspci;lsdev;lshw;mount
 [LPIC-1] Qual utilitário da suíte 'parted' permite redimensionar partições de forma dinâmica? | parted;fdisk;gdisk;resize2fs;mkfs
@@ -24,12 +24,12 @@
 [LPIC-1] Qual campo do /etc/fstab define a ordem em que o 'fsck' verificará os discos no boot? | O sexto campo (pass);O primeiro campo;O segundo campo;O quinto campo (dump);O quarto campo
 [LPIC-1] Qual valor no sexto campo do /etc/fstab indica que a partição RAIZ (/) deve ser a primeira a ser verificada? | 1;2;0;9;10
 [LPIC-1] Qual comando desativa todas as partições de swap listadas no /etc/fstab? | swapoff -a;swapon -d;umount -s;mkswap -r;swapoff -f
-[LPIC-1] Qual comando exibe as opções de montagem atuais de uma partição que já está montada? | mount;cat /etc/mtab;cat /proc/mounts;todas as anteriores;df -v
+[LPIC-1] Qual comando exibe as opções de montagem atuais de uma partição que já está montada? | mount, cat /etc/mtab e cat /proc/mounts;mount;cat /etc/mtab;cat /proc/mounts;df -v
 [LPIC-1] Qual sistema de arquivos da Apple é comumente suportado pelo Linux para leitura/escrita básica? | HFS+;APFS;NTFS;ZFS;Btrfs
 [LPIC-1] Qual comando cria um sistema de arquivos XFS? | mkfs.xfs;mkfs.ext4;xfsmake;format -t xfs;mount.xfs
 [LPIC-1] Qual opção do comando 'mount' permite montar uma partição que já está montada (ex: mudar de ro para rw)? | -o remount;-f;-r;-u;--force
 [LPIC-1] O que o comando 'tune2fs -j' faz em um sistema de arquivos ext2? | Adiciona um jornal (journal), convertendo-o para ext3;Deleta o sistema de arquivos;Formata para ext4;Muda o dono;Otimiza para SSD
-[LPIC-1] Qual comando exibe informações detalhadas do superbloco de um sistema de arquivos ext4? | dumpe2fs;tune2fs -l;as duas anteriores;fsck -v;stat
+[LPIC-1] Qual comando exibe informações detalhadas do superbloco de um sistema de arquivos ext4? | dumpe2fs e tune2fs -l;dumpe2fs;tune2fs -l;fsck -v;stat
 [LPIC-1] Qual sistema de arquivos é comumente usado em pendrives devido à alta compatibilidade entre sistemas? | VFAT (FAT32);ext4;XFS;Btrfs;ReiserFS
 [LPIC-1] Qual comando lista os sistemas de arquivos suportados pelo kernel atual? | cat /proc/filesystems;ls /lib/modules/fs;modprobe -l;sysctl fs;fdisk -l
 [LPIC-1] Qual comando cria o arquivo de swap em si (após criar o arquivo vazio com dd)? | mkswap;swapon;swapoff;mount;fsck
@@ -55,39 +55,40 @@
 [LPIC-1] Qual comando exibe o conteúdo de um arquivo de texto ignorando linhas de comentário (começando com #)? | grep -v "^#";cat -v;sed -d;awk -c;tail -n
 [LPIC-1] Qual opção do 'mount' permite que usuários comuns montem uma partição específica? | user;users;owner;as duas primeiras opções;noauto
 [LPIC-1] Qual a função da opção 'noexec' no /etc/fstab? | Impede a execução de binários naquela partição;Impede a montagem automática;Desativa o log;Oculta a partição;Impede a escrita
-[LPIC-1] Qual comando é usado para criar uma imagem ISO a partir de um diretório? | mkisofs;genisoimage;as duas anteriores;dd;tar -iso
+[LPIC-1] Qual comando é usado para criar uma imagem ISO a partir de um diretório? | mkisofs e genisoimage;mkisofs;genisoimage;dd;tar -iso
 [LPIC-1] Qual comando 'dd' cria um backup exato do MBR de um disco (/dev/sda)? | dd if=/dev/sda of=mbr.bin bs=512 count=1;dd if=/dev/sda of=mbr.bin bs=446 count=1;dd if=/dev/sda1 of=mbr.bin;dd if=mbr.bin of=/dev/sda;dd if=/dev/zero of=/dev/sda
 [LPIC-1] Qual comando localiza o binário, o código-fonte e a página de manual de um comando? | whereis;which;locate;find;type
 [LPIC-1] Qual comando mostra apenas o caminho completo do binário que seria executado no shell atual? | which;whereis;type;locate;whatis
 [LPIC-1] Qual comando atualiza o banco de dados utilizado pelo comando 'locate'? | updatedb;locate -u;mlocate -c;find -u;dbupdate
 [LPIC-1] Qual arquivo de configuração controla o comportamento e os diretórios indexados pelo 'updatedb'? | /etc/updatedb.conf;/etc/locate.conf;/var/lib/mlocate.db;/etc/find.conf;/etc/mlocate.conf
-[LPIC-1] Qual comando permite visualizar as mensagens do kernel durante o boot (ring buffer)? | dmesg;journalctl -k;as duas anteriores;cat /var/log/boot;tail /var/log/messages
+[LPIC-1] Qual comando permite visualizar as mensagens do kernel durante o boot (ring buffer)? | dmesg e journalctl -k;dmesg;journalctl -k;cat /var/log/boot;tail /var/log/messages
 [LPIC-1] Qual comando é usado para criar links simbólicos ou físicos (revisão)? | ln;link;mklink;slink;hlink
 [LPIC-1] Qual sistema de arquivos não utiliza Inodes de forma tradicional e é comum em sistemas legados da Microsoft? | VFAT;EXT4;XFS;BTRFS;REISERFS
 [LPIC-1] Qual comando exibe o status de todas as quotas de disco de forma resumida para todos os sistemas de arquivos? | repquota -a;quota -a;quotaon -p;edquota -l;quotacheck -v
 [LPIC-1] Qual diretório contém arquivos de biblioteca essenciais para os binários em /bin e /sbin? | /lib;/usr/lib;/var/lib;/etc/lib;/root/lib
 [LPIC-1] Qual comando é usado para desmontar recursivamente todos os sistemas de arquivos sob um diretório? | umount -R;umount -a;umount -f;umount -l;umount -v
 [LPIC-1] Qual comando permite ver as partições e seus respectivos pontos de montagem de forma simplificada? | lsblk;df;mount;fdisk;blkid
-[LPIC-1] Qual comando 'find' busca por arquivos vazios (tamanho zero)? | find -empty;find -size 0;as duas anteriores;find -type z;find -null
+[LPIC-1] Qual comando 'find' busca por arquivos vazios (tamanho zero)? | find -empty e find -size 0;find -empty;find -size 0;find -type z;find -null
 [LPIC-1] Qual a principal vantagem do sistema de arquivos XFS em relação ao EXT4 para arquivos muito grandes? | Melhor escalabilidade e desempenho em arquivos grandes;Mais rápido para deletar muitos arquivos pequenos;Compatibilidade com Windows;Usa menos CPU;Não precisa de fsck
 [LPIC-1] Qual comando verifica se um sistema de arquivos está montado e exibe as estatísticas de uso? | df;mount;du;stat;fuser
 [LPIC-1] Qual diretório da FHS contém os arquivos de cabeçalho (headers) para compiladores C? | /usr/include;/usr/src;/var/include;/etc/include;/lib/include
 [LPIC-1] Qual diretório contém os arquivos de dados compartilhados e independentes de arquitetura (como manuais e ícones)? | /usr/share;/usr/local;/var/share;/etc/share;/opt/share
-[LPIC-1] Qual comando permite criar um sistema de arquivos e definir o seu Label no momento da criação? | mkfs.ext4 -L LABEL;mke2fs -L LABEL;as duas anteriores;tune2fs -L LABEL;format -L LABEL
+[LPIC-1] Qual comando permite criar um sistema de arquivos e definir o seu Label no momento da criação? | mkfs.ext4 -L LABEL e mke2fs -L LABEL;mkfs.ext4 -L LABEL;mke2fs -L LABEL;tune2fs -L LABEL;format -L LABEL
 [LPIC-1] Qual o ID de partição padrão para 'Linux' no MBR (fdisk)? | 83;82;8e;fd;7
 [LPIC-1] Qual o ID de partição padrão para 'Linux Swap' no MBR? | 82;83;8e;fd;b
 [LPIC-1] Qual o ID de partição para 'Linux LVM' no MBR? | 8e;83;82;fd;f
 [LPIC-1] Qual comando do 'gdisk' (GPT) abre o menu de opções avançadas (expert mode)? | x;m;p;l;d
 [LPIC-1] Qual comando do 'fdisk' lista todos os códigos de tipos de partição suportados? | l;p;t;v;m
 [LPIC-1] O que acontece se você rodar 'fsck' em uma partição que já está montada como RW? | Pode causar corrupção grave de dados;O comando avisa e não roda;O sistema reinicia;Nada, funciona normalmente;O sistema trava
-[LPIC-1] Qual comando exibe a data da última verificação (Last checked) de uma partição ext4? | tune2fs -l;dumpe2fs -h;as duas anteriores;fsck -v;stat
-[LPIC-1] No /etc/fstab, qual opção impede que o tempo de acesso (atime) seja atualizado a cada leitura, melhorando a performance? | noatime;nodiratime;relatime;as três anteriores;async
-[LPIC-1] Qual comando permite visualizar a "árvore" de processos e ver quais arquivos cada processo está usando? | lsof;pstree;fuser;as três anteriores;ps -ef
+[LPIC-1] Qual comando exibe a data da última verificação (Last checked) de uma partição ext4? | tune2fs -l e dumpe2fs -h;tune2fs -l;dumpe2fs -h;fsck -v;stat
+[LPIC-1] No /etc/fstab, qual opção impede que o tempo de acesso (atime) seja atualizado a cada leitura, melhorando a performance? | noatime,nodiratime e relatime;noatime;nodiratime;relatime;async
 [LPIC-1] Qual comando 'fuser' mata todos os processos que estão acessando uma partição (útil para conseguir desmontar)? | fuser -km /ponto;fuser -v /ponto;fuser -u /ponto;fuser -a /ponto;fuser -s /ponto
-[LPIC-1] Qual diretório da FHS armazena dados de estado de aplicações, como arquivos .pid e sockets? | /run;/var/run;as duas anteriores;/tmp;/var/tmp
+[LPIC-1] Qual comando é utilizado para listar todos os arquivos abertos por processos ativos no sistema? | lsof;pstree;fuser;ps -ef;find
+[LPIC-1] Qual comando exibe os processos em execução no sistema em um formato de árvore, mostrando a relação pai-filho? | pstree;lsof;ps -aux;top;free
+[LPIC-1] Qual diretório da FHS armazena dados de estado de aplicações, como arquivos .pid e sockets? | /run e /var/run;/run;/var/run;/tmp;/var/tmp
 [LPIC-1] Qual diretório é destinado a arquivos temporários que devem ser preservados entre reinicializações do sistema? | /var/tmp;/tmp;/run;/dev/shm;/var/log
-[LPIC-1] Qual comando 'mke2fs' reserva uma porcentagem de blocos para o superusuário (padrão 5%)? | mke2fs -m;tune2fs -m;as duas anteriores;mkfs -r;tune2fs -r
-[LPIC-1] Qual comando exibe o tipo de sistema de arquivos de uma partição sem precisar montá-la? | blkid;file -s;lsblk -f;todas as anteriores;stat
+[LPIC-1] Qual comando 'mke2fs' reserva uma porcentagem de blocos para o superusuário (padrão 5%)? | mke2fs -m e tune2fs -m;mke2fs -m;tune2fs -m;mkfs -r;tune2fs -r
+[LPIC-1] Qual comando exibe o tipo de sistema de arquivos de uma partição sem precisar montá-la? | blkid, file -s e lsblk -f;blkid;file -s;lsblk -f;stat
 [LPIC-1] Qual opção do 'mount' permite montar um sistema de arquivos baseado no seu Label? | -L;-U;-t;-o;-a
 [LPIC-1] Qual opção do 'mount' permite montar um sistema de arquivos baseado no seu UUID? | -U;-L;-t;-o;-f
 [LPIC-1] Qual comando 'parted' exibe as unidades em bytes, KB, MB ou GB? | unit;display;format;set;print
@@ -98,4 +99,4 @@
 [LPIC-1] Qual comando do 'vi' pula para o início da palavra atual? | b;e;w;0;^
 [LPIC-1] Qual comando do 'vi' entra no modo de inserção no FINAL da linha atual? | A;I;o;a;i
 [LPIC-1] Qual comando do 'vi' entra no modo de inserção no INÍCIO da linha atual? | I;A;o;a;i
-[LPIC-1] Qual utilitário permite gerenciar partições MS-DOS (FAT) no Linux? | mtools;fattool;dosfsck;mkfs.vfat;todas as anteriores
+[LPIC-1] Qual conjunto de utilitários permite manipular arquivos em partições MS-DOS (FAT) sem a necessidade de montá-las no sistema? | mtools;fattool;dosfsck;mkfs.vfat;lsblk
